@@ -11,7 +11,7 @@ number of checks to reduce this syllable count to something closer to the true v
 
 - Words ending in s doesn't change syllable count
 - Set of consequtive vowels, i.e "ea" or "ou", generally are the same syllable.
-- Think of weird cases like "Rhythm", "Lion", "Naive", "Strengths" =
+- Think of weird cases like "Rhythm", "Lion", "Naive", "Strengths", "Cooperation" =
 
 
 - [ ] Find the maximum number of syllables a word can have
