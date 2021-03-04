@@ -9,7 +9,9 @@ Looking at [Link](https://factsumo.com/blog/syllable-rules-overview/), we can se
 This is a good starting point, once we compute the maximum number of syllables a given word has, we can then look at running the word through a 
 number of checks to reduce this syllable count to something closer to the true value. Having a maximum count is also useful as a sanity check.
 
-- Num_syllables <= Num_vowels
+- Words ending in s doesn't change syllable count
+- Set of consequtive vowels, i.e "ea" or "ou", generally are the same syllable.
+- Think of weird cases like "Rhythm", "Lion", "Naive", "Strengths" =
 
 
 - [ ] Find the maximum number of syllables a word can have
