@@ -1,6 +1,6 @@
-# COSC326
+# COSC326 Group Etudes
 
-## Syllable Attributes
+## 01 - Syllable Slam
 The number of syllables in a word is closesly related to the number of vowels the word contains, however there are many exceptions. 
 For example, "Cat" has 1 vowel and 1 syllable, "Computer" has 3 vowels and 3 syllables but "Team" has 2 vowels and 1 syllable. 
 There are examples of words where #vowels > #syllables, however I don't think the reverse is true.
@@ -16,6 +16,10 @@ number of checks to reduce this syllable count to something closer to the true v
 - If a word ends in a constanent and then a y then the y is a new syllable
 - If a word ends in an e will it always be the same syllable?
 
-
-
 - [ ] Find the maximum number of syllables a word can have
+
+*Currently not working:*
+- [ ] circumstances
+- [ ] horses
+- [ ] something
+- [ ] surely
