@@ -16,6 +16,11 @@ number of checks to reduce this syllable count to something closer to the true v
 - If a word ends in a constanent and then a y then the y is a new syllable
 - If a word ends in an e will it always be the same syllable?
 
+### Currently not working:
+- [ ] circumstances
+- [ ] something
+- [ ] surely
+
 
 
 - [ ] Find the maximum number of syllables a word can have
