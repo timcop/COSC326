@@ -1,4 +1,4 @@
-# COSC326
+# COSC326 Group Etudes
 
 ## 01 - Syllable Slam
 The number of syllables in a word is closesly related to the number of vowels the word contains, however there are many exceptions. 
