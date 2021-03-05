@@ -19,7 +19,7 @@ number of checks to reduce this syllable count to something closer to the true v
 - [ ] Find the maximum number of syllables a word can have
 
 *Currently not working:*
-- [ ] circumstances
-- [ ] horses
+- [-] circumstances
+- [-] horses
 - [ ] something
 - [ ] surely
