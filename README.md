@@ -20,5 +20,6 @@ number of checks to reduce this syllable count to something closer to the true v
 
 *Currently not working:*
 - [ ] circumstances
+- [ ] horses
 - [ ] something
 - [ ] surely
