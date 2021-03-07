@@ -1,10 +1,16 @@
 #surely, something
 import sys
+
+# Params
 words_array = []
 vowels = ['a','e','i','o','u', 'y']
+
+# Read from standard input and store words in words_array
 for word in sys.stdin:
     word = word.strip()
     words_array.append(word)
+
+# Algorithm to determine syllable count
 for word in words_array:
     syllable_count = 0
     vowel_count = 0
