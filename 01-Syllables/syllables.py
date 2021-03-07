@@ -68,4 +68,4 @@ for word in words_array:
         else:
             syllables.append(cur_syllable)
 
-    print(word, len(syllables))
+    print(len(syllables))
