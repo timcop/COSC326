@@ -6,10 +6,10 @@ vowels = ['a','e','i','o','u', 'y']
 
 # Read from standard input and store words in words_array
 for word in sys.stdin:
-    word = word.strip()
+    word = word.strip().lower()
     words_array.append(word)
 
-# Loop over all the words 
+# Loop over all the words
 for word in words_array:
     syllable_count = 0
     vowel_count = 0
@@ -18,7 +18,7 @@ for word in words_array:
     # Iterate over word to 2nd last letter
     for i in range(0, len(word) - 1):
         letter = word[i]
-        
+
         if vowel_count == 0: # If no vowels are in the current syllable, add the letter to current syllable
             cur_syllable += letter
             if letter in vowels:
@@ -33,7 +33,7 @@ for word in words_array:
                     vowel_count = 1
             else: # Add the letter to the current syllable if it isn't a vowel
                 cur_syllable += letter
- 
+
 
     # Here we handle a few cases for the end of the word
     letter = word[-1]
@@ -42,15 +42,13 @@ for word in words_array:
         syllables.append(cur_syllable)
         syllables.append('y')
     else:
-        cur_syllable+=letter 
+        cur_syllable+=letter
         if cur_syllable == 'ed': # Generally words ending in 'ed' will not be a new syllable
             syllables[-1] += cur_syllable
         elif (cur_syllable == 'es' and not(syllables[-1][-1] in ['c', 's'])): # Words ending in 'es' but not 'ces' and 'ses' will not be a new syllable
             syllables[-1] += cur_syllable
-        
+
         else:
             syllables.append(cur_syllable)
-    
-    print(syllables)
 
-
+    print(word, len(syllables))

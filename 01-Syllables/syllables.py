@@ -7,7 +7,7 @@ vowels = ['a','e','i','o','u', 'y']
 
 # Read from standard input and store words in words_array
 for word in sys.stdin:
-    word = word.strip()
+    word = word.strip().lower()
     words_array.append(word)
 
 # Algorithm to determine syllable count
