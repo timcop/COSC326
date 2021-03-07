@@ -61,7 +61,7 @@ for word in words_array:
             syllables[-1] += cur_syllable
         elif (cur_syllable == 'es' and not(syllables[-1][-1] in ['c', 's'])): # Words ending in 'es' but not 'ces' and 'ses' will not be a new syllable
             syllables[-1] += cur_syllable
-        # Words ending in 'dle' will have that as an extra syllable
+        # Words ending in '[const]le' will have that as an extra syllable
         elif cur_syllable[-3:-2] not in vowels and cur_syllable[-2:] == 'le':
             syllables.append(cur_syllable[:-3])
             syllables.append(cur_syllable[-3:])
