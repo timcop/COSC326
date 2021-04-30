@@ -34,8 +34,13 @@ public class Strat1 implements Strategy {
       stddeviation /= s.getChequesAvailable().size();
       stddeviation = Math.sqrt(stddeviation);
 
+      if (stddeviation < 1.0) {
+        return p.getCards().get(p.getCards().size()-1);
+      }
+      //change later.
+
       System.out.println(stddeviation);
-      return
+      System.out.println(p.getCards());
         return p.getCards().get((int) (Math.random()*p.getCards().size()));
     }
 }
