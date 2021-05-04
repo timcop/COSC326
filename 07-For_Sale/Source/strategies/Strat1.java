@@ -21,6 +21,7 @@ public class Strat1 implements Strategy {
     }
 
     public Card chooseCard(PlayerRecord p, SaleState s) {
+      //Dont bet higher than the highest card around the table.
       //Betting proprotional to the standard deviation of the cards.
       double stddeviation = 0;
       long mean = 0;
@@ -38,9 +39,6 @@ public class Strat1 implements Strategy {
         return p.getCards().get(p.getCards().size()-1);
       }
       //change later.
-
-      System.out.println(stddeviation);
-      System.out.println(p.getCards());
-        return p.getCards().get((int) (Math.random()*p.getCards().size()));
+      return p.getCards().get((int) (Math.random()*p.getCards().size()));
     }
 }
