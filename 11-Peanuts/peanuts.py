@@ -16,7 +16,7 @@ class Peanuts:
         self.move_to_make = [0, 0] #Initialise
 
     def Create_Array(self):
-        self.game_array[0,0] = self.CONST_BAD # (0, 0) corresponds to an empty bowl so always bad!
+        # self.game_array[0,0] = self.CONST_BAD # (0, 0) corresponds to an empty bowl so always bad!
 
         # i = peanuts, j = pretzels
         for i in range(self.num_peanuts + 1):
@@ -25,9 +25,11 @@ class Peanuts:
                 # Rules list consists of tuples (n, m) for n = preanuts, m = pretzels allowed to take
                 found_good_move = False
                 for rule in self.rules:
+
                     if ((i - rule[0] >= 0) and (j - rule[1] >= 0)): # Then the rule is possible
                         pea_pos = i - rule[0]
                         pret_pos = j - rule[1]
+
 
                         if self.game_array[pea_pos, pret_pos] == self.CONST_BAD:
                             found_good_move = True
@@ -86,33 +88,48 @@ for prob in problems:
 
         # Bit of a headache, for = we can just add the rule, for < or > we want to add each possible rule.
         # We make use of ranges and bounds.
+        # We now check that the rule isn't already in the rules_list (no duplicates) and make sure [0,0]
+        # doesn't get appended.
         if pea_rule[0] == '=':
             if pret_rule[0] == '=':
-                rules_list.append([int(pea_rule[1]), int(pret_rule[1])])
+                new_rule = [int(pea_rule[1]), int(pret_rule[1])]
+                if new_rule not in rules_list and new_rule != [0, 0]:
+                    rules_list.append(new_rule)
             elif pret_rule[0] == '<':
                 bound = int(pret_rule[1])
                 for y in range(bound):
-                    rules_list.append([int(pea_rule[1]), y])
+                    new_rule = [int(pea_rule[1]), y]
+                    if new_rule not in rules_list and new_rule != [0, 0]:
+                        rules_list.append(new_rule)
             elif pret_rule[0] == '>':
                 lower_bound = int(pret_rule[1]) + 1
                 upper_bound = num_pretzels + 1
                 for y in range(lower_bound, upper_bound):
-                    rules_list.append([int(pea_rule[1]), y])
+                    new_rule = [int(pea_rule[1]), y]
+                    if new_rule not in rules_list and new_rule != [0, 0]:
+                        rules_list.append(new_rule)
+
 
         elif pea_rule[0] == '<':
             pea_bound = int(pea_rule[1])
             for x in range(pea_bound):
                 if pret_rule[0] == '=':
-                    rules_list.append([x, int(pret_rule[1])])
+                    new_rule = [x, int(pret_rule[1])]
+                    if new_rule not in rules_list and new_rule != [0, 0]:
+                        rules_list.append(new_rule)
                 elif pret_rule[0] == '<':
                     pret_bound = int(pret_rule[1])
                     for y in range(pret_bound):
-                        rules_list.append([int(pea_rule[1]), y])
+                        new_rule = [x, y]
+                        if new_rule not in rules_list and new_rule != [0, 0]:
+                            rules_list.append(new_rule)
                 elif pret_rule[0] == '>':
                     pret_lower_bound = int(pret_rule[1]) + 1
                     pret_upper_bound = num_pretzels + 1
                     for y in range(pret_lower_bound, pret_upper_bound):
-                        rules_list.append([int(pea_rule[1]), y])
+                        new_rule = [x, y]
+                        if new_rule not in rules_list and new_rule != [0, 0]:
+                            rules_list.append(new_rule)
 
         elif pea_rule[0] == '>':
             pea_lower_bound = int(pea_rule[1]) + 1
@@ -120,18 +137,28 @@ for prob in problems:
 
             for x in range(pea_lower_bound, pea_upper_bound):
                 if pret_rule[0] == '=':
-                    rules_list.append([x, int(pret_rule[1])])
+                    new_rule = [x, int(pret_rule[1])]
+                    if new_rule not in rules_list and new_rule != [0, 0]:
+                        rules_list.append(new_rule)
                 elif pret_rule[0] == '<':
                     pret_bound = int(pret_rule[1])
                     for y in range(pret_bound):
-                        rules_list.append([x, y])
+                        new_rule = [x, y]
+                        if new_rule not in rules_list and new_rule != [0, 0]:
+                            rules_list.append(new_rule)
                 elif pret_rule[0] == '>':
                     pret_lower_bound = int(pret_rule[1]) + 1
                     pret_upper_bound = num_pretzels + 1
                     for y in range(pret_lower_bound, pret_upper_bound):
-                        rules_list.append([x, y])
+                        new_rule = [x, y]
+                        if new_rule not in rules_list and new_rule != [0, 0]:
+                            rules_list.append(new_rule)
 
     problem = Peanuts(num_peanuts, num_pretzels, rules_list)
     problem.Create_Array()
+
+    # Uncomment to see what the array looks like and the rules
+    # print(problem.game_array)
+    # print(rules_list)
 
     print(str(problem.move_to_make[0]) + ' ' + str(problem.move_to_make[1]))
