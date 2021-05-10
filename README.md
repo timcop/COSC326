@@ -5,7 +5,7 @@
 - [x] 01 - Syllable Slam
 - [ ] 04 Tents and Trees
 - [ ] 07 - For Sale (due May 24)
-- [ ] 11 - Peanuts and Pretzels  
+- [x] 11 - Peanuts and Pretzels  
 
 ## 04 - Tents and Trees
 - [x] Input
