@@ -31,4 +31,4 @@ make stddeviation a function pls.
 - [x] Efficiency
 - [x] Output
 
-Have put 2nd submission through with bugs fixed, I believe it shows correct solutions so hopefully efficient enough to pass.
+Have submitted for 3rd time, fixed input issue where greater than 1 digit number rules were being added like so (=10, =5) - > (1, 5). Have also implemented sets for rules instead of lists.
