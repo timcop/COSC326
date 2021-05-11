@@ -24,7 +24,7 @@ for line in sys.stdin:
                     row.append(tree)
             tree_list.append(row)
         else:
-            counts.append(line)
+            counts.append([int(i) for i in line])
     else:
         problem.append(tree_list)
         problem.append(counts)
@@ -35,7 +35,7 @@ problem.append(tree_list)
 problem.append(counts)
 problems_all.append(problem)
 
-
+print(problems_all)
 for prob in problems_all:
     tree_list = prob[0]
     tree_array = np.array(prob[0])
@@ -93,8 +93,40 @@ for prob in problems_all:
                         tree_array[row][col] = -1
         ## At this stage we want to loop through the array placing tents
         ## where we think they can go until it's filled up.
-
-
-
-
+    total_tents = sum(row_counts)
+    placed = 0
     print(tree_array)
+
+        while placed < total_tents:
+            print(placed)
+            # Perform operation on rows
+            ## MARK ALL SURROUNDING TILES WITH -1 AFTER PLACEMENT
+            for row, row_num in enumerate(row_counts):
+                # If available slots = num then place all tents
+                slot_count = 0
+                slot_index = []
+                for col, col_num in enumerate(col_counts):
+                    if tree_array[row][col] == 0:
+                        slot_count += 1
+                        slot_index.append(col)
+                if slot_count == row_num:
+                    for index in slot_index:
+                        tree_array[row][index] = 1
+                    placed += row_num
+            # Exact same for columns
+            for col, col_num in enumerate(col_counts):
+                # If available slots = num then place all tents
+                slot_count = 0
+                slot_index = []
+                for row, row_num in enumerate(row_counts):
+                    if tree_array[row][col] == 0:
+                        slot_count += 1
+                        slot_index.append(row)
+                if slot_count == col_num:
+                    for index in slot_index:
+                        tree_array[index][col] = 1
+                    placed += col_num
+
+
+
+    # print(tree_array)
