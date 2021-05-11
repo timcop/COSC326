@@ -17,6 +17,8 @@ public class Strat2 implements Strategy {
       return -1;
       //Always bid an even number. - but only if you plan to pull out later.
       // This maximises your returns on your bet.
+      //Calculate the std deviation of cards on the table after people have passed.
+      
 
       //Try bet for the second best card every time.
       //Try and bet for the lowest card above the median of the remaining cards.
