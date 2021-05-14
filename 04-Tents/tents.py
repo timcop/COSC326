@@ -3,9 +3,9 @@ import numpy as np
 
 # INPUT
 
-empty = 0
-tree = -1
-tent = 1
+EMPTY = 0
+TREE = -1
+TENT = 1
 
 problem = []
 problems_all = []
@@ -32,7 +32,7 @@ def solveProblem(tree_list, row_counts, col_counts):
                 else:
                     # Check if tree is adjacent.
                     found_tree = False
-                    # Need to wrap in try/excpet as can get out of bounds error
+                    # Need to wrap in try/except as can get out of bounds error
                     while True:
                         try:
                             if tree_list[row - 1][col] == -1:
@@ -106,9 +106,9 @@ if __name__ == "__main__":
                 row = []
                 for character in line[0]:
                     if character == '.':
-                        row.append(empty)
+                        row.append(EMPTY)
                     elif character == 'T':
-                        row.append(tree)
+                        row.append(TREE)
                 tree_list.append(row)
             else:
                 if not second_row:
@@ -119,10 +119,15 @@ if __name__ == "__main__":
                 # print(problem)
                 elif second_row:
                     problem.append(list(int(j) for j in line))
-                    problems_all.append(problem.copy())
-                    problem.clear()
-                    second_row = False
+                    if len(problem) != 3:
+                        print("Bad format")
+                        problem.clear()
+                        second_row = False
+                    else:
+                        problems_all.append(problem.copy())
+                        problem.clear()
+                        second_row = False
 
     for item in problems_all:
-        #solveProblem(item[0], item[1], item[2])
-        print(item)
+        solveProblem(item[0], item[1], item[2])
+        #print(item)
