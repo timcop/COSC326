@@ -11,12 +11,16 @@ import java.util.*;
  * the round.
  * Strat 2's selling strategy is to
 */
-public class Strat2 implements Strategy {
+public class Strat2a implements Strategy {
   /** Strat 2's bidding strategy is to always bid to an even number up until half
    * it's pot  before pulling out. This maximises it's returns if it does not win
    * the round.
    */
-    public int bid(PlayerRecord p, AuctionState a) {
+    private static final int NUM_OF_CARDS = 30;
+     private static final double TIMS_CONSTANT = 2.2;
+     private static final double[] MIN_STD_DEV = new double[]{0, Math.sqrt(2/9), Math.sqrt(1/4), Math.sqrt(3/5), Math.sqrt(2/3)};
+     private static final double[] MAX_STD_DEV = new double[]{7.5, Math.sqrt(50), 7.5, Math.sqrt(51.76), Math.sqrt(51.58)};
+      public int bid(PlayerRecord p, AuctionState a) {
       int maxBet = (int) Math.round(p.getCash()* 0.4);
       if (a.getCurrentBid() % 2 == 0 && a.getCurrentBid() + 2 <= maxBet) {
         return (a.getCurrentBid() + 2);
@@ -44,6 +48,18 @@ public class Strat2 implements Strategy {
        }
        stddeviation /= s.getChequesAvailable().size();
        stddeviation = Math.sqrt(stddeviation);
+       if (MAX_STD_DEV[num_players-2] - stddeviation <= TIMS_CONSTANT) {
+         //bet your highest card.
+         return p.getCards().get(0);
+       }
+       else if (stddeviation - MIN_STD_DEV[num_players-2] <= TIMS_CONSTANT) {
+         //bet your lowest card.
+         return p.getCards().get(p.getCards().size()-1);
+       }
+       if (Math.abs(stddeviation - (MAX_STD_DEV[num_players-2] - MIN_STD_DEV[num_players-2])/2) <= TIMS_CONSTANT) {
+         //bet middle card.
+         return p.getCards().get( (int) p.getCards().size()/2);
+       }
        if (num_players > 3) {
          if (stddeviation < 1.0) {
            return p.getCards().get(p.getCards().size()-1);
