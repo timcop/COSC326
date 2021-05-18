@@ -46,18 +46,6 @@ public class Strat1 implements Strategy {
       }
       stddeviation /= s.getChequesAvailable().size();
       stddeviation = Math.sqrt(stddeviation);
-      if (MAX_STD_DEV[num_players-2] - stddeviation <= TIMS_CONSTANT) {
-        //bet your highest card.
-        return p.getCards().get(0);
-      }
-      else if (stddeviation - MIN_STD_DEV[num_players-2] <= TIMS_CONSTANT) {
-        //bet your lowest card.
-        return p.getCards().get(p.getCards().size()-1);
-      }
-      if (Math.abs(stddeviation - (MAX_STD_DEV[num_players-2] - MIN_STD_DEV[num_players-2])/2) <= TIMS_CONSTANT) {
-        //bet middle card.
-        return p.getCards().get( (int) p.getCards().size()/2);
-      }
       if (num_players > 3) {
         if (stddeviation < 1.0) {
           return p.getCards().get(p.getCards().size()-1);

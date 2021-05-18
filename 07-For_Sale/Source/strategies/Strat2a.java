@@ -59,20 +59,6 @@ public class Strat2a implements Strategy {
        if (Math.abs(stddeviation - (MAX_STD_DEV[num_players-2] - MIN_STD_DEV[num_players-2])/2) <= TIMS_CONSTANT) {
          //bet middle card.
          return p.getCards().get( (int) p.getCards().size()/2);
-       }
-       if (num_players > 3) {
-         if (stddeviation < 1.0) {
-           return p.getCards().get(p.getCards().size()-1);
-         } else if (stddeviation <= 3.5) {
-           //go for the top 4 cards.
-           return p.getCards().get(Math.round(p.getCards().size() * (3/num_players)));
-         } else if (stddeviation <= 5.5) {
-           //top 3 cards
-           return p.getCards().get(Math.round(p.getCards().size() * (2/num_players)));
-         } else {
-           //top 2 cards.
-           return p.getCards().get(Math.round(p.getCards().size() * (1/num_players)));
-         }
        } else {
          return p.getCards().get((int) (Math.random()*p.getCards().size()));
        }
