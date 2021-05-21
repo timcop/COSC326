@@ -21,16 +21,19 @@ public class Strat5 implements Strategy {
   private static final double[] MIN_STD_DEV = new double[]{0, Math.sqrt(2/9), Math.sqrt(1/4), Math.sqrt(3/5), Math.sqrt(2/3)};
   private static final double[] MAX_STD_DEV = new double[]{7.5, Math.sqrt(50), 7.5, Math.sqrt(51.76), Math.sqrt(51.58)};
 
-  /** Strat 5's bidding strategy is to bid proportional to the standard
-   * deviation of the bids. I.e. if the standard deviation is high, make
-   * a high bid.
+  /** Strat 5's bidding strategy is to always bid to an even number up until
+   * half it's pot before pulling out. This maximises it's returns if it does
+   * not win the round.
    */
   public int bid(PlayerRecord p, AuctionState a) {
+    int maxBet = (int) Math.round(p.getCash()* 0.4);
+    if (a.getCurrentBid() % 2 == 0 && a.getCurrentBid() + 2 <= maxBet) {
+      return (a.getCurrentBid() + 2);
+    }
+    else if (a.getCurrentBid() + 1 <= maxBet) {
+      return (a.getCurrentBid() + 1);
+    }
     return -1;
-    /* @ Tim Copland */
-    /* You can just bid lower than the current bid and the game manager will
-     * force you to pull out automatically.
-     */
   }
 
   /** Strat 5's chooseCard strategy is to choose a card proportional to the
