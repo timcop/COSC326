@@ -6,7 +6,9 @@ import java.util.*;
  * Team Name: We Ballin', Wii Bowlin'.
  * Team Members: Ethan Fraser, Magdeline Huang, Jordan Kettles, Tim Copland.
  * Date: Tuesday 18 May 2021.
- * Strat 3's bidding strategy is to...
+ * Strat 3's bidding strategy is to bid proportional to the standard
+  * deviation of the properties. I.e. if the standard deviation is high, make
+  * a high bid, if the standard deviation is low, pull out early.
  * Strat 3's selling strategy is to choose a card proportional to the standard
  * deviation of the cards. I.e. if the standard deviation is high, choose a high
  * value card. There is one constant value (Tim’s constant) with which various
@@ -17,11 +19,13 @@ public class Strat3 implements Strategy {
 
   private static final int NUM_OF_CARDS = 30;
   private static final double TIMS_CONSTANT = 2.2;
+  private static final double[] PROPERTY_MIN_STD_DEV = new double[]{0.5, Math.sqrt(0.66), Math.sqrt(1.25), Math.sqrt(1.2), Math.sqrt(2.9167)};
+  private static final double[] PROPERTY_MAX_STD_DEV = new double[]{14.5, Math.sqrt(180.67), Math.sqrt(196.25), Math.sqrt(182), Math.sqrt(182.9)};
   private static final double[] MIN_STD_DEV = new double[]{0, Math.sqrt(2/9), Math.sqrt(1/4), Math.sqrt(3/5), Math.sqrt(2/3)};
   private static final double[] MAX_STD_DEV = new double[]{7.5, Math.sqrt(50), 7.5, Math.sqrt(51.76), Math.sqrt(51.58)};
 
   /** Strat 3's bidding strategy is to bid proportional to the standard
-   * deviation of the bids. I.e. if the standard deviation is high, make
+   * deviation of the properties. I.e. if the standard deviation is high, make
    * a high bid.
    */
   public int bid(PlayerRecord p, AuctionState a) {
@@ -29,6 +33,24 @@ public class Strat3 implements Strategy {
     /* You can just bid lower than the current bid and the game manager will
      * force you to pull out automatically.
      */
+     double stddeviation = 0;
+     long mean = 0;
+     if (a.getPlayers().size() == a.getCardsInAuction().size()) {
+       System.out.println("Round 1.");
+     }
+     return -1;
+     /*int num_players = a.getPlayers().size();
+     for(int property : a.getCardsInAuction()) {
+       mean += property;
+     }
+     mean /= a.getCardsInAuction().size();
+     for (int property : a.getCardsInAuction()) {
+       stddeviation += Math.pow((property - mean), 2);
+     }
+     stddeviation /= a.getCardsInAuction().size();
+     stddeviation = Math.sqrt(stddeviation);
+     //PROPERTY_MAX_STD_DEV
+     //PROPERTY_MIN_STD_DEV*/
   }
 
   /** Strat 3's chooseCard strategy is to choose a card proportional to the

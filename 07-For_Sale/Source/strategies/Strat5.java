@@ -6,9 +6,9 @@ import java.util.*;
  * Team Name: We Ballin', Wii Bowlin'.
  * Team Members: Ethan Fraser, Magdeline Huang, Jordan Kettles, Tim Copland.
  * Date: Tuesday 18 May 2021.
- * Strat 5's bidding strategy is to bid proportional to the standard
-  * deviation of the bids. I.e. if the standard deviation is high, make
-  * a high bid, if the standard deviation is low, pull out early.
+ * Strat 5's bidding strategy is to always bid to an even number up until
+ * half it's pot before pulling out. This maximises it's returns if it does
+ * not win the round.
  * Strat 5's selling strategy is to choose a card proportional to the standard
  * deviation of the cards. I.e. if the standard deviation is high, choose a high
  * value card. There is one constant value (Tim’s constant) with which various

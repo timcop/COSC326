@@ -6,7 +6,7 @@ import java.util.*;
  * Team Name: We Ballin', Wii Bowlin'.
  * Team Members: Ethan Fraser, Magdeline Huang, Jordan Kettles, Tim Copland.
  * Date: Tuesday 18 May 2021.
- * Strat 4's bidding strategy is to bud in relation to the median value of the
+ * Strat 4's bidding strategy is to bid in relation to the median value of the
  * property cards. On our turn, if the median property card is still on the
  * table and it is the lowest card, then pass. Otherwise, bid +1 the
  * current bid.
@@ -22,9 +22,10 @@ public class Strat4 implements Strategy {
   private static final double[] MIN_STD_DEV = new double[]{0, Math.sqrt(2/9), Math.sqrt(1/4), Math.sqrt(3/5), Math.sqrt(2/3)};
   private static final double[] MAX_STD_DEV = new double[]{7.5, Math.sqrt(50), 7.5, Math.sqrt(51.76), Math.sqrt(51.58)};
 
-  /** Strat 4's bidding strategy is to bid proportional to the standard
-   * deviation of the bids. I.e. if the standard deviation is high, make
-   * a high bid.
+  /** Strat 4's bidding strategy is to bid in relation to the median value of
+   * the property cards. On our turn, if the median property card is still on
+   * the table and it is the lowest card, then pass. Otherwise, bid +1 the
+   * current bid.
    */
   public int bid(PlayerRecord p, AuctionState a) {
     return -1;

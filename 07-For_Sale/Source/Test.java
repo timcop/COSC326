@@ -20,9 +20,9 @@ public class Test {
        for(int i = 0; i < 1; i++) {
            players.add(new Player("R"+ ((char) ('A' + i)), new RandomStrategy()));
        }
-       players.add(new Player("Strat5", new Strat5()));
        players.add(new Player("Strat2", new Strat2()));
        players.add(new Player("Strat1", new Strat1()));
+       players.add(new Player("Strat3", new Strat3()));
         java.util.Collections.shuffle(players);
         GameManager g = new GameManager(players);
         g.run();
