@@ -21,6 +21,10 @@ public class Strat4 implements Strategy {
   private static final double TIMS_CONSTANT = 2.2;
   private static final double[] MIN_STD_DEV = new double[]{0, Math.sqrt(2/9), Math.sqrt(1/4), Math.sqrt(3/5), Math.sqrt(2/3)};
   private static final double[] MAX_STD_DEV = new double[]{7.5, Math.sqrt(50), 7.5, Math.sqrt(51.76), Math.sqrt(51.58)};
+  
+  private int prevCardsInDeck = 31;
+  private int medianIdx;
+  private Card medianCard;
 
   /**
     * Strat4's bidding strategy is to go for the median card on each round.
@@ -33,17 +37,16 @@ public class Strat4 implements Strategy {
     * the value of your remaining money.
     */
   public int bid(PlayerRecord p, AuctionState a) {
-    return -1;
     // If this is the first round, work out the index of the median card.
     // idx = floor(number of cards on table / 2)
     List<Card> cardsInAuction = a.getCardsInAuction();
     List<PlayerRecord> players = a.getPlayers();
-    if (a.getCardsInDeck().size() < this.prevCardsInDeck){
-        this.prevCardsInDeck = a.getCardsInDeck().size();
-        this.medianIdx = (int) Math.floor(prevCardsInDeck / 2);
-        this.medianCard = cardsInAuction.get(this.medianIdx);
+    if (a.getCardsInDeck().size() < prevCardsInDeck){
+        prevCardsInDeck = a.getCardsInDeck().size();
+        medianIdx = (int) Math.floor(prevCardsInDeck / 2);
+        medianCard = cardsInAuction.get(medianIdx);
     }
-    if (cardsInAuction.indexOf(this.medianCard) < 1) {
+    if (cardsInAuction.indexOf(medianCard) < 1) {
         return -1;
     }
     return a.getCurrentBid() + 1;
