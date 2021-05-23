@@ -17,16 +17,15 @@ public class Test {
     public static void main(String[] args) {
 
         List<Player> players = new ArrayList<>();
-       for(int i = 0; i < 1; i++) {
-           players.add(new Player("R"+ ((char) ('A' + i)), new RandomStrategy()));
-       }
-       players.add(new Player("Strat2", new Strat2()));
-       players.add(new Player("Strat1", new Strat1()));
-       players.add(new Player("Strat3", new Strat3()));
+        for(int i = 0; i < 3; i++) {
+            players.add(new Player("R"+ ((char) ('A' + i)), new RandomStrategy()));
+        }
+        players.add(new Player("Strat5", new Strat6()));
+        players.add(new Player("Strat6", new Strat6()));
         java.util.Collections.shuffle(players);
         GameManager g = new GameManager(players);
         g.run();
         System.out.println(g);
-    }
+        }
 
 }

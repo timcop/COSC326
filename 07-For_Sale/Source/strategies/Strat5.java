@@ -2,6 +2,7 @@ package forsale.strategies;
 import forsale.*;
 import java.util.*;
 
+
 /** Strat 5.
  * Team Name: We Ballin', Wii Bowlin'.
  * Team Members: Ethan Fraser, Magdeline Huang, Jordan Kettles, Tim Copland.
@@ -46,6 +47,12 @@ public class Strat5 implements Strategy {
    */
   public Card chooseCard(PlayerRecord p, SaleState s) {
     //Calcuate the standard deviation.
+    System.out.println(p.getCards());
+    List<Card> cards = p.getCards();
+    if (cards.size() != 0) {
+        cards.sort(Comparator.comparing(Card::getQuality));
+        System.out.println(cards);
+    }
     double stddeviation = 0;
     long mean = 0;
     int num_players = s.getPlayers().size();
@@ -73,4 +80,6 @@ public class Strat5 implements Strategy {
       return p.getCards().get((int) (Math.random()*p.getCards().size()));
     }
   }
+
+
 }
