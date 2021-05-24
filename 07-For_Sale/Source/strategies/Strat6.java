@@ -6,7 +6,7 @@ import java.util.*;
  * Team Name: We Ballin', Wii Bowlin'.
  * Team Members: Ethan Fraser, Magdeline Huang, Jordan Kettles, Tim Copland.
  * Date: Tuesday 24 May 2021.
- * Strat 6's bidding strategy is compare the standard deviation of the cards in
+ * Strat 6's bidding strategy compares the standard deviation of the cards in
  * auction to a range of standard deviations of all cards remaining (including
  * on the table). We then set a max bid which is proportional to how large the
  * standard deviation is, so higher will give a higher max bid.

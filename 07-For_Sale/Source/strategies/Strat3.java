@@ -25,9 +25,10 @@ public class Strat3 implements Strategy {
   private static final double[] MIN_STD_DEV = new double[]{0, Math.sqrt(2/9), Math.sqrt(1/4), Math.sqrt(3/5), Math.sqrt(2/3)};
   private static final double[] MAX_STD_DEV = new double[]{7.5, Math.sqrt(50), 7.5, Math.sqrt(51.76), Math.sqrt(51.58)};
 
-  /** Strat 3's bidding strategy is to bid proportional to the standard
-   * deviation of the properties. I.e. if the standard deviation is high, make
-   * a high bid.
+  /** Strat 3's bidding strategy compares the standard deviation of the cards in
+  * auction to a range of standard deviations of all cards remaining (including
+  * on the table). We then set a max bid which is proportional to how large the
+  * standard deviation is, so higher will give a higher max bid.
    */
   public int bid(PlayerRecord p, AuctionState a) {
 
@@ -51,12 +52,22 @@ public class Strat3 implements Strategy {
     int max_bid = stack/2;
 
     int turns_left = a.getCardsInDeck().size()/num_players;
+    // UNCOMMENT FOR LINEAR RANGE
+    // if (min_std != max_std) {
+    //     for (int i = 0; i < range_std.size()-1; i++) {
+    //         if (curr_std >= range_std.get(i) && curr_std <= range_std.get(i+1)) {
+    //             max_bid = i*stack/6;
+    //         }
+    //     }
+    // }
+
+    // NORMAL RANGE
     if (min_std != max_std) {
-      for (int i = 0; i < range_std.size()-1; i++) {
-         if (curr_std >= range_std.get(i) && curr_std <= range_std.get(i+1)) {
-             max_bid = i*stack/6;
-         }
-      }
+        for (int i = 0; i < normal.size()-1; i++) {
+            if (curr_std >= normal.get(i) && curr_std <= normal.get(i+1)) {
+                max_bid = i*stack/6;
+            }
+        }
     }
     int bid = a.getCurrentBid();
 
