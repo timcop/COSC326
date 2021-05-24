@@ -51,14 +51,14 @@ public class Strat1 implements Strategy {
     stddeviation = Math.sqrt(stddeviation);
 
     if (num_players <= 3) {
-      upper_bound = 0.5;
+      bound = 0.5;
     }
     if (stddeviation < 1.0 - upper_bound) {
       return p.getCards().get(p.getCards().size()-1);
-    } else if (stddeviation <= 3.5 - upper_bound) {
+    } else if (stddeviation <= 3.5 - bound) {
       //go for the top 4 cards.
       return p.getCards().get(Math.round(p.getCards().size() * (3/num_players)));
-    } else if (stddeviation <= 5.5 - upper_bound) {
+    } else if (stddeviation <= 5.5 - bound) {
       //top 3 cards
       return p.getCards().get(Math.round(p.getCards().size() * (2/num_players)));
     } else {
