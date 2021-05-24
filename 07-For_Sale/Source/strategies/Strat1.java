@@ -14,7 +14,7 @@ import java.util.*;
  */
 public class Strat1 implements Strategy {
 
-  private static double upper_bound = 0;
+  private static double bound = 0;
 
   /** Strat 1's bid strategy is to always bid by 1, up until half of it's pot
    * before pulling out.
@@ -53,7 +53,7 @@ public class Strat1 implements Strategy {
     if (num_players <= 3) {
       bound = 0.5;
     }
-    if (stddeviation < 1.0 - upper_bound) {
+    if (stddeviation < 1.0 - bound) {
       return p.getCards().get(p.getCards().size()-1);
     } else if (stddeviation <= 3.5 - bound) {
       //go for the top 4 cards.

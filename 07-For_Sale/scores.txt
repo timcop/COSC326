@@ -1,2784 +1,3500 @@
-Strat3 61
-Strat5 55
-Strat1 48
-Strat6 46
-Strat2 44
-
-Strat6 62
-Strat5 59
-Strat2 54
-Strat3 52
-Strat1 32
-
-Strat2 61
-Strat6 56
-Strat5 53
-Strat3 48
-Strat1 40
-
-Strat2 60
-Strat6 56
-Strat5 54
-Strat3 51
-Strat1 39
-
-Strat5 55
-Strat3 53
-Strat6 52
-Strat2 50
-Strat1 43
-
-Strat3 64
-Strat2 57
-Strat5 52
-Strat1 45
-Strat6 40
-
-Strat3 59
 Strat5 58
-Strat2 57
-Strat6 49
-Strat1 37
-
-Strat3 69
-Strat2 55
-Strat6 55
-Strat5 43
-Strat1 35
-
-Strat3 59
-Strat2 57
-Strat5 53
-Strat1 52
-Strat6 40
-
-Strat3 69
-Strat5 66
-Strat6 56
-Strat1 47
-Strat2 28
-
-Strat2 59
-Strat3 56
+Strat2 54
 Strat6 48
-Strat5 48
-Strat1 47
-
-Strat5 63
-Strat3 56
-Strat6 52
-Strat1 50
-Strat2 40
-
-Strat1 62
-Strat5 57
-Strat3 46
-Strat6 46
-Strat2 45
-
-Strat3 72
-Strat2 53
-Strat5 48
-Strat6 47
-Strat1 43
-
-Strat5 54
-Strat3 53
-Strat2 53
-Strat6 49
-Strat1 46
-
-Strat5 58
-Strat2 54
-Strat3 54
-Strat6 51
-Strat1 39
-
-Strat3 59
-Strat2 58
-Strat6 53
-Strat5 49
-Strat1 42
-
-Strat5 59
-Strat2 54
-Strat1 53
-Strat3 50
-Strat6 45
-
-Strat6 68
-Strat5 55
-Strat1 50
-Strat2 47
-Strat3 39
-
-Strat5 55
-Strat2 55
-Strat1 51
-Strat3 51
-Strat6 49
-
-Strat3 70
-Strat5 63
-Strat2 48
-Strat6 39
-Strat1 38
-
-Strat3 70
-Strat5 54
-Strat1 48
-Strat6 44
-Strat2 39
-
-Strat6 61
-Strat5 60
-Strat3 53
-Strat2 53
-Strat1 38
-
-Strat6 55
-Strat1 53
-Strat5 52
-Strat3 49
-Strat2 49
-
-Strat6 56
-Strat2 53
-Strat3 51
-Strat5 50
-Strat1 45
-
-Strat6 60
-Strat2 59
-Strat5 59
-Strat3 49
-Strat1 36
-
-Strat6 62
-Strat5 59
-Strat3 54
-Strat1 42
-Strat2 42
-
-Strat5 76
-Strat3 56
-Strat2 48
-Strat6 40
-Strat1 40
-
-Strat2 63
-Strat6 57
-Strat3 54
-Strat5 53
-Strat1 31
-
-Strat2 69
-Strat6 54
-Strat5 49
-Strat1 43
-Strat3 43
-
-Strat2 74
-Strat1 54
-Strat3 47
-Strat6 43
-Strat5 40
-
-Strat3 62
-Strat6 59
-Strat1 52
-Strat5 46
-Strat2 40
-
-Strat5 62
-Strat2 59
-Strat6 59
-Strat3 45
-Strat1 31
-
-Strat3 67
-Strat6 55
-Strat2 54
-Strat5 50
-Strat1 37
-
-Strat5 59
-Strat1 56
-Strat2 50
-Strat6 48
-Strat3 43
-
-Strat2 65
-Strat6 62
-Strat5 55
-Strat3 54
-Strat1 28
-
-Strat3 59
-Strat1 53
-Strat5 51
-Strat2 49
-Strat6 47
-
-Strat3 61
-Strat1 56
-Strat5 56
-Strat6 50
-Strat2 39
-
-Strat5 64
-Strat6 53
-Strat1 53
-Strat3 50
-Strat2 37
-
-Strat3 64
-Strat5 49
-Strat6 48
-Strat1 48
-Strat2 45
-
-Strat5 61
-Strat3 55
-Strat6 54
-Strat2 48
-Strat1 45
-
-Strat5 58
-Strat6 57
-Strat1 55
-Strat3 48
-Strat2 44
-
-Strat5 60
-Strat6 55
-Strat2 54
-Strat3 45
-Strat1 43
-
-Strat1 56
-Strat6 53
-Strat5 53
-Strat3 52
-Strat2 49
-
-Strat5 58
-Strat3 56
-Strat6 53
-Strat1 50
-Strat2 44
-
-Strat3 66
-Strat5 65
-Strat6 51
-Strat2 46
-Strat1 35
-
-Strat6 61
-Strat5 58
-Strat1 52
-Strat3 45
-Strat2 42
-
-Strat2 69
-Strat3 55
-Strat1 49
-Strat5 44
-Strat6 37
-
-Strat3 60
-Strat5 60
-Strat2 51
-Strat6 49
-Strat1 39
-
-Strat5 67
-Strat2 59
-Strat6 52
-Strat3 47
-Strat1 35
-
-Strat2 66
-Strat6 58
-Strat3 49
-Strat5 49
-Strat1 35
-
-Strat3 63
-Strat6 57
-Strat5 56
-Strat2 41
-Strat1 41
-
-Strat6 61
-Strat5 54
-Strat3 52
-Strat1 49
-Strat2 42
-
-Strat2 62
-Strat5 58
-Strat1 50
-Strat3 48
-Strat6 40
-
-Strat3 65
-Strat6 61
-Strat5 57
-Strat2 42
-Strat1 35
-
-Strat6 71
-Strat2 57
 Strat3 46
 Strat1 43
-Strat5 43
+Strat4 37
 
-Strat6 64
-Strat5 59
-Strat1 51
+Strat3 58
+Strat6 52
 Strat2 48
-Strat3 34
-
-Strat5 62
-Strat2 56
-Strat6 55
-Strat3 52
+Strat5 48
+Strat4 34
 Strat1 34
 
-Strat5 59
-Strat1 59
-Strat3 53
-Strat6 43
-Strat2 41
-
-Strat2 62
-Strat3 62
-Strat5 52
-Strat6 46
-Strat1 36
-
-Strat5 65
-Strat2 58
-Strat1 51
-Strat6 43
-Strat3 42
-
-Strat6 67
-Strat2 63
-Strat3 51
-Strat5 41
-Strat1 37
-
-Strat3 61
-Strat2 57
-Strat5 53
-Strat6 51
-Strat1 42
-
-Strat2 62
-Strat5 57
 Strat6 54
-Strat1 45
-Strat3 40
-
-Strat2 67
-Strat5 60
-Strat3 53
-Strat1 49
-Strat6 29
-
-Strat5 64
-Strat3 59
-Strat6 57
-Strat1 51
-Strat2 37
-
-Strat2 67
-Strat5 58
-Strat3 50
-Strat6 47
-Strat1 38
-
-Strat3 64
-Strat5 63
-Strat6 50
-Strat1 48
-Strat2 41
-
-Strat3 60
-Strat5 58
-Strat2 54
 Strat1 50
-Strat6 40
-
-Strat6 70
-Strat5 55
-Strat2 52
-Strat3 48
-Strat1 31
-
-Strat1 63
-Strat5 63
-Strat3 54
-Strat6 46
-Strat2 33
-
-Strat5 61
-Strat1 59
-Strat6 58
-Strat3 48
-Strat2 36
-
-Strat2 67
-Strat3 55
-Strat5 51
-Strat6 44
-Strat1 40
-
-Strat5 60
-Strat1 57
-Strat6 50
-Strat3 50
-Strat2 43
-
-Strat6 67
-Strat3 66
-Strat5 52
-Strat2 45
-Strat1 30
-
-Strat5 60
-Strat3 58
 Strat2 49
-Strat6 48
-Strat1 41
-
-Strat3 59
-Strat5 55
-Strat6 53
-Strat2 48
-Strat1 39
-
-Strat5 65
-Strat3 52
-Strat1 51
-Strat2 48
-Strat6 45
-
-Strat6 65
-Strat5 57
-Strat1 49
-Strat3 48
-Strat2 45
-
-Strat3 61
-Strat1 55
-Strat5 54
-Strat6 50
-Strat2 40
-
-Strat6 62
-Strat2 56
-Strat5 55
-Strat3 52
-Strat1 33
-
-Strat5 72
-Strat3 58
-Strat6 45
-Strat1 44
-Strat2 38
-
-Strat3 60
-Strat6 59
-Strat2 54
+Strat3 46
 Strat5 45
-Strat1 39
+Strat4 31
 
-Strat3 58
-Strat5 54
-Strat1 52
-Strat2 50
-Strat6 44
-
-Strat3 68
-Strat6 61
-Strat5 58
-Strat1 41
-Strat2 31
-
-Strat3 63
-Strat2 55
-Strat6 51
-Strat5 47
-Strat1 42
-
-Strat5 62
-Strat3 54
-Strat1 50
-Strat2 48
-Strat6 45
-
-Strat5 65
-Strat3 58
-Strat6 47
-Strat1 45
-Strat2 41
-
-Strat6 58
-Strat2 58
-Strat5 57
-Strat3 50
-Strat1 36
-
-Strat2 66
-Strat3 57
-Strat6 52
-Strat5 47
-Strat1 37
-
-Strat2 68
-Strat5 49
-Strat6 48
-Strat1 47
-Strat3 44
-
-Strat3 74
-Strat2 58
-Strat6 47
-Strat5 43
-Strat1 38
-
-Strat1 59
-Strat2 57
-Strat5 55
-Strat3 55
-Strat6 43
-
-Strat3 70
-Strat5 68
-Strat6 51
-Strat1 35
-Strat2 33
-
-Strat6 73
-Strat5 58
-Strat2 54
-Strat3 39
-Strat1 33
-
-Strat6 56
-Strat5 56
-Strat3 53
-Strat1 51
-Strat2 41
-
-Strat6 61
-Strat2 57
-Strat5 57
-Strat1 45
-Strat3 43
-
-Strat2 58
-Strat3 57
-Strat6 49
-Strat5 49
-Strat1 47
-
-Strat6 63
-Strat2 53
-Strat5 50
-Strat3 46
-Strat1 46
-
-Strat5 62
-Strat1 62
-Strat3 52
-Strat6 45
-Strat2 38
-
-Strat2 62
-Strat3 61
-Strat6 58
-Strat5 42
-Strat1 34
-
-Strat5 61
-Strat1 59
-Strat3 59
-Strat6 40
-Strat2 36
-
-Strat5 68
-Strat6 53
-Strat2 53
-Strat1 44
-Strat3 37
-
-Strat6 73
-Strat2 55
-Strat5 46
-Strat1 45
-Strat3 44
-
-Strat5 60
 Strat6 55
-Strat2 55
-Strat3 45
-Strat1 40
+Strat1 51
+Strat3 48
+Strat5 46
+Strat2 45
+Strat4 34
 
-Strat3 61
-Strat1 58
+Strat3 59
+Strat6 56
+Strat1 51
 Strat2 50
-Strat6 48
 Strat5 39
+Strat4 26
 
-Strat3 56
-Strat1 54
-Strat6 52
-Strat5 50
-Strat2 48
+Strat2 63
+Strat6 55
+Strat5 53
+Strat1 51
+Strat4 30
+Strat3 29
 
-Strat5 65
+Strat2 53
+Strat3 51
+Strat5 51
+Strat6 49
+Strat4 41
+Strat1 35
+
+Strat5 57
+Strat2 54
+Strat3 48
+Strat6 44
+Strat1 38
+Strat4 36
+
 Strat3 61
-Strat6 57
-Strat1 41
-Strat2 34
+Strat5 52
+Strat2 47
+Strat6 45
+Strat1 40
+Strat4 32
+
+Strat6 64
+Strat5 53
+Strat3 49
+Strat1 48
+Strat2 41
+Strat4 23
 
 Strat5 59
-Strat6 56
-Strat3 55
+Strat6 55
+Strat1 46
 Strat2 46
-Strat1 43
-
-Strat3 71
-Strat6 57
-Strat5 54
-Strat2 52
-Strat1 31
-
-Strat5 62
-Strat3 57
-Strat1 51
-Strat6 46
-Strat2 46
-
-Strat1 58
-Strat6 56
-Strat5 56
-Strat2 47
-Strat3 39
-
-Strat5 61
-Strat3 56
-Strat6 51
-Strat1 47
-Strat2 47
-
-Strat2 59
-Strat5 53
-Strat6 52
-Strat3 50
-Strat1 39
-
-Strat3 57
-Strat2 56
-Strat5 54
-Strat6 50
-Strat1 43
-
-Strat5 62
-Strat6 53
-Strat2 51
-Strat1 48
 Strat3 42
+Strat4 26
 
-Strat6 61
-Strat5 56
-Strat1 50
-Strat3 48
-Strat2 44
-
-Strat2 58
-Strat3 57
-Strat6 56
-Strat5 53
-Strat1 31
-
-Strat1 61
-Strat5 52
 Strat3 52
-Strat2 47
-Strat6 45
-
-Strat3 69
-Strat6 64
-Strat1 51
-Strat2 42
+Strat1 52
+Strat2 51
+Strat6 47
+Strat4 43
 Strat5 38
 
-Strat5 58
-Strat6 57
-Strat2 55
-Strat3 47
-Strat1 36
-
-Strat3 61
-Strat5 58
-Strat6 58
-Strat1 47
-Strat2 40
-
-Strat3 60
-Strat5 56
-Strat1 51
-Strat2 46
-Strat6 44
-
-Strat5 65
 Strat3 54
-Strat6 50
-Strat2 44
-Strat1 42
-
-Strat5 62
-Strat1 59
-Strat6 56
-Strat3 45
-Strat2 36
-
-Strat2 61
-Strat5 58
-Strat6 54
-Strat3 46
-Strat1 39
-
-Strat5 57
-Strat2 57
 Strat6 53
-Strat1 46
-Strat3 45
-
-Strat2 66
-Strat5 56
-Strat1 52
-Strat3 46
-Strat6 42
-
-Strat3 57
-Strat1 55
-Strat6 53
-Strat2 49
-Strat5 49
-
-Strat3 57
-Strat2 55
-Strat6 54
-Strat5 53
-Strat1 41
-
-Strat2 65
-Strat6 59
-Strat3 52
-Strat5 50
-Strat1 33
-
-Strat5 62
-Strat6 57
-Strat1 51
-Strat2 45
-Strat3 41
-
-Strat3 59
-Strat5 56
-Strat2 52
-Strat1 49
-Strat6 42
-
-Strat6 63
-Strat5 57
-Strat1 52
-Strat3 52
-Strat2 35
-
-Strat6 56
-Strat3 54
-Strat2 52
 Strat5 51
-Strat1 45
-
-Strat5 71
-Strat1 48
-Strat6 47
-Strat3 45
-Strat2 43
-
-Strat5 62
-Strat3 61
-Strat2 51
-Strat6 42
-Strat1 41
-
-Strat3 67
-Strat6 58
-Strat5 53
-Strat2 50
-Strat1 34
-
-Strat5 60
-Strat3 60
-Strat2 49
-Strat6 46
-Strat1 43
-
-Strat3 61
-Strat5 55
-Strat6 51
 Strat2 47
-Strat1 43
+Strat1 44
+Strat4 30
+
+Strat6 61
+Strat2 57
+Strat3 45
+Strat1 45
+Strat5 44
+Strat4 27
+
+Strat6 55
+Strat1 51
+Strat2 47
+Strat5 47
+Strat3 39
+Strat4 38
+
+Strat1 56
+Strat2 55
+Strat6 48
+Strat5 45
+Strat3 38
+Strat4 34
+
+Strat5 58
+Strat2 57
+Strat3 57
+Strat1 44
+Strat6 40
+Strat4 26
+
+Strat2 57
+Strat5 53
+Strat1 47
+Strat6 44
+Strat3 42
+Strat4 30
+
+Strat6 54
+Strat1 48
+Strat5 47
+Strat2 46
+Strat3 45
+Strat4 38
 
 Strat6 64
-Strat5 56
-Strat1 55
-Strat3 50
-Strat2 36
-
-Strat5 62
-Strat1 55
-Strat2 50
-Strat3 49
-Strat6 40
-
-Strat6 57
-Strat5 55
-Strat3 52
-Strat2 49
-Strat1 48
-
-Strat3 71
-Strat6 57
-Strat5 48
-Strat2 41
-Strat1 40
-
-Strat5 62
-Strat2 61
-Strat3 58
-Strat1 45
-Strat6 35
-
-Strat5 64
-Strat3 60
-Strat2 50
-Strat6 48
-Strat1 38
-
-Strat5 68
-Strat2 54
-Strat6 49
-Strat3 46
-Strat1 40
-
-Strat6 58
-Strat2 57
-Strat3 56
-Strat5 47
-Strat1 41
-
-Strat6 62
-Strat3 59
-Strat5 57
-Strat2 49
-Strat1 30
-
-Strat2 62
-Strat5 57
-Strat6 54
-Strat3 53
-Strat1 36
-
-Strat5 62
-Strat3 57
-Strat6 55
-Strat2 51
-Strat1 30
-
-Strat5 58
-Strat2 54
-Strat3 52
-Strat6 49
-Strat1 45
-
-Strat5 57
-Strat2 55
-Strat1 54
-Strat6 53
-Strat3 37
-
-Strat5 64
-Strat3 56
-Strat2 53
-Strat6 48
-Strat1 36
-
-Strat3 58
-Strat2 57
-Strat6 54
-Strat5 53
-Strat1 36
-
-Strat3 59
-Strat5 55
-Strat1 54
-Strat2 50
-Strat6 42
-
-Strat5 60
-Strat2 59
-Strat6 56
-Strat3 55
-Strat1 39
-
-Strat2 64
-Strat1 58
-Strat3 54
-Strat6 46
-Strat5 44
-
-Strat5 68
-Strat3 57
-Strat6 48
-Strat2 43
-Strat1 40
-
-Strat3 71
-Strat2 58
-Strat1 49
-Strat5 47
-Strat6 38
-
-Strat1 62
-Strat6 61
-Strat5 57
-Strat3 44
-Strat2 34
-
-Strat2 65
-Strat6 55
-Strat3 50
-Strat5 49
-Strat1 39
-
-Strat3 62
-Strat1 56
 Strat5 54
-Strat6 42
-Strat2 41
-
-Strat5 70
-Strat2 50
-Strat3 49
-Strat6 47
-Strat1 41
-
-Strat2 61
-Strat5 59
-Strat3 47
-Strat6 44
-Strat1 42
-
-Strat5 57
-Strat2 54
-Strat1 53
-Strat6 48
-Strat3 46
-
-Strat3 62
-Strat6 60
-Strat5 57
+Strat3 53
 Strat2 45
-Strat1 36
-
-Strat3 59
-Strat5 58
-Strat6 56
-Strat2 49
-Strat1 39
-
-Strat1 59
-Strat5 57
-Strat6 48
-Strat3 48
-Strat2 45
-
-Strat5 65
-Strat2 53
-Strat3 52
-Strat6 48
-Strat1 36
-
-Strat3 63
-Strat5 61
-Strat6 48
-Strat2 44
-Strat1 43
-
-Strat6 63
-Strat3 56
-Strat2 52
-Strat5 50
-Strat1 36
-
-Strat3 62
-Strat6 58
-Strat2 53
-Strat5 53
+Strat4 35
 Strat1 31
 
-Strat1 64
-Strat6 59
-Strat2 55
-Strat5 52
-Strat3 33
-
-Strat5 62
-Strat6 62
-Strat3 50
-Strat2 46
-Strat1 37
-
-Strat3 67
-Strat6 50
-Strat2 48
-Strat1 47
-Strat5 47
-
-Strat2 63
-Strat3 58
-Strat6 55
-Strat5 46
-Strat1 35
-
-Strat5 66
-Strat3 58
-Strat2 48
-Strat6 47
-Strat1 39
-
-Strat5 63
-Strat3 52
-Strat1 48
-Strat2 48
-Strat6 46
-
-Strat3 57
-Strat6 57
-Strat5 55
-Strat1 48
-Strat2 42
-
-Strat1 62
-Strat3 54
-Strat2 51
-Strat5 48
-Strat6 47
-
-Strat6 67
-Strat2 60
-Strat3 48
-Strat5 45
-Strat1 43
-
-Strat5 60
-Strat1 55
-Strat3 53
-Strat6 49
-Strat2 39
-
-Strat6 66
-Strat5 57
-Strat2 50
-Strat3 49
-Strat1 38
-
-Strat6 70
-Strat5 49
-Strat1 49
-Strat3 47
-Strat2 43
-
-Strat1 58
-Strat3 56
-Strat2 52
-Strat6 47
-Strat5 45
-
-Strat6 65
-Strat3 54
-Strat2 49
-Strat5 49
-Strat1 42
-
-Strat6 58
-Strat3 56
-Strat2 50
-Strat5 50
-Strat1 42
-
-Strat5 64
-Strat3 59
-Strat1 52
-Strat6 45
-Strat2 36
-
-Strat3 59
-Strat5 56
-Strat6 56
-Strat2 47
-Strat1 42
-
-Strat5 58
-Strat6 53
-Strat3 51
-Strat1 50
-Strat2 46
-
-Strat5 68
-Strat6 58
-Strat1 57
-Strat3 47
-Strat2 31
-
-Strat5 59
-Strat6 58
-Strat3 55
-Strat1 44
-Strat2 42
-
-Strat2 62
-Strat6 62
-Strat3 57
-Strat5 49
-Strat1 34
-
-Strat6 60
-Strat3 56
-Strat5 54
-Strat2 47
-Strat1 40
-
-Strat1 58
-Strat6 56
 Strat2 53
-Strat5 49
-Strat3 45
-
-Strat6 70
-Strat5 60
-Strat3 57
-Strat2 42
-Strat1 28
-
-Strat5 63
-Strat6 62
-Strat2 59
-Strat3 41
-Strat1 39
-
-Strat6 56
-Strat3 51
-Strat1 51
-Strat5 49
-Strat2 49
-
-Strat5 60
-Strat3 59
-Strat1 55
-Strat6 46
-Strat2 36
-
-Strat5 63
-Strat3 59
-Strat2 58
-Strat6 42
-Strat1 37
-
-Strat6 63
-Strat3 57
-Strat2 54
-Strat5 44
-Strat1 41
-
-Strat5 62
-Strat6 55
-Strat2 52
-Strat3 52
-Strat1 38
-
-Strat5 60
-Strat6 59
-Strat1 55
-Strat2 45
-Strat3 43
-
-Strat3 64
-Strat5 57
-Strat2 52
-Strat1 51
-Strat6 39
-
-Strat1 57
-Strat6 56
-Strat5 55
-Strat3 51
-Strat2 40
-
-Strat6 71
-Strat3 54
-Strat5 51
-Strat1 42
-Strat2 39
-
-Strat5 66
-Strat2 51
-Strat3 50
-Strat1 50
-Strat6 44
-
-Strat2 62
-Strat6 56
-Strat3 55
-Strat5 53
-Strat1 35
-
-Strat3 62
-Strat5 55
-Strat2 50
-Strat6 50
-Strat1 41
-
-Strat5 62
-Strat3 58
-Strat2 58
-Strat6 50
-Strat1 38
-
-Strat3 64
-Strat6 62
-Strat5 56
-Strat2 44
-Strat1 34
-
-Strat5 64
-Strat2 60
-Strat3 48
-Strat6 46
-Strat1 42
-
-Strat6 58
-Strat2 56
-Strat5 53
-Strat1 52
-Strat3 38
-
-Strat1 73
-Strat3 57
-Strat5 54
-Strat2 43
-Strat6 30
-
-Strat5 59
-Strat1 53
-Strat3 51
-Strat2 51
-Strat6 43
-
-Strat5 57
-Strat1 55
-Strat2 54
-Strat6 51
-Strat3 43
-
-Strat3 70
-Strat2 57
-Strat6 54
-Strat5 51
-Strat1 25
-
-Strat5 69
-Strat3 57
-Strat6 55
-Strat1 48
-Strat2 37
-
-Strat2 59
-Strat3 59
-Strat6 57
-Strat5 45
-Strat1 42
-
-Strat2 64
-Strat6 64
-Strat5 58
-Strat3 42
-Strat1 30
-
-Strat5 67
-Strat3 54
 Strat6 53
-Strat2 48
-Strat1 37
-
-Strat5 62
-Strat2 52
-Strat1 52
-Strat6 49
-Strat3 42
-
-Strat2 63
-Strat6 56
-Strat3 52
-Strat5 50
-Strat1 38
-
-Strat2 66
-Strat1 55
-Strat6 53
-Strat5 49
-Strat3 39
-
-Strat3 68
-Strat6 54
-Strat1 52
-Strat2 45
-Strat5 42
-
-Strat6 69
-Strat5 57
-Strat2 50
-Strat1 43
-Strat3 43
-
-Strat2 66
-Strat3 64
-Strat5 47
-Strat6 41
-Strat1 39
-
-Strat3 69
-Strat2 60
-Strat5 54
-Strat6 42
-Strat1 35
-
-Strat5 59
-Strat6 56
-Strat3 55
-Strat2 48
-Strat1 43
-
-Strat3 72
-Strat6 53
-Strat2 48
-Strat1 45
-Strat5 39
-
-Strat3 61
-Strat2 52
-Strat5 50
-Strat6 49
-Strat1 49
-
-Strat1 60
-Strat5 57
-Strat6 53
-Strat2 51
-Strat3 38
-
-Strat6 67
-Strat2 52
-Strat5 50
-Strat1 46
-Strat3 44
-
-Strat1 57
 Strat5 52
-Strat2 52
-Strat3 49
-Strat6 47
-
-Strat3 59
-Strat5 53
-Strat6 52
-Strat2 50
-Strat1 45
-
-Strat6 62
-Strat5 60
-Strat3 52
-Strat2 50
-Strat1 36
-
-Strat1 61
-Strat6 55
-Strat5 53
-Strat3 48
-Strat2 41
-
-Strat6 63
-Strat2 52
-Strat5 51
-Strat1 50
-Strat3 46
-
-Strat5 63
-Strat2 52
-Strat3 51
-Strat6 47
-Strat1 46
-
-Strat2 65
-Strat5 63
-Strat3 49
-Strat6 45
-Strat1 37
-
-Strat2 63
-Strat3 59
-Strat6 56
-Strat5 48
-Strat1 35
-
-Strat5 61
-Strat2 60
-Strat1 46
-Strat3 45
-Strat6 44
-
-Strat6 67
-Strat3 63
-Strat5 49
-Strat2 43
-Strat1 41
-
-Strat2 56
-Strat5 54
-Strat3 53
-Strat6 52
-Strat1 45
-
-Strat5 69
-Strat6 63
-Strat3 47
-Strat2 44
-Strat1 37
-
-Strat5 57
-Strat1 57
-Strat3 55
-Strat6 52
-Strat2 45
-
-Strat2 61
-Strat5 55
-Strat3 51
-Strat1 47
-Strat6 42
-
-Strat3 59
-Strat6 58
-Strat1 54
-Strat5 53
-Strat2 37
-
-Strat2 59
-Strat3 58
-Strat5 46
-Strat6 46
-Strat1 45
-
-Strat5 59
-Strat3 53
-Strat6 53
-Strat2 49
-Strat1 44
-
-Strat3 59
-Strat6 56
-Strat1 53
-Strat2 50
-Strat5 40
-
-Strat2 58
-Strat6 57
-Strat5 53
-Strat3 49
-Strat1 41
-
-Strat3 61
-Strat5 58
-Strat1 50
-Strat2 49
-Strat6 39
-
-Strat5 67
-Strat3 61
-Strat6 50
-Strat2 46
-Strat1 36
-
-Strat3 68
-Strat2 52
-Strat6 51
-Strat5 48
-Strat1 40
-
-Strat6 69
-Strat5 62
-Strat2 51
 Strat3 50
-Strat1 29
-
-Strat6 65
-Strat2 59
-Strat5 51
-Strat1 45
-Strat3 39
-
-Strat6 58
-Strat3 54
-Strat2 54
-Strat5 53
-Strat1 47
-
-Strat5 56
-Strat2 52
-Strat3 52
-Strat1 50
-Strat6 44
-
-Strat2 69
-Strat3 61
-Strat5 56
-Strat1 37
-Strat6 33
-
-Strat3 68
-Strat6 63
-Strat1 51
-Strat5 46
-Strat2 36
-
-Strat5 61
-Strat1 56
-Strat6 49
-Strat3 47
-Strat2 44
-
-Strat3 62
-Strat5 51
-Strat1 50
-Strat6 48
-Strat2 47
-
-Strat6 66
-Strat5 61
-Strat2 57
-Strat3 43
 Strat1 36
+Strat4 31
 
-Strat6 59
-Strat5 57
-Strat3 54
-Strat1 44
-Strat2 43
-
-Strat2 62
-Strat3 51
-Strat5 49
-Strat6 49
-Strat1 47
-
-Strat5 62
-Strat3 60
-Strat2 58
-Strat6 58
-Strat1 22
-
-Strat5 57
-Strat2 56
-Strat6 51
-Strat3 48
-Strat1 46
-
-Strat5 57
-Strat1 52
-Strat3 51
-Strat2 50
-Strat6 48
-
-Strat6 60
-Strat5 57
-Strat1 51
-Strat3 48
-Strat2 42
-
-Strat3 65
-Strat5 59
-Strat1 54
-Strat2 46
-Strat6 37
-
-Strat5 64
-Strat6 53
-Strat3 51
-Strat1 46
-Strat2 43
-
-Strat2 63
-Strat3 59
-Strat6 59
-Strat5 44
-Strat1 33
-
-Strat1 60
-Strat5 54
-Strat6 50
-Strat3 48
-Strat2 47
-
-Strat3 66
-Strat5 53
-Strat2 50
-Strat1 49
-Strat6 44
-
-Strat6 63
-Strat3 61
-Strat2 51
-Strat5 50
-Strat1 33
-
-Strat1 58
-Strat3 58
-Strat5 58
-Strat6 46
-Strat2 42
-
-Strat5 66
-Strat6 56
-Strat3 50
-Strat2 45
-Strat1 41
-
-Strat2 58
-Strat3 54
-Strat5 53
-Strat6 53
-Strat1 48
-
-Strat5 59
-Strat6 55
-Strat3 53
-Strat1 50
-Strat2 41
-
-Strat6 59
-Strat3 53
-Strat1 52
-Strat2 49
-Strat5 47
-
-Strat2 59
-Strat6 55
 Strat3 55
-Strat5 51
-Strat1 38
-
-Strat3 70
-Strat5 57
-Strat6 48
-Strat1 46
-Strat2 40
-
-Strat6 63
-Strat5 62
-Strat3 48
-Strat1 45
-Strat2 41
-
-Strat6 58
-Strat2 56
-Strat3 55
-Strat5 48
-Strat1 45
-
-Strat6 62
-Strat3 54
-Strat5 50
-Strat2 49
-Strat1 42
-
-Strat6 64
-Strat3 58
-Strat5 52
-Strat1 46
-Strat2 41
-
-Strat3 76
-Strat6 54
-Strat5 53
-Strat2 50
-Strat1 27
-
-Strat1 65
-Strat3 58
-Strat5 55
-Strat2 47
-Strat6 34
-
-Strat3 60
-Strat1 55
-Strat2 54
-Strat6 48
-Strat5 45
-
-Strat5 66
-Strat3 53
-Strat1 47
-Strat6 47
-Strat2 44
-
-Strat3 71
-Strat5 53
-Strat6 49
-Strat2 46
-Strat1 42
-
-Strat1 56
-Strat5 56
-Strat2 55
-Strat3 54
-Strat6 37
-
-Strat2 62
-Strat5 61
 Strat6 54
 Strat1 47
-Strat3 40
-
-Strat6 77
-Strat3 61
-Strat5 49
-Strat2 46
-Strat1 28
-
-Strat3 64
-Strat5 62
-Strat1 55
-Strat2 46
-Strat6 36
-
-Strat5 60
-Strat3 57
-Strat6 51
-Strat2 51
-Strat1 38
-
-Strat6 63
-Strat5 54
-Strat1 53
-Strat2 45
-Strat3 43
-
-Strat3 65
-Strat6 54
-Strat5 52
-Strat1 52
-Strat2 37
-
-Strat5 59
-Strat6 58
-Strat2 58
-Strat1 48
-Strat3 39
-
-Strat5 64
-Strat6 53
-Strat1 49
-Strat3 48
-Strat2 46
-
-Strat5 68
-Strat1 54
-Strat6 51
-Strat2 48
-Strat3 38
-
-Strat5 70
-Strat2 62
-Strat3 57
-Strat6 48
-Strat1 28
-
-Strat3 65
-Strat5 58
-Strat1 55
-Strat6 45
+Strat5 43
+Strat4 39
 Strat2 38
 
-Strat3 59
-Strat2 58
-Strat5 56
-Strat6 54
-Strat1 31
+Strat3 58
+Strat2 51
+Strat5 48
+Strat6 47
+Strat1 44
+Strat4 28
 
-Strat1 61
-Strat2 60
-Strat5 58
-Strat3 51
-Strat6 28
-
-Strat6 57
-Strat5 54
+Strat5 57
 Strat3 53
 Strat2 52
-Strat1 46
+Strat6 44
+Strat4 37
+Strat1 33
 
-Strat3 57
-Strat1 54
-Strat6 53
-Strat5 48
-Strat2 47
-
-Strat5 69
-Strat3 52
-Strat2 49
-Strat1 49
-Strat6 35
-
-Strat5 57
-Strat3 57
-Strat6 53
-Strat1 46
-Strat2 43
-
-Strat5 59
-Strat2 58
-Strat6 48
-Strat1 47
-Strat3 46
-
-Strat3 63
-Strat5 57
-Strat6 56
-Strat2 50
-Strat1 37
-
-Strat6 65
-Strat2 60
-Strat5 48
-Strat3 45
-Strat1 40
-
-Strat6 59
-Strat3 56
-Strat2 53
-Strat5 53
-Strat1 44
-
-Strat5 62
-Strat1 56
+Strat5 60
 Strat3 55
-Strat6 42
+Strat6 46
+Strat1 45
 Strat2 41
+Strat4 28
 
-Strat2 61
-Strat3 59
-Strat6 50
-Strat5 47
-Strat1 38
+Strat5 61
+Strat3 51
+Strat1 50
+Strat6 45
+Strat2 44
+Strat4 28
 
-Strat6 69
-Strat5 66
-Strat2 52
-Strat3 48
-Strat1 25
-
-Strat3 67
-Strat6 56
-Strat2 55
-Strat5 50
-Strat1 37
-
-Strat3 63
-Strat5 62
-Strat2 49
-Strat6 43
-Strat1 40
-
-Strat2 58
-Strat6 58
-Strat3 57
-Strat5 46
-Strat1 39
+Strat5 55
+Strat2 53
+Strat3 53
+Strat6 47
+Strat1 43
+Strat4 28
 
 Strat3 66
-Strat5 63
-Strat2 51
-Strat6 43
-Strat1 35
-
-Strat3 61
-Strat2 58
-Strat6 58
-Strat5 48
-Strat1 38
-
-Strat5 65
-Strat2 59
-Strat3 52
-Strat1 44
-Strat6 39
-
-Strat2 61
-Strat5 57
-Strat6 46
-Strat3 46
-Strat1 44
-
-Strat5 63
-Strat3 57
-Strat1 50
-Strat2 44
-Strat6 43
-
-Strat3 65
-Strat5 61
-Strat2 52
-Strat6 49
-Strat1 33
-
-Strat3 67
-Strat6 63
-Strat1 47
-Strat5 44
-Strat2 43
-
 Strat5 60
-Strat3 58
-Strat2 51
-Strat1 45
-Strat6 42
-
-Strat1 55
-Strat5 54
-Strat3 53
-Strat6 49
-Strat2 48
-
-Strat1 59
-Strat5 56
-Strat3 53
-Strat2 50
-Strat6 39
-
-Strat3 62
-Strat6 61
-Strat2 56
-Strat5 47
+Strat6 50
 Strat1 40
-
-Strat1 62
-Strat6 59
-Strat5 56
-Strat3 49
-Strat2 35
-
-Strat6 65
-Strat5 56
-Strat2 55
-Strat3 52
-Strat1 33
-
-Strat5 59
-Strat3 52
-Strat2 52
-Strat1 51
-Strat6 42
-
-Strat6 59
-Strat2 58
-Strat3 55
-Strat5 44
-Strat1 43
-
-Strat3 64
-Strat5 60
-Strat6 51
-Strat2 45
-Strat1 36
-
-Strat3 58
-Strat5 58
-Strat1 54
-Strat6 53
 Strat2 36
+Strat4 27
 
-Strat6 61
-Strat5 55
-Strat3 54
-Strat2 49
-Strat1 39
-
-Strat5 58
-Strat2 58
-Strat6 56
-Strat3 55
-Strat1 34
-
-Strat2 57
-Strat3 56
-Strat6 55
 Strat5 53
-Strat1 37
-
-Strat2 55
-Strat6 54
-Strat1 54
-Strat3 49
-Strat5 48
-
-Strat6 61
-Strat3 61
-Strat5 50
-Strat2 46
-Strat1 43
-
-Strat3 65
-Strat5 58
-Strat6 50
-Strat2 44
-Strat1 41
-
-Strat5 70
-Strat2 52
-Strat3 49
-Strat6 45
-Strat1 40
-
-Strat5 68
-Strat3 58
-Strat6 50
-Strat1 47
-Strat2 34
-
-Strat3 58
-Strat6 56
-Strat5 52
-Strat2 49
-Strat1 40
-
-Strat3 60
-Strat5 54
-Strat6 50
-Strat1 46
-Strat2 46
-
-Strat5 55
-Strat6 54
-Strat2 53
-Strat3 51
-Strat1 48
-
-Strat5 62
-Strat1 56
-Strat6 53
-Strat2 53
-Strat3 34
-
-Strat5 57
-Strat6 55
-Strat2 51
-Strat1 48
-Strat3 47
-
-Strat6 70
-Strat5 52
-Strat3 49
-Strat2 46
-Strat1 43
-
-Strat6 62
-Strat5 61
-Strat2 53
-Strat3 48
-Strat1 33
-
-Strat5 63
-Strat6 58
-Strat3 57
-Strat1 47
-Strat2 40
-
-Strat3 55
-Strat2 52
-Strat6 52
-Strat5 50
-Strat1 50
-
-Strat6 60
-Strat5 51
-Strat2 49
-Strat3 49
-Strat1 43
-
-Strat5 59
-Strat2 54
-Strat6 52
-Strat3 48
-Strat1 46
-
-Strat5 59
-Strat3 59
-Strat2 53
-Strat6 50
-Strat1 38
-
-Strat3 63
-Strat6 61
-Strat5 59
-Strat2 45
-Strat1 32
-
-Strat3 68
-Strat6 61
-Strat2 51
-Strat1 50
-Strat5 30
-
-Strat3 62
-Strat2 54
-Strat6 50
-Strat5 47
-Strat1 44
-
-Strat5 56
-Strat6 54
-Strat3 51
-Strat2 51
-Strat1 43
-
-Strat3 62
-Strat2 58
-Strat5 51
-Strat6 50
-Strat1 43
-
-Strat3 78
-Strat2 55
-Strat6 48
-Strat5 46
-Strat1 33
-
-Strat5 59
-Strat1 54
-Strat6 54
-Strat3 47
-Strat2 43
-
-Strat5 56
-Strat6 52
+Strat3 52
 Strat2 50
-Strat3 49
-Strat1 48
-
-Strat3 57
-Strat5 54
-Strat6 53
-Strat2 48
-Strat1 46
-
-Strat5 62
-Strat6 61
-Strat2 55
-Strat3 45
-Strat1 35
-
-Strat2 57
-Strat3 57
-Strat5 54
-Strat1 50
-Strat6 40
-
-Strat5 63
-Strat6 54
-Strat1 54
-Strat3 49
-Strat2 39
-
-Strat3 61
-Strat2 56
-Strat5 53
-Strat6 51
-Strat1 38
-
-Strat3 73
-Strat2 55
-Strat6 52
-Strat5 52
-Strat1 31
-
-Strat3 77
-Strat6 60
-Strat5 57
-Strat2 44
-Strat1 28
-
-Strat2 60
-Strat3 52
-Strat6 48
-Strat5 48
-Strat1 47
-
-Strat6 65
-Strat3 62
-Strat2 45
-Strat1 44
-Strat5 42
-
-Strat5 62
-Strat3 57
-Strat6 55
-Strat2 51
-Strat1 35
-
-Strat3 69
-Strat6 56
-Strat2 53
-Strat5 49
-Strat1 34
-
-Strat2 57
-Strat5 57
-Strat6 54
-Strat1 47
-Strat3 42
-
-Strat6 58
-Strat1 54
-Strat3 52
-Strat5 48
-Strat2 45
-
-Strat5 62
-Strat1 60
 Strat6 49
-Strat2 44
-Strat3 42
-
-Strat2 62
-Strat3 54
-Strat1 48
-Strat5 48
-Strat6 46
-
-Strat5 61
-Strat6 53
-Strat2 50
-Strat3 47
-Strat1 46
-
-Strat2 69
-Strat3 53
-Strat5 49
-Strat1 45
-Strat6 43
-
-Strat3 63
-Strat1 60
-Strat6 46
-Strat5 45
-Strat2 44
-
-Strat2 61
-Strat1 53
-Strat6 50
-Strat5 47
-Strat3 46
-
-Strat5 68
-Strat3 57
-Strat2 50
-Strat1 41
-Strat6 41
+Strat1 47
+Strat4 30
 
 Strat5 58
-Strat3 56
-Strat6 56
-Strat2 53
-Strat1 39
-
-Strat2 64
-Strat5 55
-Strat3 50
-Strat6 45
-Strat1 44
-
-Strat2 62
-Strat3 59
-Strat5 53
-Strat6 50
-Strat1 31
-
-Strat5 57
-Strat3 57
-Strat2 53
-Strat1 48
-Strat6 43
-
-Strat2 59
-Strat5 56
-Strat6 54
-Strat3 52
-Strat1 37
-
-Strat2 66
-Strat6 60
-Strat5 53
-Strat1 46
-Strat3 31
-
-Strat6 63
-Strat2 57
-Strat3 55
-Strat5 47
-Strat1 35
-
-Strat6 74
-Strat2 57
-Strat3 47
-Strat5 44
-Strat1 42
-
-Strat3 63
-Strat5 62
-Strat6 53
-Strat2 47
-Strat1 36
-
-Strat2 62
-Strat3 58
-Strat6 57
-Strat5 52
-Strat1 34
-
-Strat5 59
-Strat2 54
-Strat3 53
-Strat1 47
-Strat6 46
-
-Strat5 65
-Strat3 62
-Strat6 50
-Strat1 43
-Strat2 41
-
-Strat5 66
-Strat1 58
-Strat3 52
-Strat2 48
-Strat6 36
-
-Strat5 63
-Strat6 54
-Strat3 50
-Strat2 48
-Strat1 47
-
-Strat3 62
 Strat2 55
-Strat6 52
-Strat5 48
-Strat1 39
-
-Strat1 66
-Strat6 54
-Strat5 48
-Strat2 43
-Strat3 43
-
-Strat5 67
-Strat6 52
-Strat2 49
-Strat3 45
-Strat1 44
-
-Strat2 68
-Strat6 55
-Strat1 47
-Strat5 47
-Strat3 45
-
-Strat3 57
-Strat6 53
-Strat1 53
-Strat2 49
-Strat5 46
-
-Strat5 55
-Strat2 51
-Strat6 51
-Strat3 51
-Strat1 46
-
-Strat5 61
-Strat3 59
-Strat1 50
-Strat6 48
-Strat2 42
-
-Strat6 60
-Strat5 54
-Strat2 53
-Strat3 52
-Strat1 39
-
-Strat3 61
-Strat1 57
-Strat5 53
-Strat6 44
-Strat2 41
-
-Strat5 64
-Strat3 61
-Strat2 52
-Strat1 44
-Strat6 38
-
-Strat2 64
-Strat6 60
-Strat5 56
-Strat3 42
-Strat1 41
-
-Strat6 59
-Strat5 53
-Strat2 53
-Strat3 51
-Strat1 44
-
-Strat6 66
-Strat2 54
-Strat5 52
-Strat3 50
-Strat1 40
-
-Strat3 67
-Strat2 66
-Strat5 47
-Strat6 45
-Strat1 31
-
-Strat3 62
-Strat5 53
-Strat6 52
-Strat2 51
-Strat1 39
-
-Strat5 60
-Strat6 54
-Strat3 51
-Strat1 46
-Strat2 43
-
-Strat5 57
-Strat2 52
-Strat1 51
-Strat6 51
-Strat3 48
-
-Strat5 61
-Strat6 55
-Strat3 53
-Strat1 44
-Strat2 42
-
-Strat6 58
-Strat2 58
-Strat3 56
-Strat1 46
-Strat5 42
-
-Strat2 64
-Strat6 61
-Strat3 57
-Strat5 44
-Strat1 36
-
-Strat2 64
-Strat6 61
-Strat3 52
-Strat5 46
-Strat1 37
-
-Strat2 61
-Strat3 53
-Strat1 53
-Strat6 48
-Strat5 46
-
-Strat5 56
-Strat2 53
-Strat1 53
-Strat3 52
-Strat6 48
-
-Strat3 60
-Strat2 54
-Strat5 52
-Strat6 47
-Strat1 43
-
-Strat6 65
-Strat5 60
-Strat2 58
-Strat3 55
-Strat1 26
-
-Strat6 57
-Strat5 53
-Strat1 52
-Strat3 48
-Strat2 48
-
-Strat3 64
-Strat5 55
-Strat6 50
-Strat2 46
-Strat1 45
-
-Strat6 68
-Strat5 53
-Strat3 48
-Strat2 46
-Strat1 46
-
-Strat2 58
 Strat3 54
-Strat6 52
+Strat6 43
+Strat1 42
+Strat4 32
+
+Strat2 56
 Strat5 51
-Strat1 44
+Strat6 49
+Strat3 43
+Strat1 41
+Strat4 33
 
-Strat5 69
-Strat6 56
-Strat3 52
-Strat2 47
-Strat1 36
-
-Strat2 63
-Strat6 54
-Strat5 49
-Strat1 46
-Strat3 42
-
-Strat5 69
-Strat6 65
-Strat3 49
-Strat2 45
-Strat1 39
-
-Strat1 63
-Strat3 57
-Strat6 53
-Strat2 50
-Strat5 41
-
-Strat5 63
-Strat2 61
-Strat3 49
-Strat1 43
-Strat6 42
-
-Strat1 60
-Strat3 58
 Strat5 55
-Strat2 50
-Strat6 39
+Strat2 54
+Strat6 50
+Strat3 48
+Strat1 40
+Strat4 27
 
-Strat5 61
-Strat1 54
-Strat6 52
-Strat3 50
-Strat2 43
-
-Strat2 59
-Strat6 59
-Strat5 52
-Strat3 44
-Strat1 44
-
-Strat2 61
-Strat6 53
-Strat1 52
-Strat5 51
-Strat3 41
-
-Strat2 57
-Strat5 54
-Strat1 50
-Strat6 47
+Strat5 58
+Strat6 50
 Strat3 47
-
-Strat2 64
-Strat3 55
-Strat5 55
-Strat6 53
-Strat1 37
-
-Strat6 58
-Strat2 57
-Strat3 51
-Strat5 46
 Strat1 46
-
-Strat5 64
-Strat1 59
-Strat3 52
-Strat6 52
+Strat4 44
 Strat2 33
 
-Strat3 62
-Strat5 58
-Strat6 51
-Strat2 46
-Strat1 44
-
-Strat2 70
-Strat3 56
-Strat5 53
-Strat6 42
-Strat1 36
-
-Strat6 68
-Strat2 54
-Strat5 48
-Strat3 48
-Strat1 44
-
-Strat2 61
 Strat5 56
-Strat6 52
-Strat3 47
-Strat1 40
-
-Strat6 62
-Strat5 60
-Strat3 53
-Strat2 43
-Strat1 42
-
-Strat3 61
-Strat1 52
-Strat6 51
-Strat5 49
-Strat2 46
-
-Strat5 56
-Strat3 54
-Strat6 53
-Strat1 52
-Strat2 42
-
-Strat6 62
-Strat3 55
-Strat5 55
-Strat2 50
-Strat1 41
-
-Strat3 59
-Strat5 58
-Strat6 55
-Strat2 45
-Strat1 41
-
-Strat5 60
-Strat3 59
-Strat2 57
+Strat1 53
 Strat6 48
-Strat1 35
+Strat2 47
+Strat3 42
+Strat4 28
 
-Strat5 59
-Strat3 55
-Strat1 55
-Strat6 47
-Strat2 40
+Strat2 59
+Strat5 55
+Strat3 49
+Strat4 40
+Strat1 39
+Strat6 37
 
-Strat2 64
-Strat5 60
-Strat3 53
-Strat6 50
-Strat1 32
+Strat5 56
+Strat1 52
+Strat2 50
+Strat6 46
+Strat3 46
+Strat4 32
 
-Strat3 59
-Strat2 56
-Strat5 51
-Strat6 49
-Strat1 44
-
-Strat3 65
-Strat6 61
-Strat5 48
-Strat2 46
-Strat1 43
-
-Strat5 68
-Strat3 52
-Strat2 49
-Strat1 49
-Strat6 38
-
-Strat3 57
-Strat6 55
+Strat6 56
+Strat3 54
+Strat2 54
 Strat5 52
-Strat2 49
-Strat1 44
+Strat1 36
+Strat4 27
+
+Strat2 65
+Strat3 53
+Strat6 49
+Strat5 44
+Strat1 42
+Strat4 29
+
+Strat3 64
+Strat6 53
+Strat1 46
+Strat5 45
+Strat2 41
+Strat4 29
 
 Strat2 62
-Strat6 59
+Strat3 53
+Strat5 47
+Strat6 43
+Strat1 40
+Strat4 34
+
+Strat6 54
+Strat5 51
+Strat4 49
+Strat2 46
+Strat3 44
+Strat1 34
+
+Strat3 55
+Strat6 54
+Strat2 51
+Strat5 51
+Strat1 39
+Strat4 26
+
+Strat1 56
+Strat6 50
 Strat5 50
+Strat2 49
+Strat3 45
+Strat4 34
+
+Strat6 56
+Strat5 53
+Strat2 49
 Strat3 46
+Strat1 42
+Strat4 34
+
+Strat1 67
+Strat6 52
+Strat5 48
+Strat3 42
+Strat4 37
+Strat2 33
+
+Strat3 61
+Strat2 55
+Strat5 52
+Strat6 44
+Strat4 35
+Strat1 34
+
+Strat5 60
+Strat6 52
+Strat2 51
+Strat3 47
+Strat1 37
+Strat4 32
+
+Strat3 57
+Strat6 51
+Strat2 49
+Strat5 47
+Strat1 45
+Strat4 29
+
+Strat5 54
+Strat1 53
+Strat3 52
+Strat2 44
+Strat6 41
+Strat4 32
+
+Strat5 53
+Strat6 51
+Strat2 44
+Strat3 44
+Strat4 43
 Strat1 43
 
-Strat5 68
-Strat3 53
-Strat2 53
-Strat6 42
-Strat1 38
+Strat6 58
+Strat2 55
+Strat3 52
+Strat1 45
+Strat5 39
+Strat4 32
 
-Strat6 71
-Strat5 60
-Strat3 51
-Strat2 44
+Strat2 53
+Strat5 50
+Strat1 47
+Strat3 45
+Strat6 44
+Strat4 39
+
+Strat3 57
+Strat5 53
+Strat2 47
+Strat6 40
+Strat4 40
+Strat1 39
+
+Strat3 55
+Strat6 50
+Strat2 49
+Strat1 46
+Strat5 45
+Strat4 26
+
+Strat5 65
+Strat6 49
+Strat2 45
+Strat1 45
+Strat3 39
+Strat4 35
+
+Strat2 57
+Strat5 53
+Strat6 51
+Strat3 48
+Strat4 38
+Strat1 30
+
+Strat5 55
+Strat6 50
+Strat2 49
+Strat3 48
+Strat1 38
+Strat4 37
+
+Strat5 66
+Strat3 57
+Strat6 45
+Strat2 39
+Strat4 36
 Strat1 36
 
-Strat3 65
 Strat6 56
 Strat5 55
 Strat2 52
+Strat4 40
+Strat3 40
+Strat1 31
+
+Strat3 55
+Strat2 50
+Strat1 47
+Strat5 46
+Strat6 44
+Strat4 38
+
+Strat6 60
+Strat2 55
+Strat3 53
+Strat5 45
+Strat1 38
+Strat4 28
+
+Strat2 62
+Strat3 55
+Strat6 51
+Strat5 48
+Strat1 35
+Strat4 28
+
+Strat6 59
+Strat3 54
+Strat5 54
+Strat2 50
+Strat1 40
+Strat4 27
+
+Strat6 59
+Strat5 53
+Strat1 50
+Strat3 47
+Strat2 41
+Strat4 28
+
+Strat2 66
+Strat3 51
+Strat5 51
+Strat6 40
+Strat1 39
+Strat4 31
+
+Strat6 52
+Strat3 49
+Strat5 48
+Strat4 45
+Strat2 44
+Strat1 43
+
+Strat3 51
+Strat5 51
+Strat2 47
+Strat1 45
+Strat6 43
+Strat4 39
+
+Strat2 63
+Strat3 53
+Strat5 49
+Strat1 44
+Strat6 40
+Strat4 35
+
+Strat6 53
+Strat5 52
+Strat3 52
+Strat2 47
+Strat1 43
+Strat4 30
+
+Strat2 58
+Strat5 54
+Strat3 47
+Strat4 41
+Strat6 41
+Strat1 38
+
+Strat5 55
+Strat6 54
+Strat1 53
+Strat2 49
+Strat3 44
+Strat4 26
+
+Strat3 59
+Strat1 53
+Strat6 51
+Strat5 50
+Strat2 43
+Strat4 23
+
+Strat3 56
+Strat5 53
+Strat1 48
+Strat6 47
+Strat2 43
+Strat4 33
+
+Strat2 54
+Strat1 51
+Strat5 49
+Strat3 44
+Strat4 40
+Strat6 40
+
+Strat6 57
+Strat5 55
+Strat3 51
+Strat1 45
+Strat2 41
+Strat4 27
+
+Strat3 64
+Strat6 59
+Strat5 50
+Strat4 41
+Strat1 33
+Strat2 32
+
+Strat5 55
+Strat2 54
+Strat6 48
+Strat3 47
+Strat1 44
+Strat4 27
+
+Strat5 53
+Strat6 51
+Strat2 50
+Strat1 42
+Strat4 40
+Strat3 40
+
+Strat3 58
+Strat5 54
+Strat6 47
+Strat2 44
+Strat1 37
+Strat4 35
+
+Strat3 56
+Strat1 52
+Strat5 52
+Strat6 43
+Strat2 42
+Strat4 29
+
+Strat2 56
+Strat6 55
+Strat5 51
+Strat3 49
+Strat1 41
+Strat4 28
+
+Strat6 55
+Strat5 53
+Strat3 50
+Strat1 46
+Strat2 45
+Strat4 28
+
+Strat5 56
+Strat6 53
+Strat3 52
+Strat2 46
+Strat1 39
+Strat4 34
+
+Strat5 59
+Strat3 54
+Strat1 46
+Strat2 43
+Strat6 42
+Strat4 35
+
+Strat6 53
+Strat1 53
+Strat5 49
+Strat3 44
+Strat2 43
+Strat4 35
+
+Strat5 57
+Strat3 55
+Strat6 52
+Strat2 44
+Strat1 41
+Strat4 32
+
+Strat2 57
+Strat5 50
+Strat3 49
+Strat6 44
+Strat1 42
+Strat4 33
+
+Strat3 55
+Strat2 52
+Strat6 51
+Strat5 46
+Strat1 45
+Strat4 29
+
+Strat6 55
+Strat5 55
+Strat3 50
+Strat2 49
+Strat1 47
+Strat4 25
+
+Strat5 59
+Strat3 55
+Strat6 48
+Strat1 45
+Strat4 38
+Strat2 37
+
+Strat6 57
+Strat3 54
+Strat5 53
+Strat2 52
+Strat1 39
+Strat4 25
+
+Strat3 62
+Strat5 50
+Strat1 46
+Strat6 43
+Strat2 42
+Strat4 38
+
+Strat5 60
+Strat3 50
+Strat2 50
+Strat6 42
+Strat1 38
+Strat4 37
+
+Strat2 61
+Strat6 52
+Strat3 51
+Strat5 47
+Strat4 33
+Strat1 32
+
+Strat5 57
+Strat6 53
+Strat3 48
+Strat1 47
+Strat2 43
+Strat4 24
+
+Strat2 58
+Strat5 49
+Strat1 46
+Strat3 45
+Strat6 43
+Strat4 36
+
+Strat5 54
+Strat6 52
+Strat2 49
+Strat3 48
+Strat4 41
+Strat1 31
+
+Strat3 66
+Strat6 54
+Strat5 44
+Strat2 41
+Strat1 35
+Strat4 34
+
+Strat2 62
+Strat3 52
+Strat6 49
+Strat5 46
+Strat1 44
+Strat4 25
+
+Strat3 58
+Strat5 51
+Strat6 50
+Strat2 47
+Strat1 39
+Strat4 36
+
+Strat1 61
+Strat5 49
+Strat3 47
+Strat2 40
+Strat6 39
+Strat4 38
+
+Strat2 59
+Strat3 54
+Strat1 48
+Strat6 48
+Strat5 42
+Strat4 31
+
+Strat6 54
+Strat2 54
+Strat5 53
+Strat3 52
+Strat1 34
+Strat4 29
+
+Strat6 58
+Strat2 52
+Strat5 49
+Strat3 44
+Strat1 43
+Strat4 29
+
+Strat3 59
+Strat5 56
+Strat1 46
+Strat6 46
+Strat2 45
+Strat4 27
+
+Strat2 58
+Strat3 58
+Strat5 47
+Strat1 42
+Strat6 37
+Strat4 32
+
+Strat3 59
+Strat5 54
+Strat2 51
+Strat1 49
+Strat6 41
+Strat4 26
+
+Strat6 60
+Strat5 54
+Strat3 47
+Strat1 45
+Strat2 36
+Strat4 36
+
+Strat3 60
+Strat5 52
+Strat2 51
+Strat6 40
+Strat1 40
+Strat4 35
+
+Strat5 61
+Strat1 53
+Strat6 47
+Strat2 43
+Strat4 36
+Strat3 35
+
+Strat5 53
+Strat3 47
+Strat2 47
+Strat6 47
+Strat1 45
+Strat4 36
+
+Strat6 55
+Strat5 53
+Strat2 50
+Strat3 43
+Strat1 41
+Strat4 33
+
+Strat2 60
+Strat6 55
+Strat5 46
+Strat1 42
+Strat3 39
+Strat4 36
+
+Strat3 61
+Strat6 54
+Strat5 54
+Strat2 45
+Strat4 33
+Strat1 32
+
+Strat5 58
+Strat2 56
+Strat6 45
+Strat1 43
+Strat4 40
+Strat3 35
+
+Strat3 64
+Strat5 53
+Strat6 45
+Strat2 41
+Strat4 36
+Strat1 35
+
+Strat3 61
+Strat5 54
+Strat2 49
+Strat4 39
+Strat6 38
+Strat1 36
+
+Strat6 59
+Strat2 53
+Strat5 53
+Strat3 51
+Strat4 29
+Strat1 28
+
+Strat5 59
+Strat2 55
+Strat6 53
+Strat3 46
+Strat4 38
+Strat1 31
+
+Strat5 61
+Strat2 60
+Strat3 57
+Strat1 41
+Strat6 33
+Strat4 24
+
+Strat6 54
+Strat3 53
+Strat5 50
+Strat1 46
+Strat2 43
+Strat4 27
+
+Strat2 62
+Strat6 50
+Strat1 50
+Strat3 48
+Strat5 40
+Strat4 25
+
+Strat5 61
+Strat6 49
+Strat3 48
+Strat2 46
+Strat1 43
+Strat4 34
+
+Strat6 52
+Strat3 51
+Strat5 49
+Strat1 42
+Strat2 42
+Strat4 41
+
+Strat5 52
+Strat3 51
+Strat6 50
+Strat1 49
+Strat2 42
+Strat4 34
+
+Strat5 60
+Strat3 49
+Strat6 47
+Strat1 46
+Strat2 40
+Strat4 33
+
+Strat2 56
+Strat3 54
+Strat1 50
+Strat5 47
+Strat6 37
+Strat4 29
+
+Strat5 56
+Strat6 54
+Strat3 50
+Strat1 46
+Strat2 45
+Strat4 30
+
+Strat1 54
+Strat3 52
+Strat5 51
+Strat2 49
+Strat6 44
+Strat4 27
+
+Strat2 59
+Strat3 54
+Strat6 53
+Strat5 44
+Strat1 35
+Strat4 33
+
+Strat5 56
+Strat1 54
+Strat2 48
+Strat6 46
+Strat3 41
+Strat4 34
+
+Strat2 61
+Strat5 53
+Strat3 49
+Strat6 48
+Strat1 44
+Strat4 28
+
+Strat2 58
+Strat5 53
+Strat1 48
+Strat6 48
+Strat3 39
+Strat4 36
+
+Strat5 61
+Strat3 54
+Strat2 46
+Strat1 42
+Strat4 36
+Strat6 32
+
+Strat2 54
+Strat3 53
+Strat5 48
+Strat6 44
+Strat1 43
+Strat4 34
+
+Strat5 61
+Strat6 50
+Strat3 48
+Strat2 46
+Strat1 43
+Strat4 31
+
+Strat3 58
+Strat5 52
+Strat6 51
+Strat2 48
+Strat1 44
+Strat4 26
+
+Strat5 60
+Strat3 49
+Strat2 46
+Strat6 44
+Strat1 43
+Strat4 32
+
+Strat2 65
+Strat5 58
+Strat6 45
+Strat1 39
+Strat3 39
+Strat4 30
+
+Strat5 56
+Strat2 52
+Strat6 46
+Strat3 43
+Strat4 41
+Strat1 41
+
+Strat3 65
+Strat5 55
+Strat6 53
+Strat1 51
+Strat4 31
+Strat2 30
+
+Strat2 62
+Strat6 49
+Strat3 47
+Strat5 45
+Strat4 39
+Strat1 37
+
+Strat5 54
+Strat6 51
+Strat2 44
+Strat1 43
+Strat3 42
+Strat4 41
+
+Strat5 64
+Strat3 56
+Strat2 48
+Strat6 43
+Strat4 35
+Strat1 30
+
+Strat5 61
+Strat1 52
+Strat6 46
+Strat3 43
+Strat2 40
+Strat4 33
+
+Strat5 55
+Strat1 54
+Strat3 52
+Strat6 44
+Strat2 36
+Strat4 33
+
+Strat2 59
+Strat5 58
+Strat3 48
+Strat1 42
+Strat6 38
+Strat4 28
+
+Strat5 55
+Strat3 54
+Strat6 48
+Strat2 46
+Strat4 41
+Strat1 34
+
+Strat3 62
+Strat6 51
+Strat2 48
+Strat5 47
+Strat1 46
+Strat4 29
+
+Strat6 54
+Strat5 52
+Strat3 51
+Strat2 42
+Strat1 39
+Strat4 38
+
+Strat5 61
+Strat4 53
+Strat1 50
+Strat3 41
+Strat6 37
+Strat2 34
+
+Strat3 53
+Strat1 50
+Strat5 49
+Strat2 47
+Strat6 45
+Strat4 32
+
+Strat5 58
+Strat3 53
+Strat6 50
+Strat4 41
+Strat1 41
+Strat2 36
+
+Strat6 60
+Strat3 54
+Strat5 51
+Strat1 49
+Strat2 39
+Strat4 30
+
+Strat5 62
+Strat6 51
+Strat2 51
+Strat3 47
+Strat1 39
+Strat4 29
+
+Strat2 56
+Strat3 55
+Strat5 55
+Strat6 50
+Strat4 34
+Strat1 31
+
+Strat6 59
+Strat1 59
+Strat5 51
+Strat3 40
+Strat2 35
+Strat4 32
+
+Strat6 55
+Strat2 53
+Strat5 48
+Strat3 46
+Strat1 38
+Strat4 32
+
+Strat3 60
+Strat5 53
+Strat6 48
+Strat1 47
+Strat2 35
+Strat4 33
+
+Strat6 54
+Strat5 52
+Strat3 49
+Strat1 45
+Strat2 43
+Strat4 38
+
+Strat5 51
+Strat2 51
+Strat6 47
+Strat1 47
+Strat3 46
+Strat4 35
+
+Strat2 60
+Strat5 55
+Strat6 48
+Strat1 46
+Strat3 38
+Strat4 33
+
+Strat5 56
+Strat2 50
+Strat3 48
+Strat6 43
+Strat1 41
+Strat4 37
+
+Strat6 55
+Strat3 51
+Strat5 49
+Strat1 47
+Strat2 47
+Strat4 25
+
+Strat5 55
+Strat6 53
+Strat1 52
+Strat3 47
+Strat4 34
+Strat2 33
+
+Strat3 55
+Strat6 54
+Strat5 52
+Strat2 48
+Strat1 41
+Strat4 28
+
+Strat3 53
+Strat5 49
+Strat6 47
+Strat1 46
+Strat4 41
+Strat2 39
+
+Strat5 56
+Strat3 52
+Strat2 47
+Strat6 45
+Strat1 45
+Strat4 32
+
+Strat5 52
+Strat2 49
+Strat1 47
+Strat6 46
+Strat3 46
+Strat4 36
+
+Strat3 57
+Strat5 53
+Strat6 47
+Strat2 44
+Strat1 36
+Strat4 32
+
+Strat2 60
+Strat6 54
+Strat5 48
+Strat3 43
+Strat4 39
 Strat1 34
 
 Strat6 60
+Strat2 57
+Strat3 46
+Strat1 42
+Strat5 40
+Strat4 28
+
+Strat3 52
+Strat6 49
+Strat5 48
+Strat1 48
+Strat2 48
+Strat4 32
+
+Strat5 63
+Strat2 52
+Strat6 50
+Strat1 47
+Strat3 45
+Strat4 25
+
+Strat5 53
+Strat2 53
+Strat6 48
+Strat3 44
+Strat1 42
+Strat4 34
+
+Strat3 56
+Strat5 55
+Strat6 51
+Strat2 51
+Strat1 34
+Strat4 33
+
+Strat3 65
+Strat5 56
+Strat6 52
+Strat4 40
+Strat1 34
+Strat2 33
+
+Strat5 54
+Strat6 51
+Strat3 49
+Strat2 49
+Strat1 40
+Strat4 34
+
+Strat5 57
+Strat2 54
+Strat6 48
+Strat3 48
+Strat1 41
+Strat4 30
+
+Strat2 58
+Strat5 53
+Strat3 52
+Strat6 49
+Strat1 39
+Strat4 28
+
+Strat5 57
+Strat3 54
+Strat6 52
+Strat4 40
+Strat1 40
+Strat2 36
+
+Strat6 56
+Strat3 56
+Strat2 50
+Strat5 46
+Strat1 35
+Strat4 34
+
+Strat3 63
+Strat5 56
+Strat6 48
+Strat1 41
+Strat2 40
+Strat4 30
+
+Strat5 57
+Strat6 53
+Strat3 49
+Strat1 48
+Strat2 44
+Strat4 29
+
+Strat6 52
+Strat5 51
+Strat3 51
+Strat1 45
+Strat2 44
+Strat4 39
+
+Strat3 55
+Strat6 52
+Strat5 51
+Strat2 48
+Strat1 41
+Strat4 35
+
+Strat6 57
+Strat5 53
+Strat3 48
+Strat2 44
+Strat1 40
+Strat4 39
+
+Strat3 57
+Strat2 55
+Strat6 55
+Strat5 47
+Strat1 35
+Strat4 33
+
+Strat2 57
+Strat6 52
+Strat3 49
+Strat5 49
+Strat4 40
+Strat1 35
+
+Strat2 53
+Strat5 49
+Strat1 46
+Strat3 45
+Strat6 44
+Strat4 38
+
+Strat1 59
+Strat5 55
+Strat2 46
+Strat6 45
+Strat3 40
+Strat4 31
+
+Strat6 61
+Strat5 60
+Strat4 45
+Strat3 42
+Strat2 40
+Strat1 31
+
+Strat5 56
+Strat6 51
+Strat1 48
+Strat3 48
+Strat2 47
+Strat4 31
+
+Strat3 57
+Strat2 56
+Strat5 54
+Strat6 46
+Strat1 36
+Strat4 23
+
+Strat1 52
+Strat3 50
+Strat5 49
+Strat6 49
+Strat2 44
+Strat4 29
+
+Strat5 59
+Strat3 51
+Strat6 51
+Strat1 47
+Strat2 40
+Strat4 34
+
+Strat5 59
+Strat1 50
+Strat3 49
+Strat6 48
+Strat4 38
+Strat2 32
+
+Strat3 57
+Strat6 53
+Strat5 48
+Strat1 44
+Strat4 41
+Strat2 33
+
+Strat5 56
+Strat6 55
+Strat1 52
+Strat2 43
+Strat3 38
+Strat4 36
+
+Strat6 59
+Strat2 53
+Strat5 51
+Strat3 45
+Strat1 38
+Strat4 38
+
+Strat5 58
+Strat3 56
+Strat6 50
+Strat1 42
+Strat2 38
+Strat4 32
+
+Strat5 54
+Strat2 53
+Strat3 48
+Strat6 45
+Strat1 41
+Strat4 38
+
+Strat5 61
+Strat2 53
+Strat6 48
+Strat3 47
+Strat1 34
+Strat4 33
+
+Strat5 57
+Strat2 52
+Strat6 49
+Strat3 47
+Strat1 46
+Strat4 25
+
+Strat1 61
+Strat3 48
+Strat2 47
+Strat5 46
+Strat6 45
+Strat4 27
+
+Strat5 62
+Strat3 52
+Strat1 49
+Strat6 45
+Strat2 43
+Strat4 28
+
+Strat2 55
+Strat3 53
+Strat6 52
+Strat5 48
+Strat1 39
+Strat4 32
+
+Strat3 52
+Strat2 51
+Strat5 50
+Strat6 46
+Strat1 40
+Strat4 39
+
+Strat5 62
+Strat3 56
+Strat6 46
+Strat1 45
+Strat4 38
+Strat2 32
+
+Strat5 56
+Strat2 55
+Strat3 51
+Strat6 50
+Strat1 41
+Strat4 24
+
+Strat3 58
+Strat2 53
+Strat5 52
+Strat6 49
+Strat1 35
+Strat4 30
+
+Strat2 57
+Strat6 56
+Strat5 49
+Strat1 44
+Strat3 40
+Strat4 28
+
+Strat2 53
+Strat3 50
+Strat6 47
+Strat5 46
+Strat1 39
+Strat4 38
+
+Strat3 60
+Strat5 56
+Strat6 46
+Strat2 45
+Strat1 36
+Strat4 34
+
+Strat6 55
+Strat5 53
+Strat3 46
+Strat1 43
+Strat2 43
+Strat4 35
+
+Strat5 58
+Strat6 50
+Strat2 48
+Strat1 43
+Strat3 42
+Strat4 33
+
+Strat3 59
+Strat5 58
+Strat1 45
+Strat6 42
+Strat2 42
+Strat4 32
+
+Strat2 61
+Strat5 60
+Strat6 49
+Strat1 37
+Strat3 37
+Strat4 34
+
+Strat6 58
+Strat5 57
+Strat2 55
+Strat3 44
+Strat1 41
+Strat4 24
+
+Strat6 60
+Strat3 56
+Strat2 55
+Strat5 43
+Strat1 37
+Strat4 28
+
+Strat5 55
+Strat6 53
+Strat2 49
+Strat3 48
+Strat1 40
+Strat4 33
+
+Strat6 57
+Strat5 52
+Strat1 48
+Strat3 48
+Strat2 39
+Strat4 35
+
+Strat6 57
+Strat5 54
+Strat1 52
+Strat2 46
+Strat3 40
+Strat4 25
+
+Strat5 54
+Strat6 52
+Strat2 50
+Strat3 47
+Strat4 42
+Strat1 31
+
+Strat1 54
+Strat2 51
+Strat5 50
+Strat3 47
+Strat6 44
+Strat4 29
+
+Strat3 61
+Strat5 53
+Strat6 46
+Strat2 43
+Strat1 41
+Strat4 29
+
+Strat5 61
+Strat2 48
+Strat3 48
+Strat6 46
+Strat1 45
+Strat4 32
+
+Strat5 62
+Strat3 55
+Strat6 51
+Strat2 42
+Strat1 39
+Strat4 27
+
+Strat6 62
+Strat3 60
+Strat5 48
+Strat1 43
+Strat2 37
+Strat4 29
+
+Strat6 51
+Strat3 48
+Strat5 47
+Strat1 47
+Strat2 44
+Strat4 43
+
+Strat5 59
+Strat3 58
+Strat6 53
+Strat2 40
+Strat4 36
+Strat1 30
+
+Strat6 60
+Strat5 53
+Strat3 47
+Strat1 47
+Strat2 40
+Strat4 32
+
+Strat5 59
+Strat2 53
+Strat3 51
+Strat1 46
+Strat6 40
+Strat4 28
+
+Strat5 59
+Strat6 50
+Strat1 49
+Strat2 45
+Strat3 42
+Strat4 33
+
+Strat2 56
+Strat3 55
+Strat5 51
+Strat1 42
+Strat6 42
+Strat4 36
+
+Strat5 59
+Strat3 54
+Strat6 52
+Strat2 42
+Strat1 42
+Strat4 33
+
+Strat5 63
+Strat3 55
+Strat6 54
+Strat2 46
+Strat1 37
+Strat4 24
+
+Strat6 61
+Strat5 50
+Strat3 48
+Strat2 46
+Strat1 37
+Strat4 35
+
+Strat5 68
+Strat1 49
+Strat3 46
+Strat6 40
+Strat2 39
+Strat4 33
+
+Strat1 55
+Strat2 50
+Strat5 50
+Strat6 46
+Strat3 45
+Strat4 28
+
+Strat6 60
+Strat2 57
+Strat5 55
+Strat1 39
+Strat3 38
+Strat4 30
+
+Strat6 64
+Strat5 51
+Strat3 50
+Strat2 50
+Strat1 39
+Strat4 29
+
+Strat5 53
+Strat6 52
+Strat4 46
+Strat3 46
+Strat2 41
+Strat1 39
+
+Strat3 54
+Strat5 51
+Strat6 48
+Strat1 47
+Strat2 46
+Strat4 35
+
+Strat6 58
+Strat1 56
+Strat2 49
+Strat3 41
+Strat5 38
+Strat4 33
+
+Strat5 62
+Strat2 53
+Strat6 50
+Strat1 43
+Strat3 43
+Strat4 32
+
+Strat6 55
+Strat5 54
+Strat3 47
+Strat2 47
+Strat1 46
+Strat4 32
+
+Strat5 62
+Strat6 53
+Strat3 50
+Strat2 45
+Strat1 40
+Strat4 23
+
+Strat1 58
+Strat5 54
+Strat6 52
+Strat3 49
+Strat2 43
+Strat4 29
+
+Strat6 55
+Strat3 53
+Strat5 51
+Strat1 50
+Strat2 45
+Strat4 23
+
+Strat6 53
+Strat5 48
+Strat3 47
+Strat1 47
+Strat2 44
+Strat4 35
+
+Strat5 56
+Strat3 54
+Strat1 50
+Strat6 46
+Strat2 43
+Strat4 30
+
+Strat3 56
+Strat2 51
+Strat5 49
+Strat6 49
+Strat4 40
+Strat1 35
+
+Strat5 52
+Strat2 52
+Strat6 51
+Strat3 46
+Strat1 45
+Strat4 32
+
+Strat6 60
+Strat5 53
+Strat2 47
+Strat3 45
+Strat4 38
+Strat1 28
+
+Strat1 57
+Strat3 51
+Strat2 50
+Strat6 48
+Strat5 44
+Strat4 31
+
+Strat3 55
+Strat1 54
+Strat5 47
+Strat6 46
+Strat2 43
+Strat4 34
+
+Strat2 58
+Strat6 53
+Strat5 49
+Strat3 49
+Strat1 34
+Strat4 31
+
+Strat6 56
+Strat1 52
+Strat2 45
+Strat4 42
+Strat5 42
+Strat3 40
+
+Strat2 60
+Strat6 58
+Strat3 49
+Strat5 45
+Strat4 36
+Strat1 34
+
+Strat5 56
+Strat3 56
+Strat2 53
+Strat6 43
+Strat4 32
+Strat1 30
+
+Strat3 58
+Strat2 52
+Strat6 51
+Strat5 47
+Strat1 46
+Strat4 25
+
+Strat5 51
+Strat3 50
+Strat1 50
+Strat2 49
+Strat6 46
+Strat4 32
+
+Strat6 53
+Strat2 52
+Strat3 51
+Strat5 50
+Strat4 39
+Strat1 31
+
+Strat3 58
+Strat5 51
+Strat1 46
+Strat2 43
+Strat6 42
+Strat4 35
+
+Strat3 59
+Strat2 57
+Strat5 45
+Strat1 44
+Strat6 39
+Strat4 32
+
+Strat5 58
+Strat2 54
+Strat6 48
+Strat3 43
+Strat4 38
+Strat1 36
+
+Strat5 60
+Strat6 53
+Strat1 50
+Strat3 43
+Strat2 40
+Strat4 33
+
+Strat6 66
+Strat3 49
+Strat2 46
+Strat5 45
+Strat1 41
+Strat4 32
+
+Strat6 56
+Strat2 53
+Strat5 53
+Strat3 51
+Strat1 41
+Strat4 27
+
+Strat6 53
+Strat1 50
+Strat2 50
+Strat3 47
+Strat5 44
+Strat4 32
+
+Strat3 59
+Strat5 59
+Strat6 51
+Strat2 46
+Strat1 40
+Strat4 29
+
+Strat2 56
+Strat5 55
+Strat6 54
+Strat3 50
+Strat1 40
+Strat4 26
+
+Strat2 53
+Strat3 51
+Strat5 49
+Strat6 48
+Strat1 46
+Strat4 28
+
+Strat5 56
+Strat3 50
+Strat2 49
+Strat1 47
+Strat6 40
+Strat4 32
+
+Strat5 54
+Strat3 53
+Strat6 53
+Strat1 44
+Strat4 37
+Strat2 36
+
+Strat5 62
+Strat2 59
+Strat6 47
+Strat3 46
+Strat1 39
+Strat4 30
+
+Strat2 56
+Strat3 53
+Strat5 53
+Strat6 46
+Strat1 36
+Strat4 35
+
+Strat3 56
+Strat5 53
+Strat2 52
+Strat6 45
+Strat1 36
+Strat4 34
+
+Strat3 62
+Strat5 58
+Strat2 52
+Strat6 41
+Strat1 39
+Strat4 30
+
+Strat5 54
+Strat6 51
+Strat2 51
+Strat1 46
+Strat3 46
+Strat4 36
+
+Strat5 55
+Strat6 54
+Strat3 44
+Strat2 44
+Strat1 41
+Strat4 36
+
+Strat2 56
+Strat5 54
+Strat6 47
+Strat3 46
+Strat1 42
+Strat4 28
+
+Strat3 59
+Strat6 51
+Strat5 47
+Strat1 47
+Strat2 43
+Strat4 35
+
+Strat5 62
+Strat6 49
+Strat3 47
+Strat2 44
+Strat4 39
+Strat1 38
+
+Strat3 52
+Strat2 51
+Strat5 50
+Strat6 50
+Strat1 44
+Strat4 33
+
+Strat2 55
+Strat5 53
+Strat3 50
+Strat1 46
+Strat6 43
+Strat4 31
+
+Strat2 51
+Strat3 50
+Strat6 49
+Strat5 46
+Strat1 46
+Strat4 35
+
+Strat6 50
+Strat3 50
+Strat1 50
+Strat5 46
+Strat2 45
+Strat4 35
+
+Strat6 56
+Strat2 49
+Strat5 47
+Strat3 47
+Strat4 37
+Strat1 35
+
+Strat5 58
+Strat3 56
+Strat2 56
+Strat6 44
+Strat4 32
+Strat1 31
+
+Strat2 55
+Strat3 54
+Strat5 52
+Strat6 42
+Strat1 40
+Strat4 33
+
+Strat5 54
+Strat3 52
+Strat6 48
+Strat1 47
+Strat2 45
+Strat4 31
+
+Strat2 64
+Strat6 54
+Strat5 53
+Strat3 52
+Strat1 31
+Strat4 28
+
+Strat6 54
+Strat5 50
+Strat1 50
+Strat3 49
+Strat2 44
+Strat4 31
+
+Strat2 50
+Strat3 49
+Strat5 48
+Strat4 47
+Strat6 41
+Strat1 39
+
+Strat5 62
+Strat1 50
+Strat6 48
+Strat3 48
+Strat2 45
+Strat4 31
+
+Strat3 51
+Strat6 51
+Strat5 49
+Strat4 47
+Strat2 41
+Strat1 36
+
+Strat2 59
+Strat3 51
+Strat6 50
+Strat5 43
+Strat1 42
+Strat4 29
+
+Strat5 54
+Strat6 52
+Strat1 49
+Strat3 49
+Strat2 44
+Strat4 24
+
+Strat3 53
+Strat6 53
+Strat5 52
+Strat2 48
+Strat4 44
+Strat1 27
+
+Strat2 61
+Strat3 60
+Strat6 55
+Strat5 40
+Strat4 35
+Strat1 31
+
+Strat6 56
+Strat3 54
+Strat1 49
+Strat5 48
+Strat2 42
+Strat4 29
+
+Strat3 62
+Strat2 58
+Strat5 55
+Strat6 45
+Strat1 30
+Strat4 26
+
+Strat5 50
+Strat2 48
+Strat3 48
+Strat1 43
+Strat6 43
+Strat4 42
+
+Strat5 56
+Strat6 53
+Strat1 47
+Strat3 47
+Strat2 43
+Strat4 26
+
+Strat2 55
+Strat3 52
+Strat6 51
+Strat1 46
+Strat5 42
+Strat4 29
+
+Strat3 55
+Strat6 49
+Strat5 48
+Strat1 47
+Strat2 45
+Strat4 32
+
+Strat5 57
+Strat6 53
+Strat2 48
+Strat3 44
+Strat1 44
+Strat4 29
+
+Strat3 51
+Strat5 51
+Strat6 50
+Strat2 47
+Strat1 41
+Strat4 37
+
+Strat3 55
+Strat2 50
+Strat5 49
+Strat6 47
+Strat1 47
+Strat4 30
+
+Strat5 54
+Strat6 53
+Strat2 51
+Strat3 44
+Strat1 42
+Strat4 26
+
+Strat5 57
+Strat2 55
+Strat6 52
+Strat3 49
+Strat1 45
+Strat4 24
+
+Strat6 53
+Strat2 53
+Strat5 50
+Strat3 47
+Strat1 38
+Strat4 30
+
+Strat5 55
+Strat6 53
+Strat2 50
+Strat1 47
+Strat3 40
+Strat4 31
+
+Strat6 55
+Strat2 55
+Strat3 47
+Strat5 46
+Strat1 45
+Strat4 29
+
+Strat3 57
+Strat6 53
+Strat5 51
+Strat2 44
+Strat1 39
+Strat4 33
+
+Strat6 59
+Strat3 54
+Strat2 54
+Strat5 47
+Strat1 31
+Strat4 31
+
+Strat5 61
+Strat2 60
+Strat3 50
+Strat1 42
+Strat4 35
+Strat6 33
+
+Strat3 52
+Strat5 52
+Strat1 49
+Strat2 48
+Strat6 45
+Strat4 30
+
+Strat3 55
+Strat6 53
+Strat2 51
+Strat5 48
+Strat1 38
+Strat4 27
+
+Strat6 56
+Strat5 55
+Strat1 46
+Strat3 43
+Strat4 41
+Strat2 36
+
+Strat5 56
+Strat3 53
+Strat2 49
+Strat1 44
+Strat6 44
+Strat4 37
+
+Strat5 58
+Strat6 56
+Strat2 50
+Strat3 40
+Strat1 38
+Strat4 34
+
+Strat5 54
+Strat2 52
+Strat6 50
+Strat3 45
+Strat1 43
+Strat4 32
+
+Strat5 60
+Strat6 54
+Strat3 51
+Strat1 45
+Strat2 44
+Strat4 27
+
+Strat5 61
+Strat3 58
+Strat6 56
+Strat1 42
+Strat2 36
+Strat4 27
+
+Strat5 50
+Strat3 50
+Strat6 49
+Strat2 49
+Strat1 45
+Strat4 33
+
+Strat5 69
+Strat3 55
+Strat2 54
+Strat6 38
+Strat1 36
+Strat4 31
+
+Strat3 65
+Strat5 54
+Strat1 45
+Strat6 44
+Strat2 43
+Strat4 26
+
+Strat5 60
+Strat6 49
+Strat3 48
+Strat1 44
+Strat2 41
+Strat4 31
+
+Strat6 56
+Strat1 53
+Strat5 49
+Strat3 46
+Strat2 46
+Strat4 28
+
+Strat3 55
+Strat2 50
+Strat5 49
+Strat6 49
+Strat1 44
+Strat4 27
+
+Strat3 56
+Strat5 51
+Strat2 49
+Strat6 49
+Strat1 47
+Strat4 24
+
+Strat5 55
+Strat6 54
+Strat3 54
+Strat1 51
+Strat2 45
+Strat4 25
+
+Strat6 60
+Strat2 54
+Strat3 49
+Strat4 43
+Strat5 40
+Strat1 37
+
+Strat2 53
+Strat6 52
+Strat3 51
+Strat5 49
+Strat1 41
+Strat4 32
+
+Strat3 59
+Strat6 56
+Strat1 52
+Strat5 45
+Strat2 34
+Strat4 30
+
+Strat5 59
+Strat2 56
+Strat3 51
+Strat6 46
+Strat1 37
+Strat4 29
+
+Strat3 60
+Strat2 57
+Strat6 48
+Strat1 46
+Strat5 42
+Strat4 26
+
+Strat6 57
+Strat5 57
+Strat2 55
+Strat3 42
+Strat1 38
+Strat4 29
+
+Strat5 60
+Strat6 55
+Strat1 51
+Strat3 44
+Strat2 38
+Strat4 32
+
+Strat2 57
+Strat6 54
+Strat1 49
+Strat5 47
+Strat3 43
+Strat4 26
+
+Strat3 56
+Strat5 51
+Strat1 50
+Strat6 49
+Strat4 41
+Strat2 33
+
+Strat6 59
+Strat5 54
+Strat3 47
+Strat1 39
+Strat4 39
+Strat2 38
+
+Strat3 62
+Strat2 61
+Strat6 51
+Strat5 42
+Strat1 35
+Strat4 31
+
+Strat5 62
+Strat6 52
+Strat1 50
+Strat2 44
+Strat3 42
+Strat4 31
+
+Strat5 59
+Strat2 51
+Strat3 47
+Strat4 43
+Strat6 39
+Strat1 37
+
+Strat3 54
+Strat6 53
+Strat5 52
+Strat2 50
+Strat1 47
+Strat4 23
+
+Strat5 66
+Strat2 58
+Strat6 49
+Strat3 38
+Strat1 35
+Strat4 29
+
+Strat6 57
+Strat3 48
+Strat2 47
+Strat5 45
+Strat1 41
+Strat4 39
+
+Strat5 56
+Strat3 50
+Strat4 48
+Strat6 46
+Strat1 43
+Strat2 35
+
+Strat1 53
+Strat3 50
+Strat2 50
+Strat5 49
+Strat6 44
+Strat4 33
+
+Strat6 54
+Strat5 54
+Strat2 47
+Strat1 46
+Strat3 45
+Strat4 29
+
+Strat6 52
+Strat3 52
+Strat5 47
+Strat1 46
+Strat2 45
+Strat4 37
+
+Strat5 54
+Strat1 53
+Strat6 49
+Strat2 48
+Strat3 40
+Strat4 39
+
+Strat2 58
+Strat6 55
+Strat5 53
+Strat3 48
+Strat1 34
+Strat4 33
+
+Strat3 53
+Strat5 52
+Strat1 51
+Strat2 45
+Strat6 43
+Strat4 31
+
+Strat1 54
+Strat3 51
+Strat2 51
+Strat5 48
+Strat6 44
+Strat4 27
+
+Strat5 50
+Strat6 50
+Strat1 49
+Strat3 48
+Strat2 43
+Strat4 35
+
+Strat2 62
+Strat1 49
+Strat3 48
+Strat5 47
+Strat6 46
+Strat4 27
+
+Strat2 64
+Strat5 48
+Strat6 44
+Strat3 41
+Strat4 41
+Strat1 36
+
+Strat6 56
+Strat3 55
+Strat1 53
+Strat5 51
+Strat2 38
+Strat4 25
+
+Strat3 61
+Strat2 54
+Strat1 51
+Strat6 44
+Strat5 42
+Strat4 27
+
+Strat5 59
+Strat3 53
+Strat2 51
+Strat6 46
+Strat1 41
+Strat4 32
+
+Strat1 55
+Strat6 52
+Strat5 51
+Strat2 50
+Strat3 45
+Strat4 23
+
+Strat3 56
+Strat5 56
+Strat1 53
+Strat6 46
+Strat2 37
+Strat4 31
+
+Strat5 58
+Strat6 52
+Strat2 51
+Strat3 44
+Strat1 42
+Strat4 34
+
+Strat5 58
+Strat3 52
+Strat2 47
+Strat6 45
+Strat1 45
+Strat4 29
+
+Strat6 55
+Strat3 52
+Strat5 51
+Strat2 47
+Strat1 46
+Strat4 27
+
+Strat3 59
+Strat1 54
+Strat5 49
+Strat2 47
+Strat6 45
+Strat4 25
+
+Strat6 58
+Strat5 50
+Strat1 48
+Strat3 46
+Strat2 45
+Strat4 27
+
+Strat5 63
+Strat3 54
+Strat2 53
+Strat6 48
+Strat1 34
+Strat4 31
+
+Strat5 59
+Strat6 49
+Strat2 47
+Strat1 44
+Strat3 43
+Strat4 39
+
+Strat3 56
+Strat6 55
+Strat2 50
+Strat1 43
+Strat5 40
+Strat4 28
+
+Strat2 63
+Strat5 58
+Strat3 49
+Strat6 45
+Strat4 32
+Strat1 28
+
+Strat5 57
+Strat2 54
+Strat3 48
+Strat6 48
+Strat4 41
+Strat1 30
+
+Strat5 58
+Strat6 57
+Strat3 53
+Strat4 38
+Strat2 38
+Strat1 33
+
+Strat2 59
+Strat5 53
+Strat6 51
+Strat3 49
+Strat1 35
+Strat4 29
+
+Strat6 52
+Strat2 50
+Strat3 49
+Strat5 49
+Strat1 42
+Strat4 32
+
+Strat3 56
+Strat5 56
+Strat2 54
+Strat6 41
+Strat1 38
+Strat4 36
+
+Strat3 68
+Strat6 58
+Strat5 46
+Strat2 39
+Strat1 38
+Strat4 29
+
+Strat5 59
+Strat6 59
+Strat2 49
+Strat3 42
+Strat1 40
+Strat4 27
+
+Strat2 53
+Strat3 50
+Strat6 50
+Strat5 47
+Strat1 38
+Strat4 37
+
+Strat2 53
+Strat3 52
+Strat6 51
+Strat5 49
+Strat1 46
+Strat4 27
+
+Strat5 55
+Strat2 54
+Strat6 49
+Strat3 48
+Strat1 37
+Strat4 33
+
+Strat3 58
+Strat5 56
+Strat6 49
+Strat2 46
+Strat4 34
+Strat1 34
+
+Strat3 61
+Strat5 55
+Strat6 49
+Strat2 48
+Strat1 39
+Strat4 28
+
+Strat2 51
+Strat3 50
+Strat5 50
+Strat4 45
+Strat6 43
+Strat1 39
+
+Strat5 56
+Strat3 52
+Strat2 50
+Strat1 46
+Strat6 44
+Strat4 26
+
+Strat2 54
+Strat6 54
+Strat5 51
+Strat1 49
+Strat3 42
+Strat4 31
+
+Strat5 55
+Strat3 53
+Strat2 52
+Strat1 47
+Strat6 39
+Strat4 29
+
+Strat2 60
+Strat1 54
+Strat5 52
+Strat3 44
+Strat6 42
+Strat4 28
+
+Strat6 54
+Strat5 51
+Strat2 51
+Strat1 46
+Strat3 44
+Strat4 26
+
+Strat3 55
+Strat5 53
+Strat6 51
+Strat2 48
+Strat1 43
+Strat4 28
+
+Strat3 58
+Strat5 54
+Strat6 50
+Strat2 49
+Strat4 36
+Strat1 29
+
+Strat6 61
+Strat5 58
+Strat3 55
+Strat2 42
+Strat1 36
+Strat4 28
+
+Strat3 53
+Strat2 51
+Strat1 49
+Strat6 47
+Strat5 45
+Strat4 33
+
+Strat2 55
+Strat6 53
+Strat3 49
+Strat4 43
+Strat5 43
+Strat1 31
+
+Strat3 64
+Strat5 57
+Strat6 52
+Strat1 43
+Strat2 41
+Strat4 22
+
+Strat1 62
+Strat3 56
+Strat6 48
+Strat5 47
+Strat2 43
+Strat4 24
+
+Strat2 60
+Strat5 54
+Strat6 50
+Strat3 39
+Strat1 38
+Strat4 36
+
+Strat3 60
+Strat5 50
+Strat2 49
+Strat6 44
+Strat1 41
+Strat4 31
+
+Strat5 58
+Strat6 51
+Strat1 50
+Strat3 48
+Strat2 42
+Strat4 29
+
+Strat6 60
+Strat2 57
+Strat5 50
+Strat3 41
+Strat4 33
+Strat1 33
+
+Strat5 59
+Strat1 50
+Strat3 47
+Strat2 44
+Strat6 39
+Strat4 38
+
+Strat6 61
+Strat3 56
+Strat2 51
+Strat4 40
+Strat5 39
+Strat1 33
+
+Strat6 51
+Strat5 50
+Strat2 50
+Strat1 49
+Strat3 47
+Strat4 28
+
+Strat3 60
+Strat5 55
+Strat2 53
+Strat6 47
+Strat4 39
+Strat1 28
+
+Strat5 60
+Strat6 58
+Strat3 45
+Strat2 39
+Strat1 38
+Strat4 38
+
+Strat1 53
+Strat3 52
+Strat2 50
+Strat6 49
+Strat5 46
+Strat4 28
+
+Strat6 54
+Strat2 52
+Strat5 51
+Strat1 41
+Strat3 38
+Strat4 37
+
+Strat5 66
+Strat3 49
+Strat1 44
+Strat2 44
+Strat6 42
+Strat4 31
+
+Strat6 60
+Strat3 51
+Strat5 48
+Strat1 47
+Strat2 39
+Strat4 34
+
+Strat6 56
+Strat5 53
+Strat1 51
+Strat3 50
+Strat2 41
+Strat4 30
+
+Strat3 58
+Strat5 54
+Strat6 44
+Strat1 42
+Strat2 39
+Strat4 36
+
+Strat3 55
+Strat6 54
+Strat1 49
+Strat5 47
+Strat2 41
+Strat4 31
+
+Strat3 56
+Strat1 56
+Strat5 55
+Strat2 43
+Strat6 42
+Strat4 28
+
+Strat5 60
+Strat1 52
+Strat3 47
+Strat6 45
+Strat2 38
+Strat4 38
+
+Strat3 56
+Strat6 53
+Strat2 51
+Strat5 50
+Strat1 46
+Strat4 25
+
+Strat5 52
+Strat1 47
+Strat2 47
+Strat6 47
+Strat3 46
+Strat4 35
+
+Strat6 54
+Strat2 53
+Strat3 52
+Strat5 42
+Strat4 38
+Strat1 38
+
+Strat5 56
+Strat3 50
+Strat6 49
+Strat1 47
+Strat2 43
+Strat4 33
+
+Strat5 66
+Strat1 54
+Strat6 51
+Strat3 42
+Strat2 34
+Strat4 28
+
+Strat5 56
+Strat2 52
+Strat1 44
+Strat6 44
+Strat3 39
+Strat4 37
+
+Strat5 61
+Strat6 49
+Strat3 48
+Strat2 45
+Strat1 43
+Strat4 33
+
+Strat3 58
+Strat6 52
+Strat2 48
+Strat5 46
+Strat4 37
+Strat1 37
+
+Strat5 53
+Strat6 50
+Strat1 49
+Strat3 47
+Strat2 46
+Strat4 29
+
+Strat3 57
+Strat5 54
+Strat6 50
+Strat2 45
+Strat1 43
+Strat4 31
+
+Strat5 57
+Strat2 52
+Strat6 51
+Strat3 49
+Strat1 40
+Strat4 29
+
+Strat3 52
+Strat2 52
+Strat5 50
+Strat6 49
+Strat1 47
+Strat4 32
+
+Strat6 55
+Strat5 53
+Strat2 45
+Strat3 44
+Strat1 44
+Strat4 40
+
+Strat3 55
+Strat2 55
+Strat5 47
+Strat1 43
+Strat4 38
+Strat6 35
+
+Strat6 63
+Strat2 55
+Strat3 47
+Strat1 40
+Strat5 38
+Strat4 34
+
+Strat6 51
+Strat5 50
+Strat3 47
+Strat4 45
+Strat1 42
+Strat2 41
+
+Strat3 58
+Strat5 56
+Strat2 51
+Strat1 40
+Strat4 36
+Strat6 36
+
+Strat2 60
+Strat5 55
+Strat3 52
+Strat6 48
+Strat1 41
+Strat4 28
+
+Strat5 55
+Strat3 47
+Strat6 47
+Strat2 44
+Strat1 43
+Strat4 38
+
+Strat5 52
+Strat6 52
+Strat3 49
+Strat2 48
+Strat1 47
+Strat4 27
+
+Strat2 56
+Strat6 56
+Strat5 54
+Strat1 45
+Strat3 45
+Strat4 26
+
+Strat6 57
+Strat2 53
+Strat5 52
+Strat3 44
+Strat4 35
+Strat1 31
+
+Strat6 58
+Strat3 54
+Strat5 50
+Strat2 44
+Strat1 43
+Strat4 33
+
+Strat6 56
+Strat3 54
+Strat2 51
+Strat5 47
+Strat1 40
+Strat4 32
+
+Strat3 60
+Strat2 54
+Strat5 49
+Strat6 46
+Strat1 40
+Strat4 29
+
+Strat2 55
+Strat6 53
+Strat3 52
+Strat5 44
+Strat4 37
+Strat1 37
+
+Strat5 53
+Strat1 51
+Strat3 48
+Strat6 48
+Strat2 44
+Strat4 35
+
+Strat3 62
+Strat5 52
+Strat1 50
+Strat2 49
+Strat6 42
+Strat4 27
+
+Strat1 59
+Strat5 57
+Strat3 43
+Strat2 42
+Strat6 40
+Strat4 39
+
+Strat3 56
+Strat5 56
+Strat1 50
+Strat2 43
+Strat6 42
+Strat4 35
+
+Strat3 57
+Strat6 54
+Strat5 48
+Strat2 42
+Strat4 41
+Strat1 40
+
+Strat5 58
+Strat3 50
+Strat1 46
+Strat6 44
+Strat2 42
+Strat4 34
+
+Strat2 53
+Strat6 52
+Strat3 50
+Strat5 46
+Strat1 44
+Strat4 37
+
+Strat2 61
+Strat6 57
+Strat3 55
+Strat1 45
+Strat5 40
+Strat4 25
+
+Strat3 57
+Strat6 57
+Strat5 52
+Strat1 44
+Strat2 42
+Strat4 25
+
+Strat5 61
+Strat2 50
+Strat6 50
+Strat3 41
+Strat1 38
+Strat4 33
+
+Strat2 56
+Strat6 51
+Strat5 50
+Strat3 47
+Strat1 43
+Strat4 30
+
+Strat5 60
+Strat3 54
+Strat6 50
+Strat2 50
+Strat4 34
+Strat1 34
+
+Strat3 59
+Strat6 57
+Strat2 47
+Strat5 46
+Strat1 38
+Strat4 28
+
+Strat5 56
+Strat1 50
+Strat2 46
+Strat6 44
+Strat4 39
+Strat3 38
+
+Strat5 60
+Strat1 56
+Strat2 47
+Strat3 43
+Strat6 41
+Strat4 32
+
+Strat5 57
+Strat1 56
+Strat6 55
+Strat3 42
+Strat2 35
+Strat4 34
+
+Strat2 55
+Strat6 55
+Strat3 46
+Strat5 46
+Strat1 43
+Strat4 30
+
 Strat3 58
 Strat5 53
 Strat2 52
-Strat1 36
+Strat1 48
+Strat6 40
+Strat4 29
 
-Strat2 62
-Strat3 56
-Strat6 54
+Strat6 52
 Strat5 51
+Strat2 49
+Strat3 46
+Strat1 43
+Strat4 39
+
+Strat3 57
+Strat5 57
+Strat1 52
+Strat6 47
+Strat2 35
+Strat4 30
+
+Strat1 55
+Strat5 51
+Strat6 50
+Strat3 47
+Strat2 46
+Strat4 30
+
+Strat2 61
+Strat3 60
+Strat6 49
+Strat1 41
+Strat5 39
+Strat4 27
+
+Strat2 54
+Strat6 49
+Strat1 48
+Strat3 46
+Strat5 45
+Strat4 35
+
+Strat6 58
+Strat1 50
+Strat3 47
+Strat5 46
+Strat2 40
+Strat4 36
+
+Strat6 58
+Strat3 56
+Strat5 49
+Strat2 45
+Strat1 40
+Strat4 29
+
+Strat5 55
+Strat3 55
+Strat1 51
+Strat2 44
+Strat6 40
+Strat4 36
+
+Strat1 57
+Strat3 53
+Strat5 51
+Strat6 45
+Strat2 40
+Strat4 31
+
+Strat5 58
+Strat3 57
+Strat6 53
+Strat1 46
+Strat2 31
+Strat4 29
+
+Strat2 56
+Strat3 51
+Strat6 50
+Strat5 46
+Strat1 45
+Strat4 30
+
+Strat2 63
+Strat5 51
+Strat6 48
+Strat1 45
+Strat3 42
+Strat4 28
+
+Strat5 53
+Strat3 52
+Strat6 52
+Strat2 48
+Strat1 43
+Strat4 32
+
+Strat3 57
+Strat5 53
+Strat1 52
+Strat2 49
+Strat6 34
+Strat4 31
+
+Strat3 61
+Strat6 52
+Strat5 51
+Strat2 46
+Strat1 39
+Strat4 33
+
+Strat2 54
+Strat1 49
+Strat5 49
+Strat3 48
+Strat4 40
+Strat6 40
+
+Strat3 53
+Strat5 48
+Strat1 47
+Strat6 44
+Strat2 42
+Strat4 39
+
+Strat5 55
+Strat1 53
+Strat3 52
+Strat6 48
+Strat2 41
+Strat4 31
+
+Strat2 54
+Strat3 49
+Strat6 49
+Strat4 44
+Strat1 41
+Strat5 40
+
+Strat5 55
+Strat2 55
+Strat3 52
+Strat6 43
+Strat4 38
+Strat1 33
+
+Strat3 57
+Strat6 54
+Strat5 49
+Strat1 42
+Strat2 41
+Strat4 33
+
+Strat3 54
+Strat6 54
+Strat5 52
+Strat2 45
+Strat1 39
+Strat4 34
+
+Strat2 55
+Strat5 53
+Strat3 50
+Strat6 49
+Strat1 44
+Strat4 26
+
+Strat6 54
+Strat1 53
+Strat5 52
+Strat3 45
+Strat2 38
+Strat4 38
+
+Strat6 56
+Strat5 54
+Strat3 51
+Strat1 44
+Strat2 43
+Strat4 33
+
+Strat1 59
+Strat5 54
+Strat2 52
+Strat3 49
+Strat6 45
+Strat4 21
+
+Strat2 57
+Strat5 54
+Strat3 50
+Strat6 48
+Strat1 37
+Strat4 30
+
+Strat6 59
+Strat5 57
+Strat1 44
+Strat3 44
+Strat2 43
+Strat4 29
+
+Strat6 52
+Strat1 52
+Strat5 50
+Strat2 47
+Strat3 42
+Strat4 37
+
+Strat3 57
+Strat5 56
+Strat2 48
+Strat6 40
+Strat1 40
+Strat4 32
+
+Strat3 57
+Strat5 55
+Strat2 52
+Strat6 41
 Strat1 38
+Strat4 34
+
+Strat3 54
+Strat6 52
+Strat1 51
+Strat5 46
+Strat4 38
+Strat2 33
+
+Strat2 53
+Strat3 53
+Strat5 49
+Strat1 49
+Strat6 45
+Strat4 27
+
+Strat2 57
+Strat5 48
+Strat3 48
+Strat6 46
+Strat1 44
+Strat4 37
+
+Strat5 57
+Strat2 56
+Strat6 48
+Strat1 39
+Strat3 38
+Strat4 35
+
+Strat3 56
+Strat6 52
+Strat5 50
+Strat1 43
+Strat2 42
+Strat4 35
+
+Strat5 60
+Strat3 53
+Strat1 48
+Strat6 46
+Strat2 43
+Strat4 23
 
