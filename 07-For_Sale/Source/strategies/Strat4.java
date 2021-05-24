@@ -26,6 +26,22 @@ public class Strat4 implements Strategy {
   private int medianIdx;
   private Card medianCard;
 
+  private int getToRemove(List<PlayerRecord> players) {
+    int toRemove;
+    switch (players.size()){
+        case 3:
+            toRemove = 6;
+            break;
+        case 4:
+            toRemove = 2;
+            break;
+        default:
+            toRemove = 0;
+            break;
+    }
+    return toRemove;
+  }
+
   /**
     * Strat4's bidding strategy is to go for the median card on each round.
     * At the start of every round, find out what the median card is and keep
@@ -40,15 +56,17 @@ public class Strat4 implements Strategy {
     // If this is the first round, work out the index of the median card.
     // idx = floor(number of cards on table / 2)
     List<Card> cardsInAuction = a.getCardsInAuction();
+    List<Card> cardsInDeck = a.getCardsInDeck();
     List<PlayerRecord> players = a.getPlayers();
-    if (a.getCardsInDeck().size() < prevCardsInDeck){
-        prevCardsInDeck = a.getCardsInDeck().size();
-        medianIdx = (int) Math.floor(prevCardsInDeck / 2);
+    if (cardsInDeck.size() == NUM_OF_CARDS - getToRemove(players)){
+        prevCardsInDeck = cardsInDeck.size();
+        medianIdx = (int) Math.floor(players.size() / 2);
         medianCard = cardsInAuction.get(medianIdx);
     }
     if (cardsInAuction.indexOf(medianCard) < 1) {
         return -1;
     }
+    prevCardsInDeck = cardsInDeck.size();
     return a.getCurrentBid() + 1;
   }
 

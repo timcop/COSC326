@@ -26,7 +26,7 @@ public class Test {
         }
         players.add(new Player("Strat6", new Strat6()));
         players.add(new Player("Strat5", new Strat5()));
-        // players.add(new Player("Strat4", new Strat4()));
+        players.add(new Player("Strat4", new Strat4()));
         players.add(new Player("Strat3", new Strat3()));
         players.add(new Player("Strat2", new Strat2()));
         players.add(new Player("Strat1", new Strat1()));
