@@ -1,0 +1,30 @@
+Strat2 71
+Strat5 64
+Strat6 62
+Strat1 41
+Strat3 30
+
+Strat5 62
+Strat2 62
+Strat6 59
+Strat1 46
+Strat3 39
+
+Strat6 65
+Strat5 62
+Strat1 54
+Strat2 49
+Strat3 35
+
+Strat2 69
+Strat5 58
+Strat6 55
+Strat1 45
+Strat3 37
+
+Strat6 62
+Strat5 61
+Strat1 54
+Strat2 53
+Strat3 35
+

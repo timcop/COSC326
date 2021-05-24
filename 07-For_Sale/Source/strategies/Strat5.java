@@ -80,6 +80,4 @@ public class Strat5 implements Strategy {
       return p.getCards().get((int) (Math.random()*card_length));
     }
   }
-
-
 }

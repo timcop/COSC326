@@ -4,6 +4,10 @@ import forsale.strategies.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.*;
+
+import java.io.*;
+
 
 /**
  *
@@ -29,7 +33,20 @@ public class Test {
         java.util.Collections.shuffle(players);
         GameManager g = new GameManager(players);
         g.run();
-        System.out.println(g);
-        }
+        // System.out.println(g);
+        List<PlayerRecord> final_standings = g.getFinalStandings();
 
+        final_standings.sort(Comparator.comparing(PlayerRecord::getCash));
+        Collections.reverse(final_standings);
+        try (FileWriter f = new FileWriter("scores.txt", true);
+                BufferedWriter b = new BufferedWriter(f);
+                PrintWriter p = new PrintWriter(b);) {
+                for (PlayerRecord player : final_standings) {
+                    p.println(player.getName() + " " + player.getCash());
+                }
+                p.println();
+        } catch (IOException i) {
+            i.printStackTrace();
+        }
+    }
 }

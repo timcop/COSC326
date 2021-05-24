@@ -48,9 +48,19 @@ public class Strat6 implements Strategy {
         int max_bid = stack/2;
 
         int turns_left = a.getCardsInDeck().size()/num_players;
+        // UNCOMMENT FOR LINEAR RANGE
+        // if (min_std != max_std) {
+        //     for (int i = 0; i < range_std.size()-1; i++) {
+        //         if (curr_std >= range_std.get(i) && curr_std <= range_std.get(i+1)) {
+        //             max_bid = i*stack/6;
+        //         }
+        //     }
+        // }
+
+        // NORMAL RANGE
         if (min_std != max_std) {
-            for (int i = 0; i < range_std.size()-1; i++) {
-                if (curr_std >= range_std.get(i) && curr_std <= range_std.get(i+1)) {
+            for (int i = 0; i < normal.size()-1; i++) {
+                if (curr_std >= normal.get(i) && curr_std <= normal.get(i+1)) {
                     max_bid = i*stack/6;
                 }
             }
@@ -66,7 +76,7 @@ public class Strat6 implements Strategy {
         //     return bid + 1;
         // }
 
-
+        // ODD AND EVEN BIDS
         if (bid < max_bid) {
             return bid + 1;
         }
@@ -268,7 +278,7 @@ public class Strat6 implements Strategy {
     private List<Double> normalRange (List<Double> rangeStd, double min_std, double max_std) {
         double mean_std = (max_std+min_std)/2;
         List<Double> range = new ArrayList<Double>();
-        double std = 1;
+        double std = 2;
 
         for (double x : rangeStd) {
             if (x == min_std) {
