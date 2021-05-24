@@ -47,11 +47,11 @@ public class Strat5 implements Strategy {
    */
   public Card chooseCard(PlayerRecord p, SaleState s) {
     //Calcuate the standard deviation.
-    System.out.println(p.getCards());
+    // System.out.println(p.getCards());
     List<Card> cards = p.getCards();
-    if (cards.size() != 0) {
+    int card_length = cards.size();
+    if (card_length != 0) {
         cards.sort(Comparator.comparing(Card::getQuality));
-        System.out.println(cards);
     }
     double stddeviation = 0;
     long mean = 0;
@@ -67,17 +67,17 @@ public class Strat5 implements Strategy {
     stddeviation = Math.sqrt(stddeviation);
     if (MAX_STD_DEV[num_players-2] - stddeviation <= TIMS_CONSTANT) {
       //bet your highest card.
-      return p.getCards().get(0);
+      return p.getCards().get(card_length-1);
     }
     if (stddeviation - MIN_STD_DEV[num_players-2] <= TIMS_CONSTANT) {
       //bet your lowest card.
-      return p.getCards().get(p.getCards().size()-1);
+      return p.getCards().get(0);
     }
     if (Math.abs(stddeviation - (MAX_STD_DEV[num_players-2] - MIN_STD_DEV[num_players-2])/2) <= TIMS_CONSTANT) {
       //bet middle card.
-      return p.getCards().get( (int) p.getCards().size()/2);
+      return p.getCards().get( (int) card_length/2);
     } else {
-      return p.getCards().get((int) (Math.random()*p.getCards().size()));
+      return p.getCards().get((int) (Math.random()*card_length));
     }
   }
 
