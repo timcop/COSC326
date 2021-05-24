@@ -21,7 +21,7 @@ public class Strat4 implements Strategy {
   private static final double TIMS_CONSTANT = 2.2;
   private static final double[] MIN_STD_DEV = new double[]{0, Math.sqrt(2/9), Math.sqrt(1/4), Math.sqrt(3/5), Math.sqrt(2/3)};
   private static final double[] MAX_STD_DEV = new double[]{7.5, Math.sqrt(50), 7.5, Math.sqrt(51.76), Math.sqrt(51.58)};
-  
+
   private int prevCardsInDeck = 31;
   private int medianIdx;
   private Card medianCard;
@@ -62,6 +62,11 @@ public class Strat4 implements Strategy {
    */
   public Card chooseCard(PlayerRecord p, SaleState s) {
     //Calcuate the standard deviation.
+    List<Card> cards = p.getCards();
+    int card_length = cards.size();
+    if (card_length != 0) {
+        cards.sort(Comparator.comparing(Card::getQuality));
+    }
     double stddeviation = 0;
     long mean = 0;
     int num_players = s.getPlayers().size();

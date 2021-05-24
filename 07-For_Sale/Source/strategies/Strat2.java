@@ -14,7 +14,7 @@ import java.util.*;
  * set hardcoded values based on the table's std deviation.
  */
 public class Strat2 implements Strategy {
-  
+
   private static double upper_bound = 0;
 
   /** Strat 2's bidding strategy is to always bid to an even number up until half
@@ -36,6 +36,11 @@ public class Strat2 implements Strategy {
    * of the cards on the table to choose whether to play high or low.
    */
   public Card chooseCard(PlayerRecord p, SaleState s) {
+    List<Card> cards = p.getCards();
+    int card_length = cards.size();
+    if (card_length != 0) {
+        cards.sort(Comparator.comparing(Card::getQuality));
+    }
     //Calcuate the standard deviation.
     double stddeviation = 0;
     long mean = 0;

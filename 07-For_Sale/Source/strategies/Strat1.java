@@ -31,6 +31,11 @@ public class Strat1 implements Strategy {
    * of the cards on the table to choose whether to play high or low.
    */
   public Card chooseCard(PlayerRecord p, SaleState s) {
+    List<Card> cards = p.getCards();
+    int card_length = cards.size();
+    if (card_length != 0) {
+        cards.sort(Comparator.comparing(Card::getQuality));
+    }
     //Calcuate the standard deviation.
     double stddeviation = 0;
     long mean = 0;
