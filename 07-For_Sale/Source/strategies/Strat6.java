@@ -278,7 +278,7 @@ public class Strat6 implements Strategy {
     private List<Double> normalRange (List<Double> rangeStd, double min_std, double max_std) {
         double mean_std = (max_std+min_std)/2;
         List<Double> range = new ArrayList<Double>();
-        double std = 2;
+        double std = 1;
 
         for (double x : rangeStd) {
             if (x == min_std) {
