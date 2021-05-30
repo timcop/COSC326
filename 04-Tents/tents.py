@@ -6,68 +6,87 @@ import numpy as np
 EMPTY = 0
 TREE = -1
 TENT = 1
+CROSS = 2
 
 problem = []
 problems_all = []
 tree_list = []
 
+def crossOutRow(tree_array, row_num, col_length):
+    for col in range(col_length):
+        if tree_array[row_num, col] == EMPTY:
+            tree_array[row_num, col] = CROSS
+    return tree_array
+
+def crossOutCol(tree_array, col_num, row_length):
+    for row in range(row_length):
+        if tree_array[row, col_num] == EMPTY:
+            tree_array[row, col_num] = CROSS
+    return tree_array
+
+# First stage, this removes potential locations for tents to go
+# by finding the 0's
+def crossOutZeroRows(tree_array, row_counts, col_counts):
+    for row, num in enumerate(row_counts):
+        if num == 0:
+            tree_array = crossOutRow(tree_array, row, len(col_counts))
+    for col, num in enumerate(col_counts):
+        if num == 0:
+            tree_array = crossOutCol(tree_array, col, len(row_counts))
+    return tree_array
+
+# Second Stage, find cells that are too far away from a tree and so should
+# not contain a tent.
+def crossOutFarAway(tree_array, row_length, col_length):
+    for row in range(row_length):
+        for col in range(col_length):
+            found_tree = False
+            try:
+                if tree_array[row - 1, col] == TREE:
+                    # left
+                    found_tree = True
+            except:
+                pass
+            try:
+                if tree_array[row, col - 1] == TREE:
+                    # top
+                    found_tree = True
+            except:
+                pass
+            try:
+                if tree_array[row + 1, col] == TREE:
+                    # right
+                    found_tree = True
+            except:
+                pass
+            try:
+                if tree_array[row, col + 1] == TREE:
+                    # bottom
+                    found_tree = True
+            except:
+                pass
+            if not found_tree:
+                if tree_array[row, col] == EMPTY:
+                    tree_array[row, col] = CROSS
+    return tree_array
+
 def solveProblem(tree_list, row_counts, col_counts):
     tree_array = np.array(tree_list)
-    # First stage, this removes potential locations for tents to go
-    # by finding the 0's
-    for row, num in enumerate(row_counts):
-        if num == "0":
-            tree_array[row] = -1  #* np.ones(len(col_counts))
-    for col, num in enumerate(col_counts):
-        if num == '0':
-            tree_array[:, col] = -1
 
-    for row, row_num in enumerate(row_counts):
-        if row_num == '0':
-            tree_array[row] = -1
-        else:
-            for col, col_num in enumerate(col_counts):
-                if col_num == '0':
-                    tree_array[:, col] = -1
-                else:
-                    # Check if tree is adjacent.
-                    found_tree = False
-                    # Need to wrap in try/except as can get out of bounds error
-                    while True:
-                        try:
-                            if tree_list[row - 1][col] == -1:
-                                found_tree = True
-                                break
-                        except:
-                            pass
-                        try:
-                            if tree_list[row][col - 1] == -1:
-                                found_tree = True
-                                break
-                        except:
-                            pass
-                        try:
-                            if tree_list[row + 1][col] == -1:
-                                found_tree = True
-                                break
-                        except:
-                            pass
-                        try:
-                            if tree_list[row][col + 1] == -1:
-                                found_tree = True
-                                break
-                        except:
-                            pass
-                        break
-                    if not found_tree:
-                        tree_array[row][col] = -1
-        ## At this stage we want to loop through the array placing tents
-        ## where we think they can go until it's filled up.
+    tree_array = crossOutZeroRows(tree_array, row_counts, col_counts)
+    print(tree_array)
+
+    tree_array = crossOutFarAway(tree_array, len(row_counts), len(col_counts))
+    print(tree_array)
+    ## At this stage we want to loop through the array placing tents
+    ## where we think they can go until it's filled up.
+    # {JK} Program works up to here... 30/05/21
+
+    # In rows and/or columns where the number corresponds to the number of
+    #  free cells, you may place a tent in all those free cells.
     total_tents = sum(row_counts)
     placed = 0
-    print(tree_array)
     while placed < total_tents:
-        print(placed)
         # Perform operation on rows
         ## MARK ALL SURROUNDING TILES WITH -1 AFTER PLACEMENT
         for row, row_num in enumerate(row_counts):
