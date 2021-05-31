@@ -1,5 +1,6 @@
 import sys
 import numpy as np
+import copy
 
 # INPUT
 
@@ -182,16 +183,66 @@ def isSolved(tree_array, row_counts, col_counts):
             return False
     return True
 
-# This needs updating, the logic needs to be much better. JK 31.05.31
-# This is also going to be an expensive function.
+# This function adds a cross in a copy of the tree array at each location
+# adjacent to a possible tent.
+def excludePossibleAdjacent(tree_array, row, col, row_length, col_length):
+    array_copy = copy.deepcopy(tree_array)
+    try:
+        #left
+        if array_copy[row - 1, col] == EMPTY:
+            array_copy[row -1, col] = CROSS
+    except:
+        pass
+    try:
+        #top
+        if array_copy[row, col - 1] == EMPTY:
+            array_copy[row, col - 1] = CROSS
+    except:
+        pass
+    try:
+        #right
+        if array_copy[row + 1, col] == EMPTY:
+            array_copy[row + 1, col] = CROSS
+    except:
+        pass
+    if col < col_length - 1:
+        #bottom
+        if array_copy[row, col + 1] == EMPTY:
+            array_copy[row, col + 1] = CROSS
+
+    return array_copy
+
+def excludeAllPossible(tree_array, array_list, row, col):
+    start_tree = array_list[0]
+    for tree in array_list[1:]:
+        if start_tree[row, col] != tree[row, col]:
+            return tree_array
+    tree_array[row, col] = CROSS
+    return tree_array
+
 def cornerCase(tree_array, row_length, col_length):
     for row in range(row_length):
         for col in range(col_length):
             if tree_array[row, col] == TREE:
-                # create a n.n matrix for each spot next to each tree.
-                # if all the matrices for a tree have an cross in a square, we can place a
-                # cross in that square.
-                # surely there's a numpy function for this.
+                array_list = list()
+                if row > 0:
+                    if tree_array[row - 1, col] == EMPTY:
+                        print("left")
+                        array_list.append(excludePossibleAdjacent(tree_array, row - 1, col))
+                if col > 0:
+                    if tree_array[row, col - 1] == EMPTY:
+                        array_list.append(excludePossibleAdjacent(tree_array, row, col - 1))
+                if row < row_length - 1:
+                    #right
+                    if tree_array[row + 1, col] == EMPTY:
+                        array_list.append(excludePossibleAdjacent(tree_array, row + 1, col))
+                if col < col_length - 1:
+                    #bottom
+                    if tree_array[row, col + 1] == EMPTY:
+                        array_list.append(excludePossibleAdjacent(tree_array, row, col + 1))
+                if len(array_list) > 1:
+                    tree_array = excludeAllPossible(tree_array, array_list, row, col)
+
     return tree_array
 
 def solveProblem(tree_list, row_counts, col_counts):
@@ -202,16 +253,13 @@ def solveProblem(tree_list, row_counts, col_counts):
     tree_array = crossOutFarAway(tree_array, len(row_counts), len(col_counts))
 
     tree_array = cornerCase(tree_array, len(row_counts), len(col_counts))
-
     # In rows and/or columns where the number corresponds to the number of
     #  free cells, you may place a tent in all those free cells.
     while True:
         tree_array = placeTents(tree_array, row_counts, col_counts)
         tree_array = crossOutTentConnection(tree_array, len(row_counts), len(col_counts))
         tree_array = crossOutFull(tree_array, row_counts, col_counts)
-        print(row_counts)
-        print(col_counts)
-        print(tree_array)
+
         if isSolved(tree_array, row_counts, col_counts):
             print("Solved!!")
             return
