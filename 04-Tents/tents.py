@@ -260,6 +260,35 @@ def cornerCase(tree_array, row_length, col_length):
 
     return tree_array
 
+# Nicely prints tree_array, row_counts, and col_counts
+def printProblem(tree_array, row_counts, col_counts):
+    for row in row_counts:
+        print(' ', row, end='')
+    print()
+    for i, num in enumerate(col_counts):
+        print(tree_array[i], " ", num)
+
+
+def placeRandomTent(tree_array, row_counts, col_counts):
+    i, j = 0
+    try:
+        while tree_array[i, j] != TREE:
+            if i = len(row_counts) - 1:
+                i = 0;
+                j += 1;
+            else:
+                i += 1;
+    except:
+        print("No trees in the array.")
+        exit(-1)
+    # find the free positions around the tent.
+    # for each position.
+        # Place a tent in that position.
+        # Check if that is a valid answer.
+        # If it is, return the valid tree.
+        # Else, continue.
+
+
 def solveProblem(tree_list, row_counts, col_counts):
     tree_array = np.array(tree_list)
     tree_array = crossOutZeroRows(tree_array, row_counts, col_counts)
@@ -275,12 +304,12 @@ def solveProblem(tree_list, row_counts, col_counts):
         tree_array = crossOutFull(tree_array, row_counts, col_counts)
         print(row_counts)
         print(col_counts)
-        print(tree_array)
+        printProblem(tree_array, row_counts, col_counts)
         tree_array = cornerCase(tree_array, len(row_counts), len(col_counts))
         # print(tree_array)
-        # if not placedATent:
+        if not placedATent:
             # Do we need to save the tree?
-            # placeRandomTent(tree_array, row_counts, col_counts)
+            placeRandomTent(tree_array, row_counts, col_counts)
         if isSolved(tree_array, row_counts, col_counts):
             print("Solved!!")
             return
