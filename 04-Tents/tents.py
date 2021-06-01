@@ -8,6 +8,7 @@ EMPTY = 0
 TREE = -1
 TENT = 1
 CROSS = 2
+POSSIBLE = 3
 
 problem = []
 problems_all = []
@@ -41,34 +42,26 @@ def crossOutZeroRows(tree_array, row_counts, col_counts):
 def crossOutFarAway(tree_array, row_length, col_length):
     for row in range(row_length):
         for col in range(col_length):
-            found_tree = False
-            try:
-                if tree_array[row - 1, col] == TREE:
-                    # left
-                    found_tree = True
-            except:
-                pass
-            try:
-                if tree_array[row, col - 1] == TREE:
-                    # top
-                    found_tree = True
-            except:
-                pass
-            try:
-                if tree_array[row + 1, col] == TREE:
-                    # right
-                    found_tree = True
-            except:
-                pass
-            try:
-                if tree_array[row, col + 1] == TREE:
-                    # bottom
-                    found_tree = True
-            except:
-                pass
-            if not found_tree:
-                if tree_array[row, col] == EMPTY:
-                    tree_array[row, col] = CROSS
+            if tree_array[row, col] == EMPTY:
+                found_tree = False
+                if col > 0:
+                    if tree_array[row, col - 1] == TREE:
+                        # left
+                        found_tree = True
+                if row > 0:
+                    if tree_array[row - 1, col] == TREE:
+                        # top
+                        found_tree = True
+                if col < col_length - 1 :
+                    if tree_array[row, col + 1] == TREE:
+                        # right
+                        found_tree = True
+                if row < row_length - 1:
+                    if tree_array[row + 1, col] == TREE:
+                        # bottom
+                        found_tree = True
+                if not found_tree:
+                        tree_array[row, col] = CROSS
     return tree_array
 
 # Count Empty counts the amount of zeroes in each row column.
@@ -86,6 +79,7 @@ def countTents(tree_array, row_length, col_length):
 # Place tents places tents in rows or columns that have free spaces equal to
 # the number of tents in that row.
 def placeTents(tree_array, row_counts, col_counts):
+    placedATent = False
     row_zeroes, col_zeroes = countEmpty(tree_array, len(row_counts), len(col_counts))
     row_tents, col_tents = countTents(tree_array, len(row_counts), len(col_counts))
     for row, num in enumerate(row_counts):
@@ -94,13 +88,15 @@ def placeTents(tree_array, row_counts, col_counts):
                 for col in range(len(col_counts)):
                     if tree_array[row, col] == EMPTY:
                         tree_array[row, col] = TENT
+                        placedATent = True
     for col, num in enumerate(col_counts):
         if col_tents[col] < num:
             if col_tents[col] + col_zeroes[col] == num:
                 for row in range(len(row_counts)):
                     if tree_array[row, col] == EMPTY:
                         tree_array[row, col] = TENT
-    return tree_array
+                        placedATent = True
+    return tree_array, placedATent
 
 # Crosses out empty spaces if the row or column has the correct number of tents.
 def crossOutFull(tree_array, row_counts, col_counts):
@@ -122,54 +118,38 @@ def crossOutTentConnection(tree_array, row_length, col_length):
     for row in range(row_length):
         for col in range(col_length):
             if tree_array[row, col] == TENT:
-                try:
-                    if tree_array[row - 1, col] == EMPTY:
+                if col > 0:
+                    if tree_array[row, col - 1] == EMPTY:
                         # left
-                        tree_array[row - 1, col] = CROSS
-                except:
-                    pass
-                try:
+                        tree_array[row, col - 1] = CROSS
+                if col > 0 and row > 0:
                     if tree_array[row - 1, col - 1] == EMPTY:
                         # top left
                         tree_array[row - 1, col - 1] = CROSS
-                except:
-                    pass
-                try:
-                    if tree_array[row, col - 1] == EMPTY:
+                if row > 0:
+                    if tree_array[row - 1, col] == EMPTY:
                         # top
-                        tree_array[row, col - 1] = CROSS
-                except:
-                    pass
-                try:
-                    if tree_array[row + 1, col - 1] == EMPTY:
+                        tree_array[row - 1, col] = CROSS
+                if col < (col_length - 1) and row > 0:
+                    if tree_array[row - 1, col + 1] == EMPTY:
                         # top right
-                        tree_array[row + 1, col - 1] = CROSS
-                except:
-                    pass
-                try:
-                    if tree_array[row + 1, col] == EMPTY:
+                        tree_array[row - 1, col + 1] = CROSS
+                if col < col_length - 1:
+                    if tree_array[row, col + 1] == EMPTY:
                         # right
-                        tree_array[row + 1, col] = CROSS
-                except:
-                    pass
-                try:
+                        tree_array[row, col + 1] = CROSS
+                if row < (row_length - 1) and col < (col_length - 1):
                     if tree_array[row + 1, col + 1] == EMPTY:
                         # bottom right
                         tree_array[row + 1, col + 1] = CROSS
-                except:
-                    pass
-                try:
-                    if tree_array[row, col + 1] == EMPTY:
+                if row < row_length - 1:
+                    if tree_array[row + 1, col] == EMPTY:
                         # bottom
-                        tree_array[row, col + 1] = CROSS
-                except:
-                    pass
-                try:
-                    if tree_array[row - 1, col + 1] == EMPTY:
+                        tree_array[row + 1, col] = CROSS
+                if row < (row_length - 1) and col > 0:
+                    if tree_array[row + 1, col - 1] == EMPTY:
                         # bottom left
-                        tree_array[row - 1, col + 1] = CROSS
-                except:
-                    pass
+                        tree_array[row + 1, col - 1] = CROSS
     return tree_array
 
 # Checks if the current puzzle has been solved.
@@ -187,79 +167,120 @@ def isSolved(tree_array, row_counts, col_counts):
 # adjacent to a possible tent.
 def excludePossibleAdjacent(tree_array, row, col, row_length, col_length):
     array_copy = copy.deepcopy(tree_array)
-    try:
+    if col > 0:
         #left
-        if array_copy[row - 1, col] == EMPTY:
-            array_copy[row -1, col] = CROSS
-    except:
-        pass
-    try:
-        #top
         if array_copy[row, col - 1] == EMPTY:
-            array_copy[row, col - 1] = CROSS
-    except:
-        pass
-    try:
-        #right
-        if array_copy[row + 1, col] == EMPTY:
-            array_copy[row + 1, col] = CROSS
-    except:
-        pass
+            array_copy[row, col - 1] = POSSIBLE
+    if row > 0:
+        #top
+        if array_copy[row - 1, col] == EMPTY:
+            array_copy[row - 1, col] = POSSIBLE
     if col < col_length - 1:
-        #bottom
+        #right
         if array_copy[row, col + 1] == EMPTY:
-            array_copy[row, col + 1] = CROSS
-
+            array_copy[row, col + 1] = POSSIBLE
+    if row < row_length - 1:
+        #bottom
+        if array_copy[row + 1, col] == EMPTY:
+            array_copy[row + 1, col] = POSSIBLE
+    if [row, col] == [4, 1] or [row, col] == [3, 0]:
+        print("copy:")
+        print(array_copy)
     return array_copy
 
-def excludeAllPossible(tree_array, array_list, row, col):
+# Exclude All Possible places a cross in the row, col position of the tree
+# array if all arrays in the array list also have a cross in that position.
+# Returns tree_array.
+def excludeAllPossible(tree_array, array_list, row, col, row_length, col_length):
     start_tree = array_list[0]
-    for tree in array_list[1:]:
-        if start_tree[row, col] != tree[row, col]:
-            return tree_array
-    tree_array[row, col] = CROSS
+    for i in range(row - 1, row + 2):
+        for j in range(col - 1, col + 2):
+            all_elements = True
+            for tree in array_list[1:]:
+                if i >= 0 and i < row_length and j >= 0 and j < row_length:
+                    if tree_array[i, j] == tree[i, j] or tree[i, j] != start_tree[i, j]:
+                        all_elements = False
+                        break
+                    if all_elements:
+                        tree_array[i, j] = CROSS
+
     return tree_array
 
+
+def excludeCorners(tree_array, row, col, row_length, col_length):
+    try:
+        if tree_array[row + 1, col] == CROSS:
+            tree_array[row_length, col_length]
+    except:
+        try:
+            if tree_array[row, col - 1] == CROSS:
+                tree_array[row_length, col_length]
+        except:
+            tree_array[row-1, col + 1] = CROSS
+    try:
+        if tree_array[row -1, col] == CROSS:
+            tree_array[row_length, col_length]
+    except:
+        try:
+            if tree_array[row, col + 1] == CROSS:
+                tree_array[row_length, col_length]
+        except:
+            tree_array[row+1, col - 1] = CROSS
+    #add left and bottom, top and right
+
+
+# Corner case checks if a square cannot have a tent in it if all possible spots
+# for a tree's tent would make it impossible for a tent to be in that spot.
 def cornerCase(tree_array, row_length, col_length):
     for row in range(row_length):
         for col in range(col_length):
             if tree_array[row, col] == TREE:
                 array_list = list()
-                if row > 0:
-                    if tree_array[row - 1, col] == EMPTY:
-                        print("left")
-                        array_list.append(excludePossibleAdjacent(tree_array, row - 1, col))
                 if col > 0:
+                    # left
                     if tree_array[row, col - 1] == EMPTY:
-                        array_list.append(excludePossibleAdjacent(tree_array, row, col - 1))
-                if row < row_length - 1:
-                    #right
-                    if tree_array[row + 1, col] == EMPTY:
-                        array_list.append(excludePossibleAdjacent(tree_array, row + 1, col))
+                        # print(row, col)
+                        # print(tree_array[row, col - 1])
+                        array_list.append(excludePossibleAdjacent(tree_array, row, col - 1, row_length, col_length))
                 if col < col_length - 1:
-                    #bottom
+                    # right
                     if tree_array[row, col + 1] == EMPTY:
-                        array_list.append(excludePossibleAdjacent(tree_array, row, col + 1))
-                if len(array_list) > 1:
-                    tree_array = excludeAllPossible(tree_array, array_list, row, col)
+                        array_list.append(excludePossibleAdjacent(tree_array, row, col + 1, row_length, col_length))
+                if row > 0:
+                    # top
+                    if tree_array[row - 1, col] == EMPTY:
+                        array_list.append(excludePossibleAdjacent(tree_array, row - 1, col, row_length, col_length))
+                if row < row_length - 1:
+                    # bottom
+                    if tree_array[row + 1, col] == EMPTY:
+                        array_list.append(excludePossibleAdjacent(tree_array, row + 1, col, row_length, col_length))
+                if len(array_list) == 2:
+                    #print(tree_array)
+                    tree_array = excludeAllPossible(tree_array, array_list, row, col, row_length, col_length)
 
     return tree_array
 
 def solveProblem(tree_list, row_counts, col_counts):
     tree_array = np.array(tree_list)
-
     tree_array = crossOutZeroRows(tree_array, row_counts, col_counts)
-
+    # print(tree_array)
     tree_array = crossOutFarAway(tree_array, len(row_counts), len(col_counts))
-
-    tree_array = cornerCase(tree_array, len(row_counts), len(col_counts))
+    print(tree_array)
     # In rows and/or columns where the number corresponds to the number of
     #  free cells, you may place a tent in all those free cells.
     while True:
-        tree_array = placeTents(tree_array, row_counts, col_counts)
+        placedATent = False
+        tree_array, placedATent = placeTents(tree_array, row_counts, col_counts)
         tree_array = crossOutTentConnection(tree_array, len(row_counts), len(col_counts))
         tree_array = crossOutFull(tree_array, row_counts, col_counts)
-
+        print(row_counts)
+        print(col_counts)
+        print(tree_array)
+        tree_array = cornerCase(tree_array, len(row_counts), len(col_counts))
+        # print(tree_array)
+        # if not placedATent:
+            # Do we need to save the tree?
+            # placeRandomTent(tree_array, row_counts, col_counts)
         if isSolved(tree_array, row_counts, col_counts):
             print("Solved!!")
             return
