@@ -183,9 +183,6 @@ def excludePossibleAdjacent(tree_array, row, col, row_length, col_length):
         #bottom
         if array_copy[row + 1, col] == EMPTY:
             array_copy[row + 1, col] = POSSIBLE
-    if [row, col] == [4, 1] or [row, col] == [3, 0]:
-        print("copy:")
-        print(array_copy)
     return array_copy
 
 # Exclude All Possible places a cross in the row, col position of the tree
@@ -239,8 +236,6 @@ def cornerCase(tree_array, row_length, col_length):
                 if col > 0:
                     # left
                     if tree_array[row, col - 1] == EMPTY:
-                        # print(row, col)
-                        # print(tree_array[row, col - 1])
                         array_list.append(excludePossibleAdjacent(tree_array, row, col - 1, row_length, col_length))
                 if col < col_length - 1:
                     # right
@@ -255,25 +250,46 @@ def cornerCase(tree_array, row_length, col_length):
                     if tree_array[row + 1, col] == EMPTY:
                         array_list.append(excludePossibleAdjacent(tree_array, row + 1, col, row_length, col_length))
                 if len(array_list) == 2:
-                    #print(tree_array)
                     tree_array = excludeAllPossible(tree_array, array_list, row, col, row_length, col_length)
 
     return tree_array
 
 # Nicely prints tree_array, row_counts, and col_counts
 def printProblem(tree_array, row_counts, col_counts):
-    for row in row_counts:
-        print(' ', row, end='')
+    for col in col_counts:
+        print(' ', col, end='')
     print()
-    for i, num in enumerate(col_counts):
+    for i, num in enumerate(row_counts):
         print(tree_array[i], " ", num)
 
+def printAnswer(tree_array, row_length, col_length):
+    for row in range(row_length):
+        for col in range(col_length):
+            if tree_array[row, col] == TENT:
+                print("C", end="")
+            if tree_array[row, col] == TREE:
+                print("T", end="")
+            if tree_array[row, col] == CROSS:
+                print(".", end="")
+        print()
+
+def hasEmpties(tree_array, i, j, row_length, col_length):
+    for row in range(i - 1, i + 2):
+        for col in range(j - 1, j + 2):
+            if row >= 0 and row < row_length and col >= 0 and col < col_length:
+                if tree_array[row, col] == EMPTY:
+                    return True
 
 def placeRandomTent(tree_array, row_counts, col_counts):
-    i, j = 0
+    row_length = len(row_counts)
+    col_length = len(col_counts)
+    i = j = 0
     try:
-        while tree_array[i, j] != TREE:
-            if i = len(row_counts) - 1:
+        while True:
+            if tree_array[i, j] == TREE:
+                if hasEmpties(tree_array, i, j, row_length, col_length):
+                    break
+            if i == len(row_counts) - 1:
                 i = 0;
                 j += 1;
             else:
@@ -281,38 +297,64 @@ def placeRandomTent(tree_array, row_counts, col_counts):
     except:
         print("No trees in the array.")
         exit(-1)
-    # find the free positions around the tent.
-    # for each position.
-        # Place a tent in that position.
-        # Check if that is a valid answer.
-        # If it is, return the valid tree.
-        # Else, continue.
+
+    free_positions = list()
+    for row in range(i - 1, i + 2):
+        for col in range(j - 1, j + 2):
+            if row >= 0 and row < row_length and col >= 0 and col < col_length:
+                if tree_array[row, col] == EMPTY:
+                    free_positions.append([row, col])
+
+    for position in free_positions:
+        array_copy = copy.deepcopy(tree_array)
+        array_copy[position[0], position[1]] = TENT
+        array_copy = solveProblem(array_copy, row_counts, col_counts)
+        if array_copy is not None:
+            return array_copy
+        else:
+            continue
+
+def isValid(tree_array, row_counts, col_counts):
+    row_zeroes, col_zeroes = countEmpty(tree_array, len(row_counts), len(col_counts))
+    row_tents, col_tents = countTents(tree_array, len(row_counts), len(col_counts))
+    for row, num in enumerate(row_counts):
+        if row_tents[row] != num and row_zeroes[row] == 0:
+            return False
+    for col, num in enumerate(col_counts):
+        if col_tents[col] != num and col_zeroes[col] == 0:
+            return False
+    return True
 
 
-def solveProblem(tree_list, row_counts, col_counts):
-    tree_array = np.array(tree_list)
-    tree_array = crossOutZeroRows(tree_array, row_counts, col_counts)
-    # print(tree_array)
-    tree_array = crossOutFarAway(tree_array, len(row_counts), len(col_counts))
-    print(tree_array)
-    # In rows and/or columns where the number corresponds to the number of
-    #  free cells, you may place a tent in all those free cells.
-    while True:
+
+def solveProblem(tree_array, row_counts, col_counts):
+    placedATent = True
+    while placedATent:
         placedATent = False
         tree_array, placedATent = placeTents(tree_array, row_counts, col_counts)
+        if placedATent:
+            if not isValid(tree_array, row_counts, col_counts):
+                return None
         tree_array = crossOutTentConnection(tree_array, len(row_counts), len(col_counts))
         tree_array = crossOutFull(tree_array, row_counts, col_counts)
-        print(row_counts)
-        print(col_counts)
-        printProblem(tree_array, row_counts, col_counts)
         tree_array = cornerCase(tree_array, len(row_counts), len(col_counts))
-        # print(tree_array)
-        if not placedATent:
-            # Do we need to save the tree?
-            placeRandomTent(tree_array, row_counts, col_counts)
-        if isSolved(tree_array, row_counts, col_counts):
-            print("Solved!!")
-            return
+        tree_array, placedATent = placeTents(tree_array, row_counts, col_counts)
+        if isValid(tree_array, row_counts, col_counts):
+            if isSolved(tree_array, row_counts, col_counts):
+                return crossOutFull(tree_array, row_counts, col_counts)
+        else:
+            return None
+    return placeRandomTent(tree_array, row_counts, col_counts)
+
+def startProblem(tree_list, row_counts, col_counts):
+    tree_array = np.array(tree_list)
+    tree_array = crossOutZeroRows(tree_array, row_counts, col_counts)
+    tree_array = crossOutFarAway(tree_array, len(row_counts), len(col_counts))
+    # In rows and/or columns where the number corresponds to the number of
+    #  free cells, you may place a tent in all those free cells.
+    answer = solveProblem(tree_array, row_counts, col_counts)
+    printAnswer(answer, len(row_counts), len(col_counts))
+
 
 
 
@@ -336,7 +378,6 @@ if __name__ == "__main__":
                     problem.append(list(int(j) for j in line))
                     tree_list.clear()
                     second_row = True
-                # print(problem)
                 elif second_row:
                     problem.append(list(int(j) for j in line))
                     if len(problem) != 3:
@@ -349,5 +390,5 @@ if __name__ == "__main__":
                         second_row = False
 
     for item in problems_all:
-        solveProblem(item[0], item[1], item[2])
-        #print(item)
+        startProblem(item[0], item[1], item[2])
+        print()
