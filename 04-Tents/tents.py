@@ -194,6 +194,35 @@ def cornerCase(tree_array, row_length, col_length):
                 # surely there's a numpy function for this.
     return tree_array
 
+def tryCombinations(tree_array, row_counts, col_counts):
+    tree_copy = deepcopy(tree_array)
+    row_copy = deepcopy(row_counts)
+    col_copy = deepcopy(col_counts)
+
+    row_len = len(row_counts)
+    col_len = len(col_counts)
+    for i in range(row_len):
+        if row_copy[i] != 0:
+            j = 0
+            while row_copy[i] > 0:
+                if tree_copy[i, j] == EMPTY:
+                    tree_copy[i, j] = TENT
+                    row_copy[i] = row_copy[i] - 1
+                    col_copy[j] = col_copy[j] - 1
+                    if row_copy[i] == 0:
+                        for row in range(row_len):
+                            if tree_array[row, j] == EMPTY:
+                                tree_array[row, j] = CROSS
+                    if col_copy[i] == 0:
+                        for col in range(col_len):
+                            if tree_array[i, col] == EMPTY:
+                                tree_array[i, col] = CROSS
+
+
+                j += 1
+
+
+
 def solveProblem(tree_list, row_counts, col_counts):
     tree_array = np.array(tree_list)
 
