@@ -2,7 +2,10 @@ import sys
 import numpy as np
 import copy
 
-# INPUT
+# Etude 04 - Tents and Trees.
+
+# Group: Ethan Fraser 6338284, Jordan Kettles 2147684,
+# Magdeline Huang 2824402, Tim Copland 250163
 
 EMPTY = 0
 TREE = -1
@@ -350,8 +353,6 @@ def startProblem(tree_list, row_counts, col_counts):
     tree_array = np.array(tree_list)
     tree_array = crossOutZeroRows(tree_array, row_counts, col_counts)
     tree_array = crossOutFarAway(tree_array, len(row_counts), len(col_counts))
-    # In rows and/or columns where the number corresponds to the number of
-    #  free cells, you may place a tent in all those free cells.
     answer = solveProblem(tree_array, row_counts, col_counts)
     printAnswer(answer, len(row_counts), len(col_counts))
 
