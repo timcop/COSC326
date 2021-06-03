@@ -391,5 +391,7 @@ if __name__ == "__main__":
                         second_row = False
 
     for item in problems_all:
+        item[1].reverse()
+        print(item[1])
         startProblem(item[0], item[1], item[2])
         print()
