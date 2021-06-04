@@ -8,6 +8,18 @@ TENT = 1
 CROSS = 2
 POSSIBLE = 3
 
+
+class Tree:
+    def __init__(self, row, col):
+        self.row = row
+        self.col = col
+        self.tent_row = -1
+        self.tent_col = -1
+
+    def placeTent(self, row, col):
+        self.tent_row = row
+        self.tent_col = col
+
 class Puzzle:
     def __init__(self, tree_list, row_counts, col_counts):
         self.tree_list = tree_list
@@ -17,6 +29,7 @@ class Puzzle:
         self.row_length = len(row_counts)
         self.col_length = len(col_counts)
         self.solved = False
+
 
     def crossOutRow(self, row_num):
         for col in range(self.col_length):
@@ -33,7 +46,7 @@ class Puzzle:
     def crossOutZeroRows(self):
         for row, num in enumerate(self.row_counts):
             if num == 0:
-                crossOutRow(row)
+                self.crossOutRow(row)
         for col, num in enumerate(col_counts):
             if num == 0:
                 self.crossOutCol(col)
@@ -42,23 +55,25 @@ class Puzzle:
         for row in range(self.row_length):
             for col in range(self.col_length):
                 if self.tree_array[row, col] == EMPTY:
+                    found_tree = False
                     if col > 0:
                         if self.tree_array[row, col - 1] == TREE:
                             # left
-                            continue
+                            found_tree = True
                     if row > 0:
                         if self.tree_array[row - 1, col] == TREE:
                             # top
-                            continue
+                            found_tree = True
                     if col < self.col_length - 1 :
                         if self.tree_array[row, col + 1] == TREE:
                             # right
-                            continue
+                            found_tree = True
                     if row < self.row_length - 1:
                         if self.tree_array[row + 1, col] == TREE:
                             # bottom
-                            continue
-                    self.tree_array[row, col] = CROSS
+                            found_tree = True
+                    if not found_tree:
+                            self.tree_array[row, col] = CROSS
 
     # Count Empty counts the amount of zeroes in each row column.
     def countEmpty(self):
@@ -72,26 +87,29 @@ class Puzzle:
         col_tents = np.count_nonzero(self.tree_array==TENT, axis=0)
         return row_tents, col_tents
 
+    def countTrees(self):
+        row_tents = np.count_nonzero(self.tree_array==TREE, axis=1)
+        col_tents = np.count_nonzero(self.tree_array==TREE, axis=0)
+        return row_tents, col_tents
+
     # Returns a boolean whether we placed a tent or not
     def placeTents(self):
-        placedATent = False
         row_zeroes, col_zeroes = self.countEmpty()
         row_tents, col_tents = self.countTents()
         for row, num in enumerate(self.row_counts):
-            if row_tents[row] < num:
-                if row_tents[row] + row_zeroes[row] == num:
-                    for col in range(len(self.col_counts)):
+            if row_tents[row] != num:
+                if row_zeroes[row] + row_tents[row] == num:
+                    for col in range(self.col_length):
                         if self.tree_array[row, col] == EMPTY:
                             self.tree_array[row, col] = TENT
-                            placedATent = True
+        row_zeroes, col_zeroes = self.countEmpty()
+        row_tents, col_tents = self.countTents()
         for col, num in enumerate(self.col_counts):
-            if col_tents[col] < num:
-                if col_tents[col] + col_zeroes[col] == num:
-                    for row in range(len(self.row_counts)):
+            if col_tents[col] != num:
+                if col_zeroes[col] + col_tents[col] == num:
+                    for row in range(self.row_length):
                         if self.tree_array[row, col] == EMPTY:
                             self.tree_array[row, col] = TENT
-                            placedATent = True
-        return placedATent
 
     # Crosses out empty spaces if the row or column has the correct number of tents.
     def crossOutFull(self):
@@ -161,50 +179,63 @@ class Puzzle:
 
     def leftEmpty(self, row, col):
         try:
-            if self.tree_array[row, col-1] == EMPTY:
+            if self.tree_array[row, col-1] != TENT:
+                return False
+            else:
                 return True
         except IndexError:
-            return True
+            return False
 
     def rightEmpty(self, row, col):
         try:
-            if self.tree_array[row, col+1] == EMPTY:
+            if self.tree_array[row, col+1] != TENT:
+                return False
+            else:
                 return True
         except IndexError:
-            return True
+            return False
 
     def topEmpty(self, row, col):
         try:
-            if self.tree_array[row-1, col] == EMPTY:
+            if self.tree_array[row-1, col] != TENT:
+                return False
+            else:
                 return True
         except IndexError:
-            return True
+            return False
 
     def bottomEmpty(self, row, col):
         try:
-            if self.tree_array[row-1, col] == EMPTY:
+            if self.tree_array[row+1, col] != TENT:
+                return False
+            else:
                 return True
         except IndexError:
-            return True
+            return False
 
     def cornerCases(self):
         for row in range(self.row_length):
             for col in range(self.col_length):
                 if self.tree_array[row, col] == TREE:
-                    if self.leftEmpty(row, col):
-                        if self.topEmpty(row, col):
+                    if not self.leftEmpty(row, col):
+                        if not self.topEmpty(row, col):
                             if col < self.col_length -1 and row < self.row_length-1:
-                                self.tree_array[row+1, col+1] = CROSS
-                        if self.bottomEmpty(row, col):
+                                if self.tree_array[row+1, col+1] == EMPTY:
+                                    self.tree_array[row+1, col+1] = CROSS
+                        if not self.bottomEmpty(row, col):
                             if col < self.col_length -1 and row > 0:
-                                self.tree_array[row-1, col+1] = CROSS
-                    if self.rightEmpty(row, col):
-                        if self.topEmpty(row, col):
+                                if self.tree_array[row-1, col+1] == EMPTY:
+                                    self.tree_array[row-1, col+1] = CROSS
+                    if not self.rightEmpty(row, col):
+                        if not self.topEmpty(row, col):
                             if col > 0 and row < self.row_length-1:
-                                self.tree_array[row+1, col-1] = CROSS
-                        if self.bottomEmpty(row, col):
+                                if self.tree_array[row+1, col-1] == EMPTY:
+                                    self.tree_array[row+1, col-1] = CROSS
+                        if not self.bottomEmpty(row, col):
                             if col > 0 and row > 0:
-                                self.tree_array[row-1, col-1] = CROSS
+                                if self.tree_array[row-1, col-1] == EMPTY:
+                                    self.tree_array[row-1, col-1] = CROSS
+
     def printAnswer(self):
         for row in range(self.row_length):
             for col in range(self.col_length):
@@ -214,6 +245,9 @@ class Puzzle:
                     print("T", end="")
                 if self.tree_array[row, col] == CROSS:
                     print(".", end="")
+                if self.tree_array[row, col] == EMPTY:
+                    print("_", end="")
+
             print()
 
     def availableSpaces(self):
@@ -228,31 +262,46 @@ class Puzzle:
                 return True
 
     def tryCombinations(self):
+        row_zeros, col_zeros = self.countEmpty()
+        row_trees, col_trees = self.countTrees()
+        row_tents, col_tents = self.countTents()
+        for row, num in enumerate(self.row_counts):
+            # Then need to place tents in this row
+            if self.row_counts[row] != row_tents[row]:
+                for col in range(self.col_counts):
+                    pass
 
-        for i, num in enumerate(self.row_counts):
-            if self.availableRow(row):
-                pass
+    def initialRules(self):
+        self.crossOutFull()
+        self.crossOutFarAway()
+        # self.cornerCases()
+        self.placeTents()
+        self.crossOutTentConnection()
+        # self.printAnswer()
+
+    def loopRules(self):
+        self.crossOutFull()
+        # self.cornerCases()
+        self.crossOutTentConnection()
+        # self.printAnswer()
+        self.placeTents()
+        # self.printAnswer()
 
 
 
-def loopRules(puzzle):
+
+def solve(puzzle):
     puzzle_copy = copy.deepcopy(puzzle)
-    puzzle.crossOutFull()
-    puzzle.crossOutFarAway()
-    puzzle.cornerCases()
-    puzzle.placeTents()
-    puzzle.crossOutTentConnection()
+    puzzle.initialRules()
     puzzle.isSolved()
-    while puzzle_copy.tree_array.all() != puzzle.tree_array.all() and not puzzle.solved:
+    while not(puzzle_copy.tree_array == puzzle.tree_array).all() and not puzzle.solved:
         puzzle_copy = copy.deepcopy(puzzle)
-        puzzle.crossOutFull()
-        puzzle.cornerCases()
-        puzzle.placeTents()
-        puzzle.crossOutTentConnection()
+        puzzle.loopRules()
+        puzzle.isSolved()
     if not puzzle.solved:
-
+        print("CAN'T SOLVE")
+        puzzle.printAnswer()
         pass
-
     if puzzle.solved:
         puzzle.printAnswer()
 
@@ -292,6 +341,7 @@ if __name__ == "__main__":
                         second_row = False
 
     for item in problems_all:
+        item[1].reverse()
         puzzle = Puzzle(item[0], item[1], item[2])
-        loopRules(puzzle)
+        solve(puzzle)
         print()
