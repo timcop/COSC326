@@ -19,7 +19,7 @@ class Tree:
         self.tent_row = None
         self.tent_col = None
         self.avail_squares = list()
-        self.encountered = False
+        self.visited = False
 
 
     def placeTent(self, row, col):
@@ -44,9 +44,6 @@ class Puzzle:
                 if self.tree_array[row, col] == TREE:
                     self.trees.append(Tree(row, col))
 
-        for tree in self.trees:
-            print((tree.row, tree.col))
-
     def crossOutRow(self, row_num):
         for col in range(self.col_length):
             if self.tree_array[row_num, col] == EMPTY:
@@ -66,45 +63,52 @@ class Puzzle:
                 self.crossOutCol(col)
 
     def topLeft(self, row, col):
-        try:
+        if row == 0 or col == 0:
+            return None
+        else:
             return self.tree_array[row-1, col-1]
-        except IndexError:
-            return None
+
     def topMiddle(self, row, col):
-        try:
+        if row == 0:
+            return None
+        else:
             return self.tree_array[row-1, col]
-        except IndexError:
-            return None
+
     def topRight(self, row, col):
-        try:
+        if row == 0 or col == self.col_length-1:
+            return None
+        else:
             return self.tree_array[row-1, col+1]
-        except IndexError:
-            return None
+
     def middleLeft(self, row, col):
-        try:
+        if col == 0:
+            return None
+        else:
             return self.tree_array[row, col-1]
-        except IndexError:
-            return None
+
     def middleRight(self, row, col):
-        try:
+        if col == self.col_length-1:
+            return None
+        else:
             return self.tree_array[row, col+1]
-        except IndexError:
-            return None
+
     def bottomLeft(self, row, col):
-        try:
+        if row == self.row_length-1 or col == 0:
+            return None
+        else:
             return self.tree_array[row+1, col-1]
-        except IndexError:
-            return None
+
     def bottomMiddle(self, row, col):
-        try:
+        if row == self.row_length-1:
+            return None
+        else:
             return self.tree_array[row+1, col]
-        except IndexError:
-            return None
+
     def bottomRight(self, row, col):
-        try:
-            return self.tree_array[row+1, col+1]
-        except IndexError:
+        if row == self.row_length-1 or col == self.col_length-1:
             return None
+        else:
+            return self.tree_array[row+1, col+1]
 
     def countEmpty(self):
         row_zeroes = np.count_nonzero(self.tree_array==EMPTY, axis=1)
@@ -122,27 +126,50 @@ class Puzzle:
         col_tents = np.count_nonzero(self.tree_array==TREE, axis=0)
         return row_tents, col_tents
 
+    def tentsNear(self, row, col):
+        if self.topLeft(row, col) == TENT:
+            return True
+        elif self.topMiddle(row, col) == TENT:
+            return True
+        elif self.topRight(row, col) == TENT:
+            return True
+        elif self.middleLeft(row, col) == TENT:
+            return True
+        elif self.middleRight(row, col) == TENT:
+            return True
+        elif self.bottomLeft(row, col) == TENT:
+            return True
+        elif self.bottomMiddle(row, col) == TENT:
+            return True
+        elif self.bottomRight(row, col) == TENT:
+            return True
+        return False
+
     def squaresToPlaceTent(self, row, col):
         squares = []
         row_tents, col_tents = self.countTents()
-        if col > 0 and col < self.col_length-1:
-            if row_tents[row] < self.row_counts[row]:
+        if row_tents[row] < self.row_counts[row]:
+            if col > 0:
                 if col_tents[col-1] < self.col_counts[col-1]:
-                    print("here")
                     if self.middleLeft(row, col) == EMPTY:
-                        squares.append((row, col-1))
+                        if not self.tentsNear(row, col-1):
+                            squares.append((row, col-1))
+            if col < self.col_length-1:
                 if col_tents[col+1] < self.col_counts[col+1]:
                     if self.middleRight(row, col) == EMPTY:
-                        squares.append((row, col+1))
-
-        if row > 0 and row < self.row_length-1:
-            if col_tents[col] < self.col_counts[col]:
+                        if not self.tentsNear(row, col+1):
+                            squares.append((row, col+1))
+        if col_tents[col] < self.col_counts[col]:
+            if row > 0:
                 if row_tents[row-1] < self.row_counts[row-1]:
                     if self.topMiddle(row, col) == EMPTY:
-                        squares.append((row-1, col))
+                        if not self.tentsNear(row-1, col):
+                            squares.append((row-1, col))
+            if row < self.row_length-1:
                 if row_tents[row+1] < self.row_counts[row+1]:
                     if self.bottomMiddle(row, col) == EMPTY:
-                        squares.append((row+1, col))
+                        if not self.tentsNear(row+1, col):
+                            squares.append((row+1, col))
         return squares
 
     def solve(self):
@@ -150,40 +177,35 @@ class Puzzle:
         tree_index = 0
         while not solved:
             c_tree = self.trees[tree_index]
-            print(tree_index)
-            if not c_tree.encountered:
+            if not c_tree.visited:
                 c_tree.avail_squares = self.squaresToPlaceTent(c_tree.row, c_tree.col)
-                c_tree.encountered = True
-                print(c_tree.row, c_tree.col)
-                print(c_tree.avail_squares)
-
-            if len(c_tree.avail_squares) == 0 and c_tree.encountered:
-                ## Then we have hit an unsolveable puzzle so loop back
+            if len(c_tree.avail_squares) == 0:
+                # Go back to previous tree
                 tree_index += -1
                 c_tree = self.trees[tree_index]
-                while len(c_tree.avail_squares) == 0 and c_tree.encountered:
-                    # print("Here")
-                    self.tree_array[c_tree.tent_row, c_tree.tent_col] = EMPTY #reverse changes
-                    c_tree.tent_row = None
-                    c_tree.tent_col = None
-                    c_tree.encountered = False
+                # Remove current tent
+                self.tree_array[c_tree.tent_row, c_tree.tent_col] = EMPTY
+                c_tree.tent_row = None
+                c_tree.tent_col = None
+
+                while len(c_tree.avail_squares) == 0:
+                    # Keep moving back up
                     c_tree.avail_squares = list()
+                    c_tree.visited = False
                     tree_index += -1
                     c_tree = self.trees[tree_index]
+                    self.tree_array[c_tree.tent_row, c_tree.tent_col] = EMPTY
+                    c_tree.tent_row = None
+                    c_tree.tent_col = None
 
-            elif tree_index == len(self.trees) - 1:
-                ## SOLVED
-                s = c_tree.avail_squares.pop(0)
-                self.tree_array[s[0], s[1]] = TENT
+            s = c_tree.avail_squares.pop(0)
+            self.tree_array[s[0], s[1]] = TENT
+            c_tree.placeTent(s[0], s[1])
+            if tree_index == len(self.trees) - 1:
                 solved = True
-
             else:
-                # print(tree_index)
-                s = c_tree.avail_squares.pop(0)
-                c_tree.placeTent(s[0], s[1])
-                self.tree_array[s[0], s[1]] = TENT
                 tree_index += 1
-                self.printAnswer()
+
 
     def printAnswer(self):
         for row in range(self.row_length):
@@ -192,9 +214,10 @@ class Puzzle:
                     print("C", end="")
                 if self.tree_array[row, col] == TREE:
                     print("T", end="")
-                if self.tree_array[row, col] == CROSS or self.tree_array[row, col] == EMPTY:
+                if self.tree_array[row, col] == EMPTY:
                     print(".", end="")
-
+                if self.tree_array[row, col] == CROSS:
+                    print("X", end="")
             print()
 
 if __name__ == "__main__":
