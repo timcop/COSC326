@@ -125,23 +125,22 @@ class Puzzle:
     def squaresToPlaceTent(self, row, col):
         squares = []
         row_tents, col_tents = self.countTents()
-
         if col > 0 and col < self.col_length-1:
             if row_tents[row] < self.row_counts[row]:
                 if col_tents[col-1] < self.col_counts[col-1]:
-                    if self.middleLeft(row, col-1) == EMPTY:
+                    if self.middleLeft(row, col) == EMPTY:
                         squares.append((row, col-1))
                 if col_tents[col+1] < self.col_counts[col+1]:
-                    if self.middleRight(row, col+1) == EMPTY:
+                    if self.middleRight(row, col) == EMPTY:
                         squares.append((row, col+1))
 
         if row > 0 and row < self.row_length-1:
             if col_tents[col] < self.col_counts[col]:
                 if row_tents[row-1] < self.row_counts[row-1]:
-                    if self.topMiddle(row-1, col) == EMPTY:
+                    if self.topMiddle(row, col) == EMPTY:
                         squares.append((row-1, col))
                 if row_tents[row+1] < self.row_counts[row+1]:
-                    if self.bottomMiddle(row+1, col) == EMPTY:
+                    if self.bottomMiddle(row, col) == EMPTY:
                         squares.append((row+1, col))
         return squares
 
