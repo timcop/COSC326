@@ -18,7 +18,8 @@ class Tree:
         self.col = col
         self.tent_row = None
         self.tent_col = None
-        self.avail_squares = None
+        self.avail_squares = list()
+        self.encountered = False
 
 
     def placeTent(self, row, col):
@@ -123,23 +124,20 @@ class Puzzle:
         squares = []
         row_tents, col_tents = self.countTents()
 
-        if row_tents[row] < self.row_counts[row]:
-            if col > 0:
+        if col > 0 and col < self.col_length-1:
+            if row_tents[row] < self.row_counts[row]:
                 if col_tents[col-1] < self.col_counts[col-1]:
                     if self.middleLeft(row, col-1) == EMPTY:
                         squares.append((row, col-1))
-            if col < self.col_length -1:
                 if col_tents[col+1] < self.col_counts[col+1]:
                     if self.middleRight(row, col+1) == EMPTY:
                         squares.append((row, col+1))
 
-        if col_tents[col] < self.col_counts[col]:
-            if row > 0:
+        if row > 0 and row < self.row_length-1:
+            if col_tents[col] < self.col_counts[col]:
                 if row_tents[row-1] < self.row_counts[row-1]:
                     if self.topMiddle(row-1, col) == EMPTY:
                         squares.append((row-1, col))
-
-            if row < self.row_length - 1:
                 if row_tents[row+1] < self.row_counts[row+1]:
                     if self.bottomMiddle(row+1, col) == EMPTY:
                         squares.append((row+1, col))
@@ -152,33 +150,28 @@ class Puzzle:
 
             c_tree = self.trees[tree_index]
 
-            if c_tree.avail_squares == None:
+            if not c_tree.encountered:
                 c_tree.avail_squares = self.squaresToPlaceTent(c_tree.row, c_tree.col)
+                c_tree.encountered = True
 
-                if len(c_tree.avail_squares) == 0:
-                    ## Then we have hit an unsolveable puzzle so loop back
-                    tree_index -= 1
-                    c_tree = self.trees[tree_index]
+            if len(c_tree.avail_squares) == 0:
+                ## Then we have hit an unsolveable puzzle so loop back
+                tree_index -= 1
+                c_tree = self.trees[tree_index]
+                while len(c_tree.avail_squares) == 0 and c_tree.encountered:
+                    print("Here")
                     self.tree_array[c_tree.tent_row, c_tree.tent_col] = EMPTY #reverse changes
                     c_tree.tent_row = None
                     c_tree.tent_col = None
-                    c_tree.avail_squares = None
-                    # If c_tree has more squares to explore, then don't go back futher
+                    c_tree.avail_squares = list()
                     tree_index -= 1
                     c_tree = self.trees[tree_index]
-                    while len(c_tree.avail_squares) == 0:
-                        self.tree_array[c_tree.tent_row, c_tree.tent_col] = EMPTY #reverse changes
-                        c_tree.tent_row = None
-                        c_tree.tent_col = None
-                        c_tree.avail_squares = None
-                        tree_index -= 1
-                        c_tree = self.trees[tree_index]
 
-                elif tree_index == len(self.trees) - 1:
-                    ## SOLVED
-                    s = c_tree.avail_squares.pop(0)
-                    self.tree_array[s[0], s[1]] = TENT
-                    solved = True
+            elif tree_index == len(self.trees) - 1:
+                ## SOLVED
+                s = c_tree.avail_squares.pop(0)
+                self.tree_array[s[0], s[1]] = TENT
+                solved = True
 
             else:
                 s = c_tree.avail_squares.pop(0)
