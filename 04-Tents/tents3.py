@@ -128,6 +128,7 @@ class Puzzle:
         if col > 0 and col < self.col_length-1:
             if row_tents[row] < self.row_counts[row]:
                 if col_tents[col-1] < self.col_counts[col-1]:
+                    print("here")
                     if self.middleLeft(row, col) == EMPTY:
                         squares.append((row, col-1))
                 if col_tents[col+1] < self.col_counts[col+1]:
@@ -149,10 +150,11 @@ class Puzzle:
         tree_index = 0
         while not solved:
             c_tree = self.trees[tree_index]
-
+            print(tree_index)
             if not c_tree.encountered:
                 c_tree.avail_squares = self.squaresToPlaceTent(c_tree.row, c_tree.col)
                 c_tree.encountered = True
+                print(c_tree.row, c_tree.col)
                 print(c_tree.avail_squares)
 
             if len(c_tree.avail_squares) == 0 and c_tree.encountered:
