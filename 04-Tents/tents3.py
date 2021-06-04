@@ -43,7 +43,9 @@ class Puzzle:
             for col in range(self.col_length):
                 if self.tree_array[row, col] == TREE:
                     self.trees.append(Tree(row, col))
-        # print(self.trees)
+
+        for tree in self.trees:
+            print((tree.row, tree.col))
 
     def crossOutRow(self, row_num):
         for col in range(self.col_length):
@@ -147,24 +149,25 @@ class Puzzle:
         solved = False
         tree_index = 0
         while not solved:
-
             c_tree = self.trees[tree_index]
 
             if not c_tree.encountered:
                 c_tree.avail_squares = self.squaresToPlaceTent(c_tree.row, c_tree.col)
                 c_tree.encountered = True
+                print(c_tree.avail_squares)
 
-            if len(c_tree.avail_squares) == 0:
+            if len(c_tree.avail_squares) == 0 and c_tree.encountered:
                 ## Then we have hit an unsolveable puzzle so loop back
-                tree_index -= 1
+                tree_index += -1
                 c_tree = self.trees[tree_index]
                 while len(c_tree.avail_squares) == 0 and c_tree.encountered:
-                    print("Here")
+                    # print("Here")
                     self.tree_array[c_tree.tent_row, c_tree.tent_col] = EMPTY #reverse changes
                     c_tree.tent_row = None
                     c_tree.tent_col = None
+                    c_tree.encountered = False
                     c_tree.avail_squares = list()
-                    tree_index -= 1
+                    tree_index += -1
                     c_tree = self.trees[tree_index]
 
             elif tree_index == len(self.trees) - 1:
@@ -174,10 +177,12 @@ class Puzzle:
                 solved = True
 
             else:
+                # print(tree_index)
                 s = c_tree.avail_squares.pop(0)
                 c_tree.placeTent(s[0], s[1])
                 self.tree_array[s[0], s[1]] = TENT
                 tree_index += 1
+                self.printAnswer()
 
     def printAnswer(self):
         for row in range(self.row_length):
